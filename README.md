@@ -1,1 +1,1 @@
-# XLight2
+# XLight - 2.0.0
