@@ -13,14 +13,19 @@ namespace XLight
 {
 	public partial class MenuGeneral : Form
 	{
+		List<Dictionary<string, Color>> templates = new List<Dictionary<string, Color>>();
+		int cur_template = 0;
+		DateTime endTime = DateTime.Now;
+		private int selectBtn = 0;
+
 		public MenuGeneral()
 		{
 			InitializeComponent();
-		}
 
-		#region Variables
-		private int selectBtn = 0;
-		#endregion
+			CargarTemplates();
+
+			actualizadorDia.Start();
+		}
 
 		#region Metodos Btns
 		private void btnInicio_Click(object sender, EventArgs e)
@@ -83,6 +88,18 @@ namespace XLight
 		private void bunifuImageButton1_Click(object sender, EventArgs e)
 		{
 			this.WindowState = FormWindowState.Minimized;
+		}
+
+		private void btnTransparente_Click(object sender, EventArgs e)
+		{
+			if (this.Opacity == 1.0f)
+			{
+				this.Opacity = 0.8f;
+			}
+			else
+			{
+				this.Opacity = 1.0f;
+			}
 		}
 		#endregion
 
@@ -193,8 +210,6 @@ namespace XLight
 			}
 		}
 
-		#endregion
-
 		private void btnSlider_Click(object sender, EventArgs e)
 		{
 			if (panelControl.Width == 85)
@@ -212,5 +227,62 @@ namespace XLight
 				panelControlAnimator.ShowSync(panelControl);
 			}
 		}
+		#endregion
+
+		#region Funcionalidades
+		public void load_theme(Dictionary<string, Color> theme)
+		{
+
+			panelDashboard.GradientBottomLeft = theme["bottomleft"];
+			panelDashboard.GradientBottomRight = theme["bottomright"];
+			panelDashboard.GradientTopLeft = theme["topleft"];
+			panelDashboard.GradientTopRight = theme["topright"];
+		}
+
+		public void CargarTemplates()
+		{
+			Dictionary<string, Color> template = new Dictionary<string, Color>();
+
+			template.Add("bottomleft", Color.FromArgb(255, 192, 128));
+			template.Add("bottomright", Color.FromArgb(251, 97, 122));
+			template.Add("topleft", Color.FromArgb(251, 97, 122));
+			template.Add("topright", Color.FromArgb(251, 97, 122));
+
+			templates.Add(template);
+
+
+			template = new Dictionary<string, Color>();
+
+			template.Add("bottomleft", Color.FromArgb(192, 0, 192));
+			template.Add("bottomright", Color.Black);
+			template.Add("topleft", Color.FromArgb(251, 97, 122));
+			template.Add("topright", Color.FromArgb(251, 97, 122));
+
+			templates.Add(template);
+
+			template = new Dictionary<string, Color>();
+
+			template.Add("bottomleft", Color.Black);
+			template.Add("bottomright", Color.Black);
+			template.Add("topleft", Color.FromArgb(251, 97, 122));
+			template.Add("topright", Color.DarkTurquoise);
+
+			templates.Add(template);
+
+			load_theme(templates[cur_template]);
+		}
+		#endregion
+
+		#region Ticks
+		private void actualizadorDia_Tick(object sender, EventArgs e)
+		{
+			endTime = DateTime.Now;
+
+			d.Text = endTime.Day.ToString();
+			h.Text = endTime.Hour.ToString();
+			m.Text = endTime.Minute.ToString();
+			s.Text = endTime.Second.ToString();
+		}
+		#endregion
 	}
 }
