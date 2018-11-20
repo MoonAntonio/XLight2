@@ -107,5 +107,26 @@
   <ItemGroup>
     <None Include="Resources\Collapse_100px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registry Editor_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registry Editor_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Combo Chart_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Heart with Pulse_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slider _50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Console_50px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
