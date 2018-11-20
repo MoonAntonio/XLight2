@@ -67,6 +67,23 @@ namespace XLight
 			selectBtn = 6;
 			SetSelectForeColor();
 		}
+
+		private void btnMaximizar_Click(object sender, EventArgs e)
+		{
+			if (this.WindowState == FormWindowState.Maximized)
+			{
+				this.WindowState = FormWindowState.Normal;
+			}
+			else
+			{
+				this.WindowState = FormWindowState.Maximized;
+			}
+		}
+
+		private void bunifuImageButton1_Click(object sender, EventArgs e)
+		{
+			this.WindowState = FormWindowState.Minimized;
+		}
 		#endregion
 
 		#region Metodos GUI
@@ -175,6 +192,25 @@ namespace XLight
 					break;
 			}
 		}
+
 		#endregion
+
+		private void btnSlider_Click(object sender, EventArgs e)
+		{
+			if (panelControl.Width == 85)
+			{
+				panelControl.Visible = false;
+				panelControl.Width = 256;
+				panelControlAnimator2.ShowSync(panelControl);
+				logoAnimator.ShowSync(imgLogoAmpliado);
+			}
+			else
+			{
+				logoAnimator.HideSync(imgLogoAmpliado);
+				panelControl.Visible = false;
+				panelControl.Width = 85;
+				panelControlAnimator.ShowSync(panelControl);
+			}
+		}
 	}
 }
