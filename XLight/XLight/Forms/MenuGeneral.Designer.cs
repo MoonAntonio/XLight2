@@ -32,11 +32,12 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuGeneral));
 			this.buniElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
 			this.panelControl = new System.Windows.Forms.Panel();
+			this.separadorInferior = new Bunifu.Framework.UI.BunifuSeparator();
+			this.separadorSuperior = new Bunifu.Framework.UI.BunifuSeparator();
 			this.header = new System.Windows.Forms.Panel();
 			this.lblSuperior = new Bunifu.Framework.UI.BunifuCustomLabel();
 			this.controlDrag = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-			this.separadorSuperior = new Bunifu.Framework.UI.BunifuSeparator();
-			this.separadorInferior = new Bunifu.Framework.UI.BunifuSeparator();
+			this.btnSalir = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.btnCambiarUsuario = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.btnOpciones = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.btnHistorial = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
@@ -44,17 +45,17 @@
 			this.btnClientes = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.btnInicio = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.imgLogoAmpliado = new System.Windows.Forms.PictureBox();
+			this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
 			this.btnSlider = new Bunifu.Framework.UI.BunifuImageButton();
 			this.btnMinimizar = new Bunifu.Framework.UI.BunifuImageButton();
 			this.btnMaximizar = new Bunifu.Framework.UI.BunifuImageButton();
-			this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
 			this.panelControl.SuspendLayout();
 			this.header.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.imgLogoAmpliado)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnSlider)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// buniElipse
@@ -65,6 +66,7 @@
 			// panelControl
 			// 
 			this.panelControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.panelControl.Controls.Add(this.btnSalir);
 			this.panelControl.Controls.Add(this.btnCambiarUsuario);
 			this.panelControl.Controls.Add(this.separadorInferior);
 			this.panelControl.Controls.Add(this.btnOpciones);
@@ -77,16 +79,40 @@
 			this.panelControl.Dock = System.Windows.Forms.DockStyle.Left;
 			this.panelControl.Location = new System.Drawing.Point(0, 53);
 			this.panelControl.Name = "panelControl";
-			this.panelControl.Size = new System.Drawing.Size(256, 562);
+			this.panelControl.Size = new System.Drawing.Size(256, 597);
 			this.panelControl.TabIndex = 0;
+			// 
+			// separadorInferior
+			// 
+			this.separadorInferior.BackColor = System.Drawing.Color.Transparent;
+			this.separadorInferior.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+			this.separadorInferior.LineThickness = 1;
+			this.separadorInferior.Location = new System.Drawing.Point(12, 492);
+			this.separadorInferior.Name = "separadorInferior";
+			this.separadorInferior.Size = new System.Drawing.Size(228, 35);
+			this.separadorInferior.TabIndex = 8;
+			this.separadorInferior.Transparency = 255;
+			this.separadorInferior.Vertical = false;
+			// 
+			// separadorSuperior
+			// 
+			this.separadorSuperior.BackColor = System.Drawing.Color.Transparent;
+			this.separadorSuperior.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+			this.separadorSuperior.LineThickness = 1;
+			this.separadorSuperior.Location = new System.Drawing.Point(12, 110);
+			this.separadorSuperior.Name = "separadorSuperior";
+			this.separadorSuperior.Size = new System.Drawing.Size(228, 35);
+			this.separadorSuperior.TabIndex = 3;
+			this.separadorSuperior.Transparency = 255;
+			this.separadorSuperior.Vertical = false;
 			// 
 			// header
 			// 
 			this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.header.Controls.Add(this.bunifuImageButton1);
 			this.header.Controls.Add(this.btnSlider);
 			this.header.Controls.Add(this.btnMinimizar);
 			this.header.Controls.Add(this.btnMaximizar);
-			this.header.Controls.Add(this.btnClose);
 			this.header.Controls.Add(this.lblSuperior);
 			this.header.Dock = System.Windows.Forms.DockStyle.Top;
 			this.header.Location = new System.Drawing.Point(0, 0);
@@ -112,29 +138,37 @@
 			this.controlDrag.TargetControl = this.header;
 			this.controlDrag.Vertical = true;
 			// 
-			// separadorSuperior
+			// btnSalir
 			// 
-			this.separadorSuperior.BackColor = System.Drawing.Color.Transparent;
-			this.separadorSuperior.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-			this.separadorSuperior.LineThickness = 1;
-			this.separadorSuperior.Location = new System.Drawing.Point(12, 110);
-			this.separadorSuperior.Name = "separadorSuperior";
-			this.separadorSuperior.Size = new System.Drawing.Size(228, 35);
-			this.separadorSuperior.TabIndex = 3;
-			this.separadorSuperior.Transparency = 255;
-			this.separadorSuperior.Vertical = false;
-			// 
-			// separadorInferior
-			// 
-			this.separadorInferior.BackColor = System.Drawing.Color.Transparent;
-			this.separadorInferior.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-			this.separadorInferior.LineThickness = 1;
-			this.separadorInferior.Location = new System.Drawing.Point(12, 441);
-			this.separadorInferior.Name = "separadorInferior";
-			this.separadorInferior.Size = new System.Drawing.Size(228, 35);
-			this.separadorInferior.TabIndex = 8;
-			this.separadorInferior.Transparency = 255;
-			this.separadorInferior.Vertical = false;
+			this.btnSalir.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnSalir.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.btnSalir.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.btnSalir.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.btnSalir.Border.Color = System.Drawing.Color.White;
+			this.btnSalir.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.btnSalir.Border.HoverVisible = true;
+			this.btnSalir.Border.Rounding = 6;
+			this.btnSalir.Border.Thickness = 1;
+			this.btnSalir.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.btnSalir.Border.Visible = true;
+			this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSalir.ForeColor = System.Drawing.Color.White;
+			this.btnSalir.Image = global::XLight.Properties.Resources.Shutdown_50px;
+			this.btnSalir.Location = new System.Drawing.Point(12, 441);
+			this.btnSalir.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.btnSalir.Name = "btnSalir";
+			this.btnSalir.Size = new System.Drawing.Size(228, 52);
+			this.btnSalir.TabIndex = 10;
+			this.btnSalir.Text = "               Salir";
+			this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnSalir.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.btnSalir.TextStyle.Enabled = System.Drawing.Color.White;
+			this.btnSalir.TextStyle.Hover = System.Drawing.Color.White;
+			this.btnSalir.TextStyle.Pressed = System.Drawing.Color.White;
+			this.btnSalir.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.btnSalir.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.btnSalir.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
 			// 
 			// btnCambiarUsuario
 			// 
@@ -152,7 +186,7 @@
 			this.btnCambiarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnCambiarUsuario.ForeColor = System.Drawing.Color.White;
 			this.btnCambiarUsuario.Image = global::XLight.Properties.Resources.Console_50px;
-			this.btnCambiarUsuario.Location = new System.Drawing.Point(12, 480);
+			this.btnCambiarUsuario.Location = new System.Drawing.Point(12, 533);
 			this.btnCambiarUsuario.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
 			this.btnCambiarUsuario.Name = "btnCambiarUsuario";
 			this.btnCambiarUsuario.Size = new System.Drawing.Size(228, 52);
@@ -166,6 +200,7 @@
 			this.btnCambiarUsuario.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
 			this.btnCambiarUsuario.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
 			this.btnCambiarUsuario.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.btnCambiarUsuario.Click += new System.EventHandler(this.btnCambiarUsuario_Click);
 			// 
 			// btnOpciones
 			// 
@@ -197,6 +232,7 @@
 			this.btnOpciones.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
 			this.btnOpciones.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
 			this.btnOpciones.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.btnOpciones.Click += new System.EventHandler(this.btnOpciones_Click);
 			// 
 			// btnHistorial
 			// 
@@ -228,6 +264,7 @@
 			this.btnHistorial.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
 			this.btnHistorial.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
 			this.btnHistorial.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
 			// 
 			// btnBalance
 			// 
@@ -259,6 +296,7 @@
 			this.btnBalance.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
 			this.btnBalance.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
 			this.btnBalance.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.btnBalance.Click += new System.EventHandler(this.btnBalance_Click);
 			// 
 			// btnClientes
 			// 
@@ -290,6 +328,7 @@
 			this.btnClientes.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
 			this.btnClientes.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
 			this.btnClientes.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
 			// 
 			// btnInicio
 			// 
@@ -312,7 +351,7 @@
 			this.btnInicio.Name = "btnInicio";
 			this.btnInicio.Size = new System.Drawing.Size(228, 52);
 			this.btnInicio.TabIndex = 1;
-			this.btnInicio.Text = "         DashBoard";
+			this.btnInicio.Text = "          DashBoard";
 			this.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.btnInicio.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
 			this.btnInicio.TextStyle.Enabled = System.Drawing.Color.White;
@@ -321,6 +360,7 @@
 			this.btnInicio.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
 			this.btnInicio.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
 			this.btnInicio.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
 			// 
 			// imgLogoAmpliado
 			// 
@@ -331,6 +371,19 @@
 			this.imgLogoAmpliado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.imgLogoAmpliado.TabIndex = 0;
 			this.imgLogoAmpliado.TabStop = false;
+			// 
+			// bunifuImageButton1
+			// 
+			this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.bunifuImageButton1.Image = global::XLight.Properties.Resources.Minimize_Window_100px;
+			this.bunifuImageButton1.ImageActive = null;
+			this.bunifuImageButton1.Location = new System.Drawing.Point(967, 7);
+			this.bunifuImageButton1.Name = "bunifuImageButton1";
+			this.bunifuImageButton1.Size = new System.Drawing.Size(34, 37);
+			this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.bunifuImageButton1.TabIndex = 7;
+			this.bunifuImageButton1.TabStop = false;
+			this.bunifuImageButton1.Zoom = 20;
 			// 
 			// btnSlider
 			// 
@@ -350,7 +403,7 @@
 			this.btnMinimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
 			this.btnMinimizar.Image = global::XLight.Properties.Resources.Collapse_100px;
 			this.btnMinimizar.ImageActive = null;
-			this.btnMinimizar.Location = new System.Drawing.Point(1063, 7);
+			this.btnMinimizar.Location = new System.Drawing.Point(1007, 7);
 			this.btnMinimizar.Name = "btnMinimizar";
 			this.btnMinimizar.Size = new System.Drawing.Size(34, 37);
 			this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -361,9 +414,9 @@
 			// btnMaximizar
 			// 
 			this.btnMaximizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-			this.btnMaximizar.Image = global::XLight.Properties.Resources.Expand_100px;
+			this.btnMaximizar.Image = global::XLight.Properties.Resources.Currency_100px;
 			this.btnMaximizar.ImageActive = null;
-			this.btnMaximizar.Location = new System.Drawing.Point(1103, 7);
+			this.btnMaximizar.Location = new System.Drawing.Point(1007, 7);
 			this.btnMaximizar.Name = "btnMaximizar";
 			this.btnMaximizar.Size = new System.Drawing.Size(34, 37);
 			this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -371,26 +424,12 @@
 			this.btnMaximizar.TabStop = false;
 			this.btnMaximizar.Zoom = 20;
 			// 
-			// btnClose
-			// 
-			this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-			this.btnClose.Image = global::XLight.Properties.Resources.Delete_100px;
-			this.btnClose.ImageActive = null;
-			this.btnClose.Location = new System.Drawing.Point(1143, 7);
-			this.btnClose.Name = "btnClose";
-			this.btnClose.Size = new System.Drawing.Size(34, 37);
-			this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.btnClose.TabIndex = 3;
-			this.btnClose.TabStop = false;
-			this.btnClose.Zoom = 20;
-			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-			// 
 			// MenuGeneral
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-			this.ClientSize = new System.Drawing.Size(1188, 615);
+			this.ClientSize = new System.Drawing.Size(1188, 650);
 			this.Controls.Add(this.panelControl);
 			this.Controls.Add(this.header);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -402,10 +441,10 @@
 			this.header.ResumeLayout(false);
 			this.header.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.imgLogoAmpliado)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnSlider)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -417,7 +456,6 @@
 		private System.Windows.Forms.Panel header;
 		private System.Windows.Forms.PictureBox imgLogoAmpliado;
 		private Bunifu.Framework.UI.BunifuCustomLabel lblSuperior;
-		private Bunifu.Framework.UI.BunifuImageButton btnClose;
 		private Bunifu.Framework.UI.BunifuImageButton btnMaximizar;
 		private Bunifu.Framework.UI.BunifuImageButton btnMinimizar;
 		private Bunifu.Framework.UI.BunifuDragControl controlDrag;
@@ -430,6 +468,8 @@
 		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton btnOpciones;
 		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton btnCambiarUsuario;
 		private Bunifu.Framework.UI.BunifuSeparator separadorInferior;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton btnSalir;
+		private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
 	}
 }
 

@@ -128,5 +128,14 @@
   <ItemGroup>
     <None Include="Resources\Console_50px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shutdown_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Currency_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize Window_100px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -17,11 +17,41 @@ namespace XLight
 			InitializeComponent();
 		}
 
-		#region Funcionalidad
-		private void btnClose_Click(object sender, EventArgs e)
+		#region Funcionalidad Btns
+		private void btnInicio_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnClientes_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnBalance_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnHistorial_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnOpciones_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnSalir_Click(object sender, EventArgs e)
 		{
 			// Cierre de formulario
 			this.Close();
+		}
+
+		private void btnCambiarUsuario_Click(object sender, EventArgs e)
+		{
+
 		}
 		#endregion
 	}
