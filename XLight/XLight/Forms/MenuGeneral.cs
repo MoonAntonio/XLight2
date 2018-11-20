@@ -24,6 +24,8 @@ namespace XLight
 
 			CargarTemplates();
 
+			AplicarElipse();
+
 			actualizadorDia.Start();
 		}
 
@@ -32,12 +34,14 @@ namespace XLight
 		{
 			selectBtn = 0;
 			SetSelectForeColor();
+			panelDashboard.Show();
 		}
 
 		private void btnClientes_Click(object sender, EventArgs e)
 		{
 			selectBtn = 1;
 			SetSelectForeColor();
+			panelDashboard.Hide();
 		}
 
 		private void btnBalance_Click(object sender, EventArgs e)
@@ -270,6 +274,13 @@ namespace XLight
 			templates.Add(template);
 
 			load_theme(templates[cur_template]);
+		}
+
+		public void AplicarElipse()
+		{
+			Bunifu.Framework.Lib.Elipse.Apply(card1, 5);
+			Bunifu.Framework.Lib.Elipse.Apply(card2, 5);
+			Bunifu.Framework.Lib.Elipse.Apply(card3, 5);
 		}
 		#endregion
 

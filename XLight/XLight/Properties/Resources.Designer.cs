@@ -153,6 +153,26 @@ namespace XLight.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Google_Calendar_100px {
+            get {
+                object obj = ResourceManager.GetObject("Google Calendar_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Google_Nearby_100px {
+            get {
+                object obj = ResourceManager.GetObject("Google Nearby_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Heart_with_Pulse_50px {
             get {
                 object obj = ResourceManager.GetObject("Heart with Pulse_50px", resourceCulture);
@@ -206,6 +226,16 @@ namespace XLight.Properties {
         internal static System.Drawing.Bitmap Shutdown_50px {
             get {
                 object obj = ResourceManager.GetObject("Shutdown_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SimplyBuilt_100px {
+            get {
+                object obj = ResourceManager.GetObject("SimplyBuilt_100px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
