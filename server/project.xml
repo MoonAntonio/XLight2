@@ -2,7 +2,7 @@
 <sharpUpdate> 
     <update> 
         <version>1.0.0.0</version> 
-        <url>https://raw.githubusercontent.com/henryxrl/SharpUpdate/master/TestApp/bin/Debug/XLight.exe</url> 
+        <url>https://github.com/MoonAntonio/XLight2/blob/master/server/Update/XLight.exe</url> 
         <filePath>./XLight.exe</filePath>
         <md5></md5>
         <description>Update: 21/11/2018:
