@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace XLight
 {
-	public partial class Main : Form
+	public partial class MenuGeneral : Form
 	{
-		public Main()
+		public MenuGeneral()
 		{
 			InitializeComponent();
 		}
+
+		#region Funcionalidad
+		private void btnClose_Click(object sender, EventArgs e)
+		{
+			// Cierre de formulario
+			this.Close();
+		}
+		#endregion
 	}
 }
