@@ -34,14 +34,14 @@ namespace XLight
 		{
 			selectBtn = 0;
 			SetSelectForeColor();
-			panelDashboard.Show();
+			PanelDashShow(true);
 		}
 
 		private void btnClientes_Click(object sender, EventArgs e)
 		{
 			selectBtn = 1;
 			SetSelectForeColor();
-			panelDashboard.Hide();
+			PanelDashShow(false);
 		}
 
 		private void btnBalance_Click(object sender, EventArgs e)
@@ -229,6 +229,19 @@ namespace XLight
 				panelControl.Visible = false;
 				panelControl.Width = 85;
 				panelControlAnimator.ShowSync(panelControl);
+			}
+		}
+
+		private void PanelDashShow(bool show)
+		{
+			if (show == true)
+			{
+				panelDashboard.Visible = false;
+				transi1.ShowSync(panelDashboard);
+			}
+			else
+			{
+				panelDashboard.Hide();
 			}
 		}
 		#endregion

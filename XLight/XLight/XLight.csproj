@@ -73,6 +73,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Ajustes.cs" />
+    <Compile Include="Clases\Xml.cs" />
     <Compile Include="Forms\MenuGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,5 +190,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
