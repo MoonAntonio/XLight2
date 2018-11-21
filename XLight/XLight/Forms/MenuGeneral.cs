@@ -152,7 +152,7 @@ namespace XLight
 			SetSelectForeColor();
 
 			// Cierre de formulario
-			this.Close();
+			Application.Exit();
 		}
 
 		private void btnCambiarUsuario_Click(object sender, EventArgs e)

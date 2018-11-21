@@ -103,6 +103,16 @@ namespace XLight.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cuphead_100px {
+            get {
+                object obj = ResourceManager.GetObject("Cuphead_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Currency_100px {
             get {
                 object obj = ResourceManager.GetObject("Currency_100px", resourceCulture);
@@ -223,6 +233,16 @@ namespace XLight.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Play_100px {
+            get {
+                object obj = ResourceManager.GetObject("Play_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Registry_Editor_100px {
             get {
                 object obj = ResourceManager.GetObject("Registry Editor_100px", resourceCulture);
@@ -236,6 +256,16 @@ namespace XLight.Properties {
         internal static System.Drawing.Bitmap Registry_Editor_50px {
             get {
                 object obj = ResourceManager.GetObject("Registry Editor_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Round_100px {
+            get {
+                object obj = ResourceManager.GetObject("Round_100px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
