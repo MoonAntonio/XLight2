@@ -15,6 +15,7 @@ using System.Windows.Forms;
 using System.Xml;
 using XLight.Clases;
 using XLight.Forms;
+using AutoUpdaterDotNET;
 #endregion
 
 namespace XLight.Forms
@@ -35,7 +36,7 @@ namespace XLight.Forms
 		public Splash()// Constructor de Splash
 		{
 			InitializeComponent();
-
+			AutoUpdater.Start("http://rbsoft.org/updates/AutoUpdaterTest.xml");
 		}
 		#endregion
 

@@ -51,6 +51,9 @@
     <ApplicationIcon>Logo_Tocayo_512_MasRosa.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoUpdater.NET">
+      <HintPath>..\..\Librerias\net40\AutoUpdater.NET.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\..\Librerias\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
