@@ -131,6 +131,9 @@
     <EmbeddedResource Include="Forms\MenuGeneral.resx">
       <DependentUpon>MenuGeneral.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NuevoUsuario.resx">
+      <DependentUpon>NuevoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>

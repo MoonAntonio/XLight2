@@ -17,7 +17,7 @@ namespace XLight
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new EditarUsuario());
+			Application.Run(new NuevoUsuario());
 		}
 	}
 }
