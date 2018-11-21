@@ -38,6 +38,10 @@
 			this.visualSeparator2 = new VisualPlus.Toolkit.Controls.Layout.VisualSeparator();
 			this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
 			this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// bunifuElipse1
@@ -249,11 +253,33 @@
 			this.bunifuCustomLabel2.TabIndex = 6;
 			this.bunifuCustomLabel2.Text = "Nueva";
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = global::XLight.Properties.Resources.Clash_Royale_100px;
+			this.pictureBox1.Location = new System.Drawing.Point(7, 32);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(31, 30);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox1.TabIndex = 7;
+			this.pictureBox1.TabStop = false;
+			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.Image = global::XLight.Properties.Resources.Realtime_100px;
+			this.pictureBox2.Location = new System.Drawing.Point(7, 68);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(31, 30);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox2.TabIndex = 8;
+			this.pictureBox2.TabStop = false;
+			// 
 			// CambiarContrase
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(686, 136);
+			this.Controls.Add(this.pictureBox2);
+			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.bunifuCustomLabel2);
 			this.Controls.Add(this.bunifuCustomLabel1);
 			this.Controls.Add(this.visualSeparator2);
@@ -265,6 +291,8 @@
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "CambiarContrase";
 			this.Text = "CambiarContrase";
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -280,5 +308,7 @@
 		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
 		private VisualPlus.Toolkit.Controls.Layout.VisualSeparator visualSeparator2;
 		private VisualPlus.Toolkit.Controls.Layout.VisualSeparator visualSeparator1;
+		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.PictureBox pictureBox2;
 	}
 }

@@ -29,10 +29,10 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
-			BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
 			BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
+			BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
 			BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+			BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuGeneral));
 			this.buniElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
 			this.panelControl = new System.Windows.Forms.Panel();
@@ -46,10 +46,69 @@
 			this.panelControlAnimator2 = new BunifuAnimatorNS.BunifuTransition(this.components);
 			this.actualizadorDia = new System.Windows.Forms.Timer(this.components);
 			this.transi1 = new BunifuAnimatorNS.BunifuTransition(this.components);
-			this.PanelClientes = new Bunifu.Framework.UI.BunifuGradientPanel();
-			this.PanelBalance = new Bunifu.Framework.UI.BunifuGradientPanel();
-			this.PanelHistorial = new Bunifu.Framework.UI.BunifuGradientPanel();
+			this.printDocument1 = new System.Drawing.Printing.PrintDocument();
 			this.PanelOpciones = new Bunifu.Framework.UI.BunifuGradientPanel();
+			this.visualGroupBox2 = new VisualPlus.Toolkit.Controls.Layout.VisualGroupBox();
+			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.pictureBox6 = new System.Windows.Forms.PictureBox();
+			this.visualLabel1 = new VisualPlus.Toolkit.Controls.Interactivity.VisualLabel();
+			this.checkBoxAuto = new System.Windows.Forms.CheckBox();
+			this.BtnCrearUsuario = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.BtnCambiarContraseña = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.BtnBorrarHistorial = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.visualSeparator4 = new VisualPlus.Toolkit.Controls.Layout.VisualSeparator();
+			this.visualSeparator3 = new VisualPlus.Toolkit.Controls.Layout.VisualSeparator();
+			this.LblHistorial = new VisualPlus.Toolkit.Controls.Interactivity.VisualLabel();
+			this.LblClientes = new VisualPlus.Toolkit.Controls.Interactivity.VisualLabel();
+			this.BtnRutaHistorial = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.BtnRutaClientes = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.visualGroupBox1 = new VisualPlus.Toolkit.Controls.Layout.VisualGroupBox();
+			this.visualSeparator2 = new VisualPlus.Toolkit.Controls.Layout.VisualSeparator();
+			this.LblUsuarios = new VisualPlus.Toolkit.Controls.Interactivity.VisualLabel();
+			this.LblData = new VisualPlus.Toolkit.Controls.Interactivity.VisualLabel();
+			this.BtnRutaUsuarios = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.BtnRutaData = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.PanelHistorial = new Bunifu.Framework.UI.BunifuGradientPanel();
+			this.listViewHistorial = new System.Windows.Forms.ListView();
+			this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.PanelBalance = new Bunifu.Framework.UI.BunifuGradientPanel();
+			this.PanelClientes = new Bunifu.Framework.UI.BunifuGradientPanel();
+			this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
+			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Apellidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.DNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.txtBoxBuscadorRegistro = new System.Windows.Forms.TextBox();
+			this.BtnImprimirClientes = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.BtnBorrar = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.BtnEditar = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.BtnAbrirFicha = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.bunifuCustomLabel13 = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.pictureBox5 = new System.Windows.Forms.PictureBox();
+			this.visualSeparator1 = new VisualPlus.Toolkit.Controls.Layout.VisualSeparator();
+			this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+			this.DataFecha = new Bunifu.Framework.UI.BunifuDatepicker();
+			this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.TextTelefono = new VisualPlus.Toolkit.Controls.Editors.VisualTextBox();
+			this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.TextApellidos = new VisualPlus.Toolkit.Controls.Editors.VisualTextBox();
+			this.TextDireccion = new VisualPlus.Toolkit.Controls.Editors.VisualTextBox();
+			this.TextDNI = new VisualPlus.Toolkit.Controls.Editors.VisualTextBox();
+			this.TextNombre = new VisualPlus.Toolkit.Controls.Editors.VisualTextBox();
+			this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.BtnAgregarNuevoCliente = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.panelDashboard = new Bunifu.Framework.UI.BunifuGradientPanel();
 			this.panelStats = new Bunifu.Framework.UI.BunifuCards();
 			this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
@@ -69,7 +128,7 @@
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.card1 = new Bunifu.Framework.UI.BunifuGradientPanel();
 			this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-			this.lblClientes = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.lblClien = new Bunifu.Framework.UI.BunifuCustomLabel();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.panelBase = new System.Windows.Forms.Panel();
 			this.h = new System.Windows.Forms.Label();
@@ -85,7 +144,7 @@
 			this.label8 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.btnSalir = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
-			this.btnCambiarUsuario = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.BtnUsuarioSetup = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.btnOpciones = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.btnHistorial = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.btnBalance = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
@@ -96,11 +155,21 @@
 			this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
 			this.btnSlider = new Bunifu.Framework.UI.BunifuImageButton();
 			this.btnMaximizar = new Bunifu.Framework.UI.BunifuImageButton();
+			this.LblUser = new Bunifu.Framework.UI.BunifuCustomLabel();
 			this.panelControl.SuspendLayout();
 			this.header.SuspendLayout();
-			this.PanelClientes.SuspendLayout();
-			this.PanelBalance.SuspendLayout();
+			this.PanelOpciones.SuspendLayout();
+			this.visualGroupBox2.SuspendLayout();
+			this.groupBox1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+			this.visualGroupBox1.SuspendLayout();
 			this.PanelHistorial.SuspendLayout();
+			this.PanelClientes.SuspendLayout();
+			this.bunifuGradientPanel2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+			this.bunifuGradientPanel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			this.panelDashboard.SuspendLayout();
 			this.panelStats.SuspendLayout();
 			this.card3.SuspendLayout();
@@ -126,7 +195,7 @@
 			// 
 			this.panelControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
 			this.panelControl.Controls.Add(this.btnSalir);
-			this.panelControl.Controls.Add(this.btnCambiarUsuario);
+			this.panelControl.Controls.Add(this.BtnUsuarioSetup);
 			this.panelControl.Controls.Add(this.separadorInferior);
 			this.panelControl.Controls.Add(this.btnOpciones);
 			this.panelControl.Controls.Add(this.btnHistorial);
@@ -182,6 +251,7 @@
 			// header
 			// 
 			this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.header.Controls.Add(this.LblUser);
 			this.header.Controls.Add(this.btnTransparente);
 			this.header.Controls.Add(this.bunifuImageButton1);
 			this.header.Controls.Add(this.btnSlider);
@@ -223,22 +293,22 @@
 			// 
 			this.logoAnimator.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate;
 			this.logoAnimator.Cursor = null;
-			animation2.AnimateOnlyDifferences = true;
-			animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-			animation2.LeafCoeff = 0F;
-			animation2.MaxTime = 1F;
-			animation2.MinTime = 0F;
-			animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-			animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-			animation2.MosaicSize = 0;
-			animation2.Padding = new System.Windows.Forms.Padding(30);
-			animation2.RotateCoeff = 0.5F;
-			animation2.RotateLimit = 0.2F;
-			animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-			animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-			animation2.TimeCoeff = 0F;
-			animation2.TransparencyCoeff = 0F;
-			this.logoAnimator.DefaultAnimation = animation2;
+			animation4.AnimateOnlyDifferences = true;
+			animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+			animation4.LeafCoeff = 0F;
+			animation4.MaxTime = 1F;
+			animation4.MinTime = 0F;
+			animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+			animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+			animation4.MosaicSize = 0;
+			animation4.Padding = new System.Windows.Forms.Padding(30);
+			animation4.RotateCoeff = 0.5F;
+			animation4.RotateLimit = 0.2F;
+			animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+			animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+			animation4.TimeCoeff = 0F;
+			animation4.TransparencyCoeff = 0F;
+			this.logoAnimator.DefaultAnimation = animation4;
 			// 
 			// panelControlAnimator
 			// 
@@ -265,32 +335,6 @@
 			// 
 			this.panelControlAnimator2.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
 			this.panelControlAnimator2.Cursor = null;
-			animation4.AnimateOnlyDifferences = true;
-			animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-			animation4.LeafCoeff = 0F;
-			animation4.MaxTime = 1F;
-			animation4.MinTime = 0F;
-			animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-			animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-			animation4.MosaicSize = 0;
-			animation4.Padding = new System.Windows.Forms.Padding(0);
-			animation4.RotateCoeff = 0F;
-			animation4.RotateLimit = 0F;
-			animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-			animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-			animation4.TimeCoeff = 0F;
-			animation4.TransparencyCoeff = 0F;
-			this.panelControlAnimator2.DefaultAnimation = animation4;
-			// 
-			// actualizadorDia
-			// 
-			this.actualizadorDia.Interval = 1000;
-			this.actualizadorDia.Tick += new System.EventHandler(this.actualizadorDia_Tick);
-			// 
-			// transi1
-			// 
-			this.transi1.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
-			this.transi1.Cursor = null;
 			animation1.AnimateOnlyDifferences = true;
 			animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
 			animation1.LeafCoeff = 0F;
@@ -306,15 +350,830 @@
 			animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
 			animation1.TimeCoeff = 0F;
 			animation1.TransparencyCoeff = 0F;
-			this.transi1.DefaultAnimation = animation1;
+			this.panelControlAnimator2.DefaultAnimation = animation1;
+			// 
+			// actualizadorDia
+			// 
+			this.actualizadorDia.Interval = 1000;
+			this.actualizadorDia.Tick += new System.EventHandler(this.actualizadorDia_Tick);
+			// 
+			// transi1
+			// 
+			this.transi1.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
+			this.transi1.Cursor = null;
+			animation2.AnimateOnlyDifferences = true;
+			animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+			animation2.LeafCoeff = 0F;
+			animation2.MaxTime = 1F;
+			animation2.MinTime = 0F;
+			animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+			animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+			animation2.MosaicSize = 0;
+			animation2.Padding = new System.Windows.Forms.Padding(0);
+			animation2.RotateCoeff = 0F;
+			animation2.RotateLimit = 0F;
+			animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+			animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+			animation2.TimeCoeff = 0F;
+			animation2.TransparencyCoeff = 0F;
+			this.transi1.DefaultAnimation = animation2;
 			this.transi1.Interval = 15;
+			// 
+			// PanelOpciones
+			// 
+			this.PanelOpciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(97)))), ((int)(((byte)(122)))));
+			this.PanelOpciones.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelOpciones.BackgroundImage")));
+			this.PanelOpciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.PanelOpciones.Controls.Add(this.visualGroupBox2);
+			this.PanelOpciones.Controls.Add(this.visualGroupBox1);
+			this.transi1.SetDecoration(this.PanelOpciones, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.PanelOpciones, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.PanelOpciones, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.PanelOpciones, BunifuAnimatorNS.DecorationType.None);
+			this.PanelOpciones.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.PanelOpciones.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.PanelOpciones.GradientBottomLeft = System.Drawing.Color.DarkBlue;
+			this.PanelOpciones.GradientBottomRight = System.Drawing.Color.Black;
+			this.PanelOpciones.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(97)))), ((int)(((byte)(122)))));
+			this.PanelOpciones.GradientTopRight = System.Drawing.Color.DarkTurquoise;
+			this.PanelOpciones.Location = new System.Drawing.Point(256, 53);
+			this.PanelOpciones.Name = "PanelOpciones";
+			this.PanelOpciones.Quality = 10;
+			this.PanelOpciones.Size = new System.Drawing.Size(932, 597);
+			this.PanelOpciones.TabIndex = 27;
+			// 
+			// visualGroupBox2
+			// 
+			this.visualGroupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.visualGroupBox2.BackColor = System.Drawing.Color.Transparent;
+			this.visualGroupBox2.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.visualGroupBox2.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualGroupBox2.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.visualGroupBox2.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.visualGroupBox2.Border.HoverVisible = true;
+			this.visualGroupBox2.Border.Rounding = 6;
+			this.visualGroupBox2.Border.Thickness = 1;
+			this.visualGroupBox2.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.visualGroupBox2.Border.Visible = true;
+			this.visualGroupBox2.BoxStyle = VisualPlus.Toolkit.Controls.Layout.VisualGroupBox.GroupBoxStyle.Default;
+			this.visualGroupBox2.Controls.Add(this.groupBox1);
+			this.visualGroupBox2.Controls.Add(this.checkBoxAuto);
+			this.visualGroupBox2.Controls.Add(this.BtnCrearUsuario);
+			this.visualGroupBox2.Controls.Add(this.BtnCambiarContraseña);
+			this.visualGroupBox2.Controls.Add(this.BtnBorrarHistorial);
+			this.visualGroupBox2.Controls.Add(this.visualSeparator4);
+			this.visualGroupBox2.Controls.Add(this.visualSeparator3);
+			this.visualGroupBox2.Controls.Add(this.LblHistorial);
+			this.visualGroupBox2.Controls.Add(this.LblClientes);
+			this.visualGroupBox2.Controls.Add(this.BtnRutaHistorial);
+			this.visualGroupBox2.Controls.Add(this.BtnRutaClientes);
+			this.panelControlAnimator2.SetDecoration(this.visualGroupBox2, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.visualGroupBox2, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.visualGroupBox2, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.visualGroupBox2, BunifuAnimatorNS.DecorationType.None);
+			this.visualGroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+			this.visualGroupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualGroupBox2.Image = null;
+			this.visualGroupBox2.Location = new System.Drawing.Point(7, 219);
+			this.visualGroupBox2.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.visualGroupBox2.Name = "visualGroupBox2";
+			this.visualGroupBox2.Padding = new System.Windows.Forms.Padding(5, 26, 5, 5);
+			this.visualGroupBox2.Separator = true;
+			this.visualGroupBox2.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualGroupBox2.Size = new System.Drawing.Size(913, 366);
+			this.visualGroupBox2.TabIndex = 16;
+			this.visualGroupBox2.Text = "Ajustes Usuario";
+			this.visualGroupBox2.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.visualGroupBox2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.visualGroupBox2.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualGroupBox2.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.visualGroupBox2.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualGroupBox2.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualGroupBox2.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualGroupBox2.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.visualGroupBox2.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualGroupBox2.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.visualGroupBox2.TitleBoxHeight = 25;
+			// 
+			// groupBox1
+			// 
+			this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.groupBox1.Controls.Add(this.pictureBox6);
+			this.groupBox1.Controls.Add(this.visualLabel1);
+			this.transi1.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.BottomMirror);
+			this.groupBox1.Location = new System.Drawing.Point(636, 214);
+			this.groupBox1.Name = "groupBox1";
+			this.groupBox1.Size = new System.Drawing.Size(237, 111);
+			this.groupBox1.TabIndex = 21;
+			this.groupBox1.TabStop = false;
+			this.groupBox1.Text = "About";
+			// 
+			// pictureBox6
+			// 
+			this.panelControlAnimator2.SetDecoration(this.pictureBox6, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.pictureBox6, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.pictureBox6, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.pictureBox6, BunifuAnimatorNS.DecorationType.None);
+			this.pictureBox6.Image = global::XLight.Properties.Resources.Avatar;
+			this.pictureBox6.Location = new System.Drawing.Point(121, 10);
+			this.pictureBox6.Name = "pictureBox6";
+			this.pictureBox6.Size = new System.Drawing.Size(100, 87);
+			this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox6.TabIndex = 1;
+			this.pictureBox6.TabStop = false;
+			// 
+			// visualLabel1
+			// 
+			this.visualLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.transi1.SetDecoration(this.visualLabel1, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.visualLabel1, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.visualLabel1, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.visualLabel1, BunifuAnimatorNS.DecorationType.None);
+			this.visualLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.visualLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualLabel1.Location = new System.Drawing.Point(6, 29);
+			this.visualLabel1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.visualLabel1.Name = "visualLabel1";
+			this.visualLabel1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+			this.visualLabel1.Outline = false;
+			this.visualLabel1.OutlineColor = System.Drawing.Color.Red;
+			this.visualLabel1.OutlineLocation = new System.Drawing.Point(0, 0);
+			this.visualLabel1.ReflectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualLabel1.ReflectionSpacing = 0;
+			this.visualLabel1.ShadowColor = System.Drawing.Color.Black;
+			this.visualLabel1.ShadowDirection = 315;
+			this.visualLabel1.ShadowLocation = new System.Drawing.Point(0, 0);
+			this.visualLabel1.ShadowOpacity = 100;
+			this.visualLabel1.Size = new System.Drawing.Size(109, 65);
+			this.visualLabel1.TabIndex = 0;
+			this.visualLabel1.Text = "Antonio Moon";
+			this.visualLabel1.TextAlignment = System.Drawing.StringAlignment.Near;
+			this.visualLabel1.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualLabel1.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.visualLabel1.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualLabel1.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualLabel1.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualLabel1.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.visualLabel1.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualLabel1.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			// 
+			// checkBoxAuto
+			// 
+			this.checkBoxAuto.AutoSize = true;
+			this.checkBoxAuto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.transi1.SetDecoration(this.checkBoxAuto, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.checkBoxAuto, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.checkBoxAuto, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.checkBoxAuto, BunifuAnimatorNS.DecorationType.None);
+			this.checkBoxAuto.Location = new System.Drawing.Point(287, 291);
+			this.checkBoxAuto.Name = "checkBoxAuto";
+			this.checkBoxAuto.Size = new System.Drawing.Size(92, 20);
+			this.checkBoxAuto.TabIndex = 20;
+			this.checkBoxAuto.Text = "Autologin";
+			this.checkBoxAuto.UseVisualStyleBackColor = false;
+			this.checkBoxAuto.CheckStateChanged += new System.EventHandler(this.checkBoxAuto_CheckStateChanged);
+			// 
+			// BtnCrearUsuario
+			// 
+			this.BtnCrearUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.BtnCrearUsuario.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.BtnCrearUsuario.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.BtnCrearUsuario.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.BtnCrearUsuario.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.BtnCrearUsuario.Border.Color = System.Drawing.Color.White;
+			this.BtnCrearUsuario.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.BtnCrearUsuario.Border.HoverVisible = true;
+			this.BtnCrearUsuario.Border.Rounding = 6;
+			this.BtnCrearUsuario.Border.Thickness = 1;
+			this.BtnCrearUsuario.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.BtnCrearUsuario.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.BtnCrearUsuario, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.BtnCrearUsuario, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.BtnCrearUsuario, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.BtnCrearUsuario, BunifuAnimatorNS.DecorationType.None);
+			this.BtnCrearUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnCrearUsuario.ForeColor = System.Drawing.Color.White;
+			this.BtnCrearUsuario.Image = global::XLight.Properties.Resources.Add_to_Favorites_50px;
+			this.BtnCrearUsuario.Location = new System.Drawing.Point(285, 214);
+			this.BtnCrearUsuario.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.BtnCrearUsuario.Name = "BtnCrearUsuario";
+			this.BtnCrearUsuario.Size = new System.Drawing.Size(228, 52);
+			this.BtnCrearUsuario.TabIndex = 19;
+			this.BtnCrearUsuario.Text = "       Crear Usuario";
+			this.BtnCrearUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.BtnCrearUsuario.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.BtnCrearUsuario.TextStyle.Enabled = System.Drawing.Color.White;
+			this.BtnCrearUsuario.TextStyle.Hover = System.Drawing.Color.White;
+			this.BtnCrearUsuario.TextStyle.Pressed = System.Drawing.Color.White;
+			this.BtnCrearUsuario.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnCrearUsuario.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnCrearUsuario.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.BtnCrearUsuario.Click += new System.EventHandler(this.BtnCrearUsuario_Click);
+			// 
+			// BtnCambiarContraseña
+			// 
+			this.BtnCambiarContraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.BtnCambiarContraseña.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.BtnCambiarContraseña.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.BtnCambiarContraseña.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.BtnCambiarContraseña.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.BtnCambiarContraseña.Border.Color = System.Drawing.Color.White;
+			this.BtnCambiarContraseña.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.BtnCambiarContraseña.Border.HoverVisible = true;
+			this.BtnCambiarContraseña.Border.Rounding = 6;
+			this.BtnCambiarContraseña.Border.Thickness = 1;
+			this.BtnCambiarContraseña.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.BtnCambiarContraseña.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.BtnCambiarContraseña, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.BtnCambiarContraseña, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.BtnCambiarContraseña, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.BtnCambiarContraseña, BunifuAnimatorNS.DecorationType.None);
+			this.BtnCambiarContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnCambiarContraseña.ForeColor = System.Drawing.Color.White;
+			this.BtnCambiarContraseña.Image = global::XLight.Properties.Resources.Sort_50px;
+			this.BtnCambiarContraseña.Location = new System.Drawing.Point(30, 273);
+			this.BtnCambiarContraseña.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.BtnCambiarContraseña.Name = "BtnCambiarContraseña";
+			this.BtnCambiarContraseña.Size = new System.Drawing.Size(228, 52);
+			this.BtnCambiarContraseña.TabIndex = 18;
+			this.BtnCambiarContraseña.Text = " Cambiar Contraseña";
+			this.BtnCambiarContraseña.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.BtnCambiarContraseña.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.BtnCambiarContraseña.TextStyle.Enabled = System.Drawing.Color.White;
+			this.BtnCambiarContraseña.TextStyle.Hover = System.Drawing.Color.White;
+			this.BtnCambiarContraseña.TextStyle.Pressed = System.Drawing.Color.White;
+			this.BtnCambiarContraseña.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnCambiarContraseña.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnCambiarContraseña.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.BtnCambiarContraseña.Click += new System.EventHandler(this.BtnCambiarContraseña_Click);
+			// 
+			// BtnBorrarHistorial
+			// 
+			this.BtnBorrarHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.BtnBorrarHistorial.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.BtnBorrarHistorial.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.BtnBorrarHistorial.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.BtnBorrarHistorial.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.BtnBorrarHistorial.Border.Color = System.Drawing.Color.White;
+			this.BtnBorrarHistorial.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.BtnBorrarHistorial.Border.HoverVisible = true;
+			this.BtnBorrarHistorial.Border.Rounding = 6;
+			this.BtnBorrarHistorial.Border.Thickness = 1;
+			this.BtnBorrarHistorial.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.BtnBorrarHistorial.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.BtnBorrarHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.BtnBorrarHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.BtnBorrarHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.BtnBorrarHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.BtnBorrarHistorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnBorrarHistorial.ForeColor = System.Drawing.Color.White;
+			this.BtnBorrarHistorial.Image = global::XLight.Properties.Resources.Versions_50px;
+			this.BtnBorrarHistorial.Location = new System.Drawing.Point(30, 215);
+			this.BtnBorrarHistorial.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.BtnBorrarHistorial.Name = "BtnBorrarHistorial";
+			this.BtnBorrarHistorial.Size = new System.Drawing.Size(228, 52);
+			this.BtnBorrarHistorial.TabIndex = 17;
+			this.BtnBorrarHistorial.Text = "       Borrar Historial";
+			this.BtnBorrarHistorial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.BtnBorrarHistorial.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.BtnBorrarHistorial.TextStyle.Enabled = System.Drawing.Color.White;
+			this.BtnBorrarHistorial.TextStyle.Hover = System.Drawing.Color.White;
+			this.BtnBorrarHistorial.TextStyle.Pressed = System.Drawing.Color.White;
+			this.BtnBorrarHistorial.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnBorrarHistorial.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnBorrarHistorial.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.BtnBorrarHistorial.Click += new System.EventHandler(this.BtnBorrarHistorial_Click);
+			// 
+			// visualSeparator4
+			// 
+			this.visualSeparator4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.visualSeparator4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.transi1.SetDecoration(this.visualSeparator4, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.visualSeparator4, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.visualSeparator4, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.visualSeparator4, BunifuAnimatorNS.DecorationType.None);
+			this.visualSeparator4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualSeparator4.Line = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(222)))), ((int)(((byte)(220)))));
+			this.visualSeparator4.Location = new System.Drawing.Point(30, 190);
+			this.visualSeparator4.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.visualSeparator4.Name = "visualSeparator4";
+			this.visualSeparator4.Orientation = System.Windows.Forms.Orientation.Horizontal;
+			this.visualSeparator4.Shadow = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+			this.visualSeparator4.ShadowVisible = false;
+			this.visualSeparator4.Size = new System.Drawing.Size(850, 4);
+			this.visualSeparator4.TabIndex = 16;
+			this.visualSeparator4.Text = "visualSeparator4";
+			this.visualSeparator4.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.visualSeparator4.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualSeparator4.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualSeparator4.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualSeparator4.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.visualSeparator4.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualSeparator4.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			// 
+			// visualSeparator3
+			// 
+			this.visualSeparator3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.transi1.SetDecoration(this.visualSeparator3, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.visualSeparator3, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.visualSeparator3, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.visualSeparator3, BunifuAnimatorNS.DecorationType.None);
+			this.visualSeparator3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualSeparator3.Line = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(222)))), ((int)(((byte)(220)))));
+			this.visualSeparator3.Location = new System.Drawing.Point(287, 70);
+			this.visualSeparator3.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.visualSeparator3.Name = "visualSeparator3";
+			this.visualSeparator3.Orientation = System.Windows.Forms.Orientation.Vertical;
+			this.visualSeparator3.Shadow = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+			this.visualSeparator3.ShadowVisible = false;
+			this.visualSeparator3.Size = new System.Drawing.Size(4, 75);
+			this.visualSeparator3.TabIndex = 15;
+			this.visualSeparator3.Text = "visualSeparator3";
+			this.visualSeparator3.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.visualSeparator3.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualSeparator3.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualSeparator3.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualSeparator3.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.visualSeparator3.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualSeparator3.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			// 
+			// LblHistorial
+			// 
+			this.LblHistorial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.LblHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.transi1.SetDecoration(this.LblHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.LblHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.LblHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.LblHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.LblHistorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.LblHistorial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblHistorial.Location = new System.Drawing.Point(306, 114);
+			this.LblHistorial.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.LblHistorial.Name = "LblHistorial";
+			this.LblHistorial.Orientation = System.Windows.Forms.Orientation.Horizontal;
+			this.LblHistorial.Outline = false;
+			this.LblHistorial.OutlineColor = System.Drawing.Color.Red;
+			this.LblHistorial.OutlineLocation = new System.Drawing.Point(0, 0);
+			this.LblHistorial.ReflectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblHistorial.ReflectionSpacing = 0;
+			this.LblHistorial.ShadowColor = System.Drawing.Color.Black;
+			this.LblHistorial.ShadowDirection = 315;
+			this.LblHistorial.ShadowLocation = new System.Drawing.Point(0, 0);
+			this.LblHistorial.ShadowOpacity = 100;
+			this.LblHistorial.Size = new System.Drawing.Size(590, 52);
+			this.LblHistorial.TabIndex = 14;
+			this.LblHistorial.Text = "visualLabel1";
+			this.LblHistorial.TextAlignment = System.Drawing.StringAlignment.Near;
+			this.LblHistorial.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.LblHistorial.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.LblHistorial.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblHistorial.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblHistorial.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblHistorial.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.LblHistorial.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.LblHistorial.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			// 
+			// LblClientes
+			// 
+			this.LblClientes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.LblClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.transi1.SetDecoration(this.LblClientes, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.LblClientes, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.LblClientes, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.LblClientes, BunifuAnimatorNS.DecorationType.None);
+			this.LblClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.LblClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblClientes.Location = new System.Drawing.Point(306, 59);
+			this.LblClientes.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.LblClientes.Name = "LblClientes";
+			this.LblClientes.Orientation = System.Windows.Forms.Orientation.Horizontal;
+			this.LblClientes.Outline = false;
+			this.LblClientes.OutlineColor = System.Drawing.Color.Red;
+			this.LblClientes.OutlineLocation = new System.Drawing.Point(0, 0);
+			this.LblClientes.ReflectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblClientes.ReflectionSpacing = 0;
+			this.LblClientes.ShadowColor = System.Drawing.Color.Black;
+			this.LblClientes.ShadowDirection = 315;
+			this.LblClientes.ShadowLocation = new System.Drawing.Point(0, 0);
+			this.LblClientes.ShadowOpacity = 100;
+			this.LblClientes.Size = new System.Drawing.Size(590, 52);
+			this.LblClientes.TabIndex = 13;
+			this.LblClientes.Text = "visualLabel1";
+			this.LblClientes.TextAlignment = System.Drawing.StringAlignment.Near;
+			this.LblClientes.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.LblClientes.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.LblClientes.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblClientes.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblClientes.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblClientes.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.LblClientes.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.LblClientes.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			// 
+			// BtnRutaHistorial
+			// 
+			this.BtnRutaHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.BtnRutaHistorial.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.BtnRutaHistorial.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.BtnRutaHistorial.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.BtnRutaHistorial.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.BtnRutaHistorial.Border.Color = System.Drawing.Color.White;
+			this.BtnRutaHistorial.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.BtnRutaHistorial.Border.HoverVisible = true;
+			this.BtnRutaHistorial.Border.Rounding = 6;
+			this.BtnRutaHistorial.Border.Thickness = 1;
+			this.BtnRutaHistorial.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.BtnRutaHistorial.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.BtnRutaHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.BtnRutaHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.BtnRutaHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.BtnRutaHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.BtnRutaHistorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnRutaHistorial.ForeColor = System.Drawing.Color.White;
+			this.BtnRutaHistorial.Image = global::XLight.Properties.Resources.Audio_Wave_50px;
+			this.BtnRutaHistorial.Location = new System.Drawing.Point(30, 116);
+			this.BtnRutaHistorial.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.BtnRutaHistorial.Name = "BtnRutaHistorial";
+			this.BtnRutaHistorial.Size = new System.Drawing.Size(228, 52);
+			this.BtnRutaHistorial.TabIndex = 12;
+			this.BtnRutaHistorial.Text = "       Ruta Historial";
+			this.BtnRutaHistorial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.BtnRutaHistorial.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.BtnRutaHistorial.TextStyle.Enabled = System.Drawing.Color.White;
+			this.BtnRutaHistorial.TextStyle.Hover = System.Drawing.Color.White;
+			this.BtnRutaHistorial.TextStyle.Pressed = System.Drawing.Color.White;
+			this.BtnRutaHistorial.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnRutaHistorial.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnRutaHistorial.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.BtnRutaHistorial.Click += new System.EventHandler(this.BtnRutaHistorial_Click);
+			// 
+			// BtnRutaClientes
+			// 
+			this.BtnRutaClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.BtnRutaClientes.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.BtnRutaClientes.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.BtnRutaClientes.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.BtnRutaClientes.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.BtnRutaClientes.Border.Color = System.Drawing.Color.White;
+			this.BtnRutaClientes.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.BtnRutaClientes.Border.HoverVisible = true;
+			this.BtnRutaClientes.Border.Rounding = 6;
+			this.BtnRutaClientes.Border.Thickness = 1;
+			this.BtnRutaClientes.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.BtnRutaClientes.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.BtnRutaClientes, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.BtnRutaClientes, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.BtnRutaClientes, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.BtnRutaClientes, BunifuAnimatorNS.DecorationType.None);
+			this.BtnRutaClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnRutaClientes.ForeColor = System.Drawing.Color.White;
+			this.BtnRutaClientes.Image = global::XLight.Properties.Resources.Process_50px;
+			this.BtnRutaClientes.Location = new System.Drawing.Point(30, 58);
+			this.BtnRutaClientes.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.BtnRutaClientes.Name = "BtnRutaClientes";
+			this.BtnRutaClientes.Size = new System.Drawing.Size(228, 52);
+			this.BtnRutaClientes.TabIndex = 11;
+			this.BtnRutaClientes.Text = "       Ruta Clientes";
+			this.BtnRutaClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.BtnRutaClientes.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.BtnRutaClientes.TextStyle.Enabled = System.Drawing.Color.White;
+			this.BtnRutaClientes.TextStyle.Hover = System.Drawing.Color.White;
+			this.BtnRutaClientes.TextStyle.Pressed = System.Drawing.Color.White;
+			this.BtnRutaClientes.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnRutaClientes.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnRutaClientes.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.BtnRutaClientes.Click += new System.EventHandler(this.BtnRutaClientes_Click);
+			// 
+			// visualGroupBox1
+			// 
+			this.visualGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.visualGroupBox1.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.visualGroupBox1.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualGroupBox1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.visualGroupBox1.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.visualGroupBox1.Border.HoverVisible = true;
+			this.visualGroupBox1.Border.Rounding = 6;
+			this.visualGroupBox1.Border.Thickness = 1;
+			this.visualGroupBox1.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.visualGroupBox1.Border.Visible = true;
+			this.visualGroupBox1.BoxStyle = VisualPlus.Toolkit.Controls.Layout.VisualGroupBox.GroupBoxStyle.Default;
+			this.visualGroupBox1.Controls.Add(this.visualSeparator2);
+			this.visualGroupBox1.Controls.Add(this.LblUsuarios);
+			this.visualGroupBox1.Controls.Add(this.LblData);
+			this.visualGroupBox1.Controls.Add(this.BtnRutaUsuarios);
+			this.visualGroupBox1.Controls.Add(this.BtnRutaData);
+			this.panelControlAnimator2.SetDecoration(this.visualGroupBox1, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.visualGroupBox1, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.visualGroupBox1, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.visualGroupBox1, BunifuAnimatorNS.DecorationType.None);
+			this.visualGroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+			this.visualGroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualGroupBox1.Image = null;
+			this.visualGroupBox1.Location = new System.Drawing.Point(7, 12);
+			this.visualGroupBox1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.visualGroupBox1.Name = "visualGroupBox1";
+			this.visualGroupBox1.Padding = new System.Windows.Forms.Padding(5, 26, 5, 5);
+			this.visualGroupBox1.Separator = true;
+			this.visualGroupBox1.SeparatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualGroupBox1.Size = new System.Drawing.Size(913, 188);
+			this.visualGroupBox1.TabIndex = 0;
+			this.visualGroupBox1.Text = "Ajustes Base";
+			this.visualGroupBox1.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.visualGroupBox1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.visualGroupBox1.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualGroupBox1.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.visualGroupBox1.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualGroupBox1.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualGroupBox1.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualGroupBox1.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.visualGroupBox1.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualGroupBox1.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.visualGroupBox1.TitleBoxHeight = 25;
+			// 
+			// visualSeparator2
+			// 
+			this.visualSeparator2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.transi1.SetDecoration(this.visualSeparator2, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.visualSeparator2, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.visualSeparator2, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.visualSeparator2, BunifuAnimatorNS.DecorationType.None);
+			this.visualSeparator2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualSeparator2.Line = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(222)))), ((int)(((byte)(220)))));
+			this.visualSeparator2.Location = new System.Drawing.Point(287, 70);
+			this.visualSeparator2.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.visualSeparator2.Name = "visualSeparator2";
+			this.visualSeparator2.Orientation = System.Windows.Forms.Orientation.Vertical;
+			this.visualSeparator2.Shadow = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+			this.visualSeparator2.ShadowVisible = false;
+			this.visualSeparator2.Size = new System.Drawing.Size(4, 75);
+			this.visualSeparator2.TabIndex = 15;
+			this.visualSeparator2.Text = "visualSeparator2";
+			this.visualSeparator2.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.visualSeparator2.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualSeparator2.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualSeparator2.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualSeparator2.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.visualSeparator2.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualSeparator2.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			// 
+			// LblUsuarios
+			// 
+			this.LblUsuarios.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.LblUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.transi1.SetDecoration(this.LblUsuarios, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.LblUsuarios, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.LblUsuarios, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.LblUsuarios, BunifuAnimatorNS.DecorationType.None);
+			this.LblUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.LblUsuarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblUsuarios.Location = new System.Drawing.Point(306, 107);
+			this.LblUsuarios.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.LblUsuarios.Name = "LblUsuarios";
+			this.LblUsuarios.Orientation = System.Windows.Forms.Orientation.Horizontal;
+			this.LblUsuarios.Outline = false;
+			this.LblUsuarios.OutlineColor = System.Drawing.Color.Red;
+			this.LblUsuarios.OutlineLocation = new System.Drawing.Point(0, 0);
+			this.LblUsuarios.ReflectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblUsuarios.ReflectionSpacing = 0;
+			this.LblUsuarios.ShadowColor = System.Drawing.Color.Black;
+			this.LblUsuarios.ShadowDirection = 315;
+			this.LblUsuarios.ShadowLocation = new System.Drawing.Point(0, 0);
+			this.LblUsuarios.ShadowOpacity = 100;
+			this.LblUsuarios.Size = new System.Drawing.Size(590, 52);
+			this.LblUsuarios.TabIndex = 14;
+			this.LblUsuarios.Text = "visualLabel1";
+			this.LblUsuarios.TextAlignment = System.Drawing.StringAlignment.Near;
+			this.LblUsuarios.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.LblUsuarios.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.LblUsuarios.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblUsuarios.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblUsuarios.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblUsuarios.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.LblUsuarios.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.LblUsuarios.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			// 
+			// LblData
+			// 
+			this.LblData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.LblData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.transi1.SetDecoration(this.LblData, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.LblData, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.LblData, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.LblData, BunifuAnimatorNS.DecorationType.None);
+			this.LblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.LblData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblData.Location = new System.Drawing.Point(306, 52);
+			this.LblData.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.LblData.Name = "LblData";
+			this.LblData.Orientation = System.Windows.Forms.Orientation.Horizontal;
+			this.LblData.Outline = false;
+			this.LblData.OutlineColor = System.Drawing.Color.Red;
+			this.LblData.OutlineLocation = new System.Drawing.Point(0, 0);
+			this.LblData.ReflectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblData.ReflectionSpacing = 0;
+			this.LblData.ShadowColor = System.Drawing.Color.Black;
+			this.LblData.ShadowDirection = 315;
+			this.LblData.ShadowLocation = new System.Drawing.Point(0, 0);
+			this.LblData.ShadowOpacity = 100;
+			this.LblData.Size = new System.Drawing.Size(590, 52);
+			this.LblData.TabIndex = 13;
+			this.LblData.Text = "visualLabel1";
+			this.LblData.TextAlignment = System.Drawing.StringAlignment.Near;
+			this.LblData.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.LblData.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.LblData.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblData.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblData.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.LblData.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.LblData.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.LblData.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			// 
+			// BtnRutaUsuarios
+			// 
+			this.BtnRutaUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.BtnRutaUsuarios.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.BtnRutaUsuarios.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.BtnRutaUsuarios.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.BtnRutaUsuarios.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.BtnRutaUsuarios.Border.Color = System.Drawing.Color.White;
+			this.BtnRutaUsuarios.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.BtnRutaUsuarios.Border.HoverVisible = true;
+			this.BtnRutaUsuarios.Border.Rounding = 6;
+			this.BtnRutaUsuarios.Border.Thickness = 1;
+			this.BtnRutaUsuarios.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.BtnRutaUsuarios.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.BtnRutaUsuarios, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.BtnRutaUsuarios, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.BtnRutaUsuarios, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.BtnRutaUsuarios, BunifuAnimatorNS.DecorationType.None);
+			this.BtnRutaUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnRutaUsuarios.ForeColor = System.Drawing.Color.White;
+			this.BtnRutaUsuarios.Image = global::XLight.Properties.Resources.Audio_Wave_50px;
+			this.BtnRutaUsuarios.Location = new System.Drawing.Point(30, 110);
+			this.BtnRutaUsuarios.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.BtnRutaUsuarios.Name = "BtnRutaUsuarios";
+			this.BtnRutaUsuarios.Size = new System.Drawing.Size(228, 52);
+			this.BtnRutaUsuarios.TabIndex = 12;
+			this.BtnRutaUsuarios.Text = "       Ruta Usuarios";
+			this.BtnRutaUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.BtnRutaUsuarios.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.BtnRutaUsuarios.TextStyle.Enabled = System.Drawing.Color.White;
+			this.BtnRutaUsuarios.TextStyle.Hover = System.Drawing.Color.White;
+			this.BtnRutaUsuarios.TextStyle.Pressed = System.Drawing.Color.White;
+			this.BtnRutaUsuarios.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnRutaUsuarios.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnRutaUsuarios.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.BtnRutaUsuarios.Click += new System.EventHandler(this.BtnRutaUsuarios_Click);
+			// 
+			// BtnRutaData
+			// 
+			this.BtnRutaData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.BtnRutaData.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.BtnRutaData.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.BtnRutaData.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.BtnRutaData.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.BtnRutaData.Border.Color = System.Drawing.Color.White;
+			this.BtnRutaData.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.BtnRutaData.Border.HoverVisible = true;
+			this.BtnRutaData.Border.Rounding = 6;
+			this.BtnRutaData.Border.Thickness = 1;
+			this.BtnRutaData.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.BtnRutaData.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.BtnRutaData, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.BtnRutaData, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.BtnRutaData, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.BtnRutaData, BunifuAnimatorNS.DecorationType.None);
+			this.BtnRutaData.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnRutaData.ForeColor = System.Drawing.Color.White;
+			this.BtnRutaData.Image = global::XLight.Properties.Resources.Process_50px;
+			this.BtnRutaData.Location = new System.Drawing.Point(30, 52);
+			this.BtnRutaData.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.BtnRutaData.Name = "BtnRutaData";
+			this.BtnRutaData.Size = new System.Drawing.Size(228, 52);
+			this.BtnRutaData.TabIndex = 11;
+			this.BtnRutaData.Text = "       Ruta Data";
+			this.BtnRutaData.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.BtnRutaData.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.BtnRutaData.TextStyle.Enabled = System.Drawing.Color.White;
+			this.BtnRutaData.TextStyle.Hover = System.Drawing.Color.White;
+			this.BtnRutaData.TextStyle.Pressed = System.Drawing.Color.White;
+			this.BtnRutaData.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnRutaData.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnRutaData.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.BtnRutaData.Click += new System.EventHandler(this.BtnRutaData_Click);
+			// 
+			// PanelHistorial
+			// 
+			this.PanelHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(97)))), ((int)(((byte)(122)))));
+			this.PanelHistorial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelHistorial.BackgroundImage")));
+			this.PanelHistorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.PanelHistorial.Controls.Add(this.listViewHistorial);
+			this.transi1.SetDecoration(this.PanelHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.PanelHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.PanelHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.PanelHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.PanelHistorial.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.PanelHistorial.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.PanelHistorial.GradientBottomLeft = System.Drawing.Color.DarkBlue;
+			this.PanelHistorial.GradientBottomRight = System.Drawing.Color.Black;
+			this.PanelHistorial.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(97)))), ((int)(((byte)(122)))));
+			this.PanelHistorial.GradientTopRight = System.Drawing.Color.DarkTurquoise;
+			this.PanelHistorial.Location = new System.Drawing.Point(256, 53);
+			this.PanelHistorial.Name = "PanelHistorial";
+			this.PanelHistorial.Quality = 10;
+			this.PanelHistorial.Size = new System.Drawing.Size(932, 597);
+			this.PanelHistorial.TabIndex = 26;
+			// 
+			// listViewHistorial
+			// 
+			this.listViewHistorial.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.listViewHistorial.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5});
+			this.transi1.SetDecoration(this.listViewHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.listViewHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.listViewHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.listViewHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.listViewHistorial.Location = new System.Drawing.Point(0, 0);
+			this.listViewHistorial.Name = "listViewHistorial";
+			this.listViewHistorial.Size = new System.Drawing.Size(932, 597);
+			this.listViewHistorial.TabIndex = 0;
+			this.listViewHistorial.UseCompatibleStateImageBehavior = false;
+			this.listViewHistorial.View = System.Windows.Forms.View.Details;
+			// 
+			// columnHeader1
+			// 
+			this.columnHeader1.Text = "ID";
+			this.columnHeader1.Width = 50;
+			// 
+			// columnHeader2
+			// 
+			this.columnHeader2.Text = "Nombre";
+			this.columnHeader2.Width = 200;
+			// 
+			// columnHeader3
+			// 
+			this.columnHeader3.Text = "Apellidos";
+			this.columnHeader3.Width = 190;
+			// 
+			// columnHeader4
+			// 
+			this.columnHeader4.Text = "Suceso";
+			this.columnHeader4.Width = 300;
+			// 
+			// columnHeader5
+			// 
+			this.columnHeader5.Text = "Fecha";
+			this.columnHeader5.Width = 150;
+			// 
+			// PanelBalance
+			// 
+			this.PanelBalance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(97)))), ((int)(((byte)(122)))));
+			this.PanelBalance.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelBalance.BackgroundImage")));
+			this.PanelBalance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.transi1.SetDecoration(this.PanelBalance, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.PanelBalance, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.PanelBalance, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.PanelBalance, BunifuAnimatorNS.DecorationType.None);
+			this.PanelBalance.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.PanelBalance.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.PanelBalance.GradientBottomLeft = System.Drawing.Color.DarkBlue;
+			this.PanelBalance.GradientBottomRight = System.Drawing.Color.Black;
+			this.PanelBalance.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(97)))), ((int)(((byte)(122)))));
+			this.PanelBalance.GradientTopRight = System.Drawing.Color.DarkTurquoise;
+			this.PanelBalance.Location = new System.Drawing.Point(256, 53);
+			this.PanelBalance.Name = "PanelBalance";
+			this.PanelBalance.Quality = 10;
+			this.PanelBalance.Size = new System.Drawing.Size(932, 597);
+			this.PanelBalance.TabIndex = 25;
 			// 
 			// PanelClientes
 			// 
 			this.PanelClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(97)))), ((int)(((byte)(122)))));
 			this.PanelClientes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelClientes.BackgroundImage")));
 			this.PanelClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.PanelClientes.Controls.Add(this.PanelBalance);
+			this.PanelClientes.Controls.Add(this.bunifuGradientPanel2);
+			this.PanelClientes.Controls.Add(this.visualSeparator1);
+			this.PanelClientes.Controls.Add(this.bunifuGradientPanel1);
 			this.transi1.SetDecoration(this.PanelClientes, BunifuAnimatorNS.DecorationType.None);
 			this.logoAnimator.SetDecoration(this.PanelClientes, BunifuAnimatorNS.DecorationType.None);
 			this.panelControlAnimator.SetDecoration(this.PanelClientes, BunifuAnimatorNS.DecorationType.None);
@@ -331,70 +1190,809 @@
 			this.PanelClientes.Size = new System.Drawing.Size(932, 597);
 			this.PanelClientes.TabIndex = 24;
 			// 
-			// PanelBalance
+			// bunifuGradientPanel2
 			// 
-			this.PanelBalance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(97)))), ((int)(((byte)(122)))));
-			this.PanelBalance.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelBalance.BackgroundImage")));
-			this.PanelBalance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.PanelBalance.Controls.Add(this.PanelHistorial);
-			this.transi1.SetDecoration(this.PanelBalance, BunifuAnimatorNS.DecorationType.None);
-			this.logoAnimator.SetDecoration(this.PanelBalance, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.PanelBalance, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator2.SetDecoration(this.PanelBalance, BunifuAnimatorNS.DecorationType.None);
-			this.PanelBalance.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.PanelBalance.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.PanelBalance.GradientBottomLeft = System.Drawing.Color.DarkBlue;
-			this.PanelBalance.GradientBottomRight = System.Drawing.Color.Black;
-			this.PanelBalance.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(97)))), ((int)(((byte)(122)))));
-			this.PanelBalance.GradientTopRight = System.Drawing.Color.DarkTurquoise;
-			this.PanelBalance.Location = new System.Drawing.Point(0, 0);
-			this.PanelBalance.Name = "PanelBalance";
-			this.PanelBalance.Quality = 10;
-			this.PanelBalance.Size = new System.Drawing.Size(932, 597);
-			this.PanelBalance.TabIndex = 25;
+			this.bunifuGradientPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
+			this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.bunifuGradientPanel2.Controls.Add(this.dataGridView1);
+			this.bunifuGradientPanel2.Controls.Add(this.txtBoxBuscadorRegistro);
+			this.bunifuGradientPanel2.Controls.Add(this.BtnImprimirClientes);
+			this.bunifuGradientPanel2.Controls.Add(this.BtnBorrar);
+			this.bunifuGradientPanel2.Controls.Add(this.BtnEditar);
+			this.bunifuGradientPanel2.Controls.Add(this.BtnAbrirFicha);
+			this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomLabel13);
+			this.bunifuGradientPanel2.Controls.Add(this.pictureBox5);
+			this.transi1.SetDecoration(this.bunifuGradientPanel2, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.bunifuGradientPanel2, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.bunifuGradientPanel2, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.bunifuGradientPanel2, BunifuAnimatorNS.DecorationType.None);
+			this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(171)))), ((int)(((byte)(104)))));
+			this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(92)))), ((int)(((byte)(156)))));
+			this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(92)))), ((int)(((byte)(156)))));
+			this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(171)))), ((int)(((byte)(104)))));
+			this.bunifuGradientPanel2.Location = new System.Drawing.Point(15, 219);
+			this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
+			this.bunifuGradientPanel2.Quality = 50;
+			this.bunifuGradientPanel2.Size = new System.Drawing.Size(905, 365);
+			this.bunifuGradientPanel2.TabIndex = 6;
 			// 
-			// PanelHistorial
+			// dataGridView1
 			// 
-			this.PanelHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(97)))), ((int)(((byte)(122)))));
-			this.PanelHistorial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelHistorial.BackgroundImage")));
-			this.PanelHistorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.PanelHistorial.Controls.Add(this.PanelOpciones);
-			this.transi1.SetDecoration(this.PanelHistorial, BunifuAnimatorNS.DecorationType.None);
-			this.logoAnimator.SetDecoration(this.PanelHistorial, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.PanelHistorial, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator2.SetDecoration(this.PanelHistorial, BunifuAnimatorNS.DecorationType.None);
-			this.PanelHistorial.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.PanelHistorial.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.PanelHistorial.GradientBottomLeft = System.Drawing.Color.DarkBlue;
-			this.PanelHistorial.GradientBottomRight = System.Drawing.Color.Black;
-			this.PanelHistorial.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(97)))), ((int)(((byte)(122)))));
-			this.PanelHistorial.GradientTopRight = System.Drawing.Color.DarkTurquoise;
-			this.PanelHistorial.Location = new System.Drawing.Point(0, 0);
-			this.PanelHistorial.Name = "PanelHistorial";
-			this.PanelHistorial.Quality = 10;
-			this.PanelHistorial.Size = new System.Drawing.Size(932, 597);
-			this.PanelHistorial.TabIndex = 26;
+			this.dataGridView1.AllowUserToOrderColumns = true;
+			this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Nombre,
+            this.Apellidos,
+            this.DNI,
+            this.Telefono,
+            this.Fecha,
+            this.Direccion});
+			this.panelControlAnimator.SetDecoration(this.dataGridView1, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.dataGridView1, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.dataGridView1, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.dataGridView1, BunifuAnimatorNS.DecorationType.None);
+			this.dataGridView1.Location = new System.Drawing.Point(250, 58);
+			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.Size = new System.Drawing.Size(638, 291);
+			this.dataGridView1.TabIndex = 28;
 			// 
-			// PanelOpciones
+			// ID
 			// 
-			this.PanelOpciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(97)))), ((int)(((byte)(122)))));
-			this.PanelOpciones.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelOpciones.BackgroundImage")));
-			this.PanelOpciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.transi1.SetDecoration(this.PanelOpciones, BunifuAnimatorNS.DecorationType.None);
-			this.logoAnimator.SetDecoration(this.PanelOpciones, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.PanelOpciones, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator2.SetDecoration(this.PanelOpciones, BunifuAnimatorNS.DecorationType.None);
-			this.PanelOpciones.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.PanelOpciones.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.PanelOpciones.GradientBottomLeft = System.Drawing.Color.DarkBlue;
-			this.PanelOpciones.GradientBottomRight = System.Drawing.Color.Black;
-			this.PanelOpciones.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(97)))), ((int)(((byte)(122)))));
-			this.PanelOpciones.GradientTopRight = System.Drawing.Color.DarkTurquoise;
-			this.PanelOpciones.Location = new System.Drawing.Point(0, 0);
-			this.PanelOpciones.Name = "PanelOpciones";
-			this.PanelOpciones.Quality = 10;
-			this.PanelOpciones.Size = new System.Drawing.Size(932, 597);
-			this.PanelOpciones.TabIndex = 27;
+			this.ID.HeaderText = "ID";
+			this.ID.Name = "ID";
+			this.ID.Width = 50;
+			// 
+			// Nombre
+			// 
+			this.Nombre.HeaderText = "Nombre";
+			this.Nombre.Name = "Nombre";
+			this.Nombre.Width = 200;
+			// 
+			// Apellidos
+			// 
+			this.Apellidos.HeaderText = "Apellidos";
+			this.Apellidos.Name = "Apellidos";
+			this.Apellidos.Width = 200;
+			// 
+			// DNI
+			// 
+			this.DNI.HeaderText = "DNI";
+			this.DNI.Name = "DNI";
+			this.DNI.Width = 200;
+			// 
+			// Telefono
+			// 
+			this.Telefono.HeaderText = "Telefono";
+			this.Telefono.Name = "Telefono";
+			this.Telefono.Width = 80;
+			// 
+			// Fecha
+			// 
+			this.Fecha.HeaderText = "Fecha";
+			this.Fecha.Name = "Fecha";
+			this.Fecha.Width = 200;
+			// 
+			// Direccion
+			// 
+			this.Direccion.HeaderText = "Direccion";
+			this.Direccion.Name = "Direccion";
+			// 
+			// txtBoxBuscadorRegistro
+			// 
+			this.txtBoxBuscadorRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.panelControlAnimator2.SetDecoration(this.txtBoxBuscadorRegistro, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.txtBoxBuscadorRegistro, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.txtBoxBuscadorRegistro, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.txtBoxBuscadorRegistro, BunifuAnimatorNS.DecorationType.None);
+			this.txtBoxBuscadorRegistro.Location = new System.Drawing.Point(250, 27);
+			this.txtBoxBuscadorRegistro.Name = "txtBoxBuscadorRegistro";
+			this.txtBoxBuscadorRegistro.Size = new System.Drawing.Size(638, 20);
+			this.txtBoxBuscadorRegistro.TabIndex = 27;
+			// 
+			// BtnImprimirClientes
+			// 
+			this.BtnImprimirClientes.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.BtnImprimirClientes.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.BtnImprimirClientes.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.BtnImprimirClientes.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.BtnImprimirClientes.Border.Color = System.Drawing.Color.White;
+			this.BtnImprimirClientes.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.BtnImprimirClientes.Border.HoverVisible = true;
+			this.BtnImprimirClientes.Border.Rounding = 6;
+			this.BtnImprimirClientes.Border.Thickness = 1;
+			this.BtnImprimirClientes.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.BtnImprimirClientes.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.BtnImprimirClientes, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.BtnImprimirClientes, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.BtnImprimirClientes, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.BtnImprimirClientes, BunifuAnimatorNS.DecorationType.None);
+			this.BtnImprimirClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnImprimirClientes.ForeColor = System.Drawing.Color.White;
+			this.BtnImprimirClientes.Image = global::XLight.Properties.Resources.Plus_Math_50px;
+			this.BtnImprimirClientes.Location = new System.Drawing.Point(22, 297);
+			this.BtnImprimirClientes.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.BtnImprimirClientes.Name = "BtnImprimirClientes";
+			this.BtnImprimirClientes.Size = new System.Drawing.Size(190, 52);
+			this.BtnImprimirClientes.TabIndex = 26;
+			this.BtnImprimirClientes.Text = "     Imprimir";
+			this.BtnImprimirClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.BtnImprimirClientes.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.BtnImprimirClientes.TextStyle.Enabled = System.Drawing.Color.White;
+			this.BtnImprimirClientes.TextStyle.Hover = System.Drawing.Color.White;
+			this.BtnImprimirClientes.TextStyle.Pressed = System.Drawing.Color.White;
+			this.BtnImprimirClientes.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnImprimirClientes.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnImprimirClientes.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.BtnImprimirClientes.Click += new System.EventHandler(this.BtnImprimirClientes_Click);
+			// 
+			// BtnBorrar
+			// 
+			this.BtnBorrar.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.BtnBorrar.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.BtnBorrar.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.BtnBorrar.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.BtnBorrar.Border.Color = System.Drawing.Color.White;
+			this.BtnBorrar.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.BtnBorrar.Border.HoverVisible = true;
+			this.BtnBorrar.Border.Rounding = 6;
+			this.BtnBorrar.Border.Thickness = 1;
+			this.BtnBorrar.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.BtnBorrar.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.BtnBorrar, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.BtnBorrar, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.BtnBorrar, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.BtnBorrar, BunifuAnimatorNS.DecorationType.None);
+			this.BtnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnBorrar.ForeColor = System.Drawing.Color.White;
+			this.BtnBorrar.Image = global::XLight.Properties.Resources.Plus_Math_50px;
+			this.BtnBorrar.Location = new System.Drawing.Point(22, 215);
+			this.BtnBorrar.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.BtnBorrar.Name = "BtnBorrar";
+			this.BtnBorrar.Size = new System.Drawing.Size(190, 52);
+			this.BtnBorrar.TabIndex = 25;
+			this.BtnBorrar.Text = "     Borrar";
+			this.BtnBorrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.BtnBorrar.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.BtnBorrar.TextStyle.Enabled = System.Drawing.Color.White;
+			this.BtnBorrar.TextStyle.Hover = System.Drawing.Color.White;
+			this.BtnBorrar.TextStyle.Pressed = System.Drawing.Color.White;
+			this.BtnBorrar.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnBorrar.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnBorrar.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.BtnBorrar.Click += new System.EventHandler(this.BtnBorrar_Click);
+			// 
+			// BtnEditar
+			// 
+			this.BtnEditar.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.BtnEditar.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.BtnEditar.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.BtnEditar.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.BtnEditar.Border.Color = System.Drawing.Color.White;
+			this.BtnEditar.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.BtnEditar.Border.HoverVisible = true;
+			this.BtnEditar.Border.Rounding = 6;
+			this.BtnEditar.Border.Thickness = 1;
+			this.BtnEditar.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.BtnEditar.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.BtnEditar, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.BtnEditar, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.BtnEditar, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.BtnEditar, BunifuAnimatorNS.DecorationType.None);
+			this.BtnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnEditar.ForeColor = System.Drawing.Color.White;
+			this.BtnEditar.Image = global::XLight.Properties.Resources.Plus_Math_50px;
+			this.BtnEditar.Location = new System.Drawing.Point(22, 158);
+			this.BtnEditar.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.BtnEditar.Name = "BtnEditar";
+			this.BtnEditar.Size = new System.Drawing.Size(190, 52);
+			this.BtnEditar.TabIndex = 24;
+			this.BtnEditar.Text = "     Editar";
+			this.BtnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.BtnEditar.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.BtnEditar.TextStyle.Enabled = System.Drawing.Color.White;
+			this.BtnEditar.TextStyle.Hover = System.Drawing.Color.White;
+			this.BtnEditar.TextStyle.Pressed = System.Drawing.Color.White;
+			this.BtnEditar.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnEditar.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnEditar.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
+			// 
+			// BtnAbrirFicha
+			// 
+			this.BtnAbrirFicha.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.BtnAbrirFicha.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.BtnAbrirFicha.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.BtnAbrirFicha.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.BtnAbrirFicha.Border.Color = System.Drawing.Color.White;
+			this.BtnAbrirFicha.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.BtnAbrirFicha.Border.HoverVisible = true;
+			this.BtnAbrirFicha.Border.Rounding = 6;
+			this.BtnAbrirFicha.Border.Thickness = 1;
+			this.BtnAbrirFicha.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.BtnAbrirFicha.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.BtnAbrirFicha, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.BtnAbrirFicha, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.BtnAbrirFicha, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.BtnAbrirFicha, BunifuAnimatorNS.DecorationType.None);
+			this.BtnAbrirFicha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnAbrirFicha.ForeColor = System.Drawing.Color.White;
+			this.BtnAbrirFicha.Image = global::XLight.Properties.Resources.Plus_Math_50px;
+			this.BtnAbrirFicha.Location = new System.Drawing.Point(22, 76);
+			this.BtnAbrirFicha.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.BtnAbrirFicha.Name = "BtnAbrirFicha";
+			this.BtnAbrirFicha.Size = new System.Drawing.Size(190, 52);
+			this.BtnAbrirFicha.TabIndex = 23;
+			this.BtnAbrirFicha.Text = "     Abrir Ficha";
+			this.BtnAbrirFicha.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.BtnAbrirFicha.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.BtnAbrirFicha.TextStyle.Enabled = System.Drawing.Color.White;
+			this.BtnAbrirFicha.TextStyle.Hover = System.Drawing.Color.White;
+			this.BtnAbrirFicha.TextStyle.Pressed = System.Drawing.Color.White;
+			this.BtnAbrirFicha.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnAbrirFicha.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnAbrirFicha.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.BtnAbrirFicha.Click += new System.EventHandler(this.BtnAbrirFicha_Click);
+			// 
+			// bunifuCustomLabel13
+			// 
+			this.bunifuCustomLabel13.AutoSize = true;
+			this.bunifuCustomLabel13.BackColor = System.Drawing.Color.Transparent;
+			this.panelControlAnimator2.SetDecoration(this.bunifuCustomLabel13, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.bunifuCustomLabel13, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.bunifuCustomLabel13, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.bunifuCustomLabel13, BunifuAnimatorNS.DecorationType.None);
+			this.bunifuCustomLabel13.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+			this.bunifuCustomLabel13.ForeColor = System.Drawing.Color.White;
+			this.bunifuCustomLabel13.Location = new System.Drawing.Point(79, 27);
+			this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
+			this.bunifuCustomLabel13.Size = new System.Drawing.Size(62, 20);
+			this.bunifuCustomLabel13.TabIndex = 10;
+			this.bunifuCustomLabel13.Text = "Clientes";
+			// 
+			// pictureBox5
+			// 
+			this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+			this.panelControlAnimator2.SetDecoration(this.pictureBox5, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.pictureBox5, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.pictureBox5, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.pictureBox5, BunifuAnimatorNS.DecorationType.None);
+			this.pictureBox5.Image = global::XLight.Properties.Resources.SimplyBuilt_100px;
+			this.pictureBox5.Location = new System.Drawing.Point(22, 21);
+			this.pictureBox5.Name = "pictureBox5";
+			this.pictureBox5.Size = new System.Drawing.Size(51, 49);
+			this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox5.TabIndex = 1;
+			this.pictureBox5.TabStop = false;
+			// 
+			// visualSeparator1
+			// 
+			this.visualSeparator1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.visualSeparator1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.transi1.SetDecoration(this.visualSeparator1, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.visualSeparator1, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.visualSeparator1, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.visualSeparator1, BunifuAnimatorNS.DecorationType.None);
+			this.visualSeparator1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualSeparator1.Line = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(222)))), ((int)(((byte)(220)))));
+			this.visualSeparator1.Location = new System.Drawing.Point(15, 209);
+			this.visualSeparator1.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.visualSeparator1.Name = "visualSeparator1";
+			this.visualSeparator1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+			this.visualSeparator1.Shadow = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+			this.visualSeparator1.ShadowVisible = false;
+			this.visualSeparator1.Size = new System.Drawing.Size(900, 4);
+			this.visualSeparator1.TabIndex = 5;
+			this.visualSeparator1.Text = "visualSeparator1";
+			this.visualSeparator1.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.visualSeparator1.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualSeparator1.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualSeparator1.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualSeparator1.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.visualSeparator1.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualSeparator1.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			// 
+			// bunifuGradientPanel1
+			// 
+			this.bunifuGradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+			this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.bunifuGradientPanel1.Controls.Add(this.DataFecha);
+			this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel11);
+			this.bunifuGradientPanel1.Controls.Add(this.TextTelefono);
+			this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel10);
+			this.bunifuGradientPanel1.Controls.Add(this.TextApellidos);
+			this.bunifuGradientPanel1.Controls.Add(this.TextDireccion);
+			this.bunifuGradientPanel1.Controls.Add(this.TextDNI);
+			this.bunifuGradientPanel1.Controls.Add(this.TextNombre);
+			this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel9);
+			this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel8);
+			this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel6);
+			this.bunifuGradientPanel1.Controls.Add(this.BtnAgregarNuevoCliente);
+			this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel7);
+			this.bunifuGradientPanel1.Controls.Add(this.pictureBox4);
+			this.transi1.SetDecoration(this.bunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.bunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.bunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.bunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None);
+			this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(229)))), ((int)(((byte)(151)))));
+			this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Teal;
+			this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.SlateBlue;
+			this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(229)))), ((int)(((byte)(151)))));
+			this.bunifuGradientPanel1.Location = new System.Drawing.Point(15, 9);
+			this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+			this.bunifuGradientPanel1.Quality = 50;
+			this.bunifuGradientPanel1.Size = new System.Drawing.Size(905, 194);
+			this.bunifuGradientPanel1.TabIndex = 4;
+			// 
+			// DataFecha
+			// 
+			this.DataFecha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.DataFecha.BackColor = System.Drawing.Color.Turquoise;
+			this.DataFecha.BorderRadius = 0;
+			this.transi1.SetDecoration(this.DataFecha, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.DataFecha, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.DataFecha, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.DataFecha, BunifuAnimatorNS.DecorationType.None);
+			this.DataFecha.ForeColor = System.Drawing.Color.White;
+			this.DataFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+			this.DataFecha.FormatCustom = null;
+			this.DataFecha.Location = new System.Drawing.Point(670, 73);
+			this.DataFecha.Name = "DataFecha";
+			this.DataFecha.Size = new System.Drawing.Size(218, 31);
+			this.DataFecha.TabIndex = 22;
+			this.DataFecha.Value = new System.DateTime(2018, 11, 21, 17, 22, 25, 464);
+			// 
+			// bunifuCustomLabel11
+			// 
+			this.bunifuCustomLabel11.AutoSize = true;
+			this.bunifuCustomLabel11.BackColor = System.Drawing.Color.Transparent;
+			this.panelControlAnimator2.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
+			this.bunifuCustomLabel11.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+			this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.White;
+			this.bunifuCustomLabel11.Location = new System.Drawing.Point(615, 81);
+			this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
+			this.bunifuCustomLabel11.Size = new System.Drawing.Size(49, 20);
+			this.bunifuCustomLabel11.TabIndex = 21;
+			this.bunifuCustomLabel11.Text = "Fecha";
+			// 
+			// TextTelefono
+			// 
+			this.TextTelefono.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.TextTelefono.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(249)))));
+			this.TextTelefono.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.TextTelefono.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.TextTelefono.Border.HoverVisible = true;
+			this.TextTelefono.Border.Rounding = 6;
+			this.TextTelefono.Border.Thickness = 1;
+			this.TextTelefono.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.TextTelefono.Border.Visible = true;
+			this.TextTelefono.ButtonBorder.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.TextTelefono.ButtonBorder.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.TextTelefono.ButtonBorder.HoverVisible = true;
+			this.TextTelefono.ButtonBorder.Rounding = 6;
+			this.TextTelefono.ButtonBorder.Thickness = 1;
+			this.TextTelefono.ButtonBorder.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.TextTelefono.ButtonBorder.Visible = true;
+			this.TextTelefono.ButtonColor.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.TextTelefono.ButtonColor.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.TextTelefono.ButtonColor.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.TextTelefono.ButtonColor.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+			this.TextTelefono.ButtonFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.TextTelefono.ButtonIndent = 3;
+			this.TextTelefono.ButtonText = "visualButton";
+			this.TextTelefono.ButtonVisible = false;
+			this.panelControlAnimator.SetDecoration(this.TextTelefono, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.TextTelefono, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.TextTelefono, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.TextTelefono, BunifuAnimatorNS.DecorationType.None);
+			this.TextTelefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextTelefono.Image = null;
+			this.TextTelefono.ImageSize = new System.Drawing.Size(16, 16);
+			this.TextTelefono.ImageVisible = false;
+			this.TextTelefono.ImageWidth = 35;
+			this.TextTelefono.Location = new System.Drawing.Point(496, 81);
+			this.TextTelefono.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.TextTelefono.Name = "TextTelefono";
+			this.TextTelefono.PasswordChar = '\0';
+			this.TextTelefono.ReadOnly = false;
+			this.TextTelefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
+			this.TextTelefono.Size = new System.Drawing.Size(115, 23);
+			this.TextTelefono.TabIndex = 20;
+			this.TextTelefono.TextBoxWidth = 105;
+			this.TextTelefono.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.TextTelefono.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextTelefono.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextTelefono.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextTelefono.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.TextTelefono.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.TextTelefono.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.TextTelefono.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.TextTelefono.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.TextTelefono.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+			this.TextTelefono.Watermark.Text = "Watermark text";
+			this.TextTelefono.Watermark.Visible = false;
+			this.TextTelefono.WordWrap = true;
+			// 
+			// bunifuCustomLabel10
+			// 
+			this.bunifuCustomLabel10.AutoSize = true;
+			this.bunifuCustomLabel10.BackColor = System.Drawing.Color.Transparent;
+			this.panelControlAnimator2.SetDecoration(this.bunifuCustomLabel10, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.bunifuCustomLabel10, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.bunifuCustomLabel10, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.bunifuCustomLabel10, BunifuAnimatorNS.DecorationType.None);
+			this.bunifuCustomLabel10.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+			this.bunifuCustomLabel10.ForeColor = System.Drawing.Color.White;
+			this.bunifuCustomLabel10.Location = new System.Drawing.Point(428, 81);
+			this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
+			this.bunifuCustomLabel10.Size = new System.Drawing.Size(68, 20);
+			this.bunifuCustomLabel10.TabIndex = 19;
+			this.bunifuCustomLabel10.Text = "Telefono";
+			// 
+			// TextApellidos
+			// 
+			this.TextApellidos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.TextApellidos.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.TextApellidos.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(249)))));
+			this.TextApellidos.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.TextApellidos.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.TextApellidos.Border.HoverVisible = true;
+			this.TextApellidos.Border.Rounding = 6;
+			this.TextApellidos.Border.Thickness = 1;
+			this.TextApellidos.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.TextApellidos.Border.Visible = true;
+			this.TextApellidos.ButtonBorder.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.TextApellidos.ButtonBorder.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.TextApellidos.ButtonBorder.HoverVisible = true;
+			this.TextApellidos.ButtonBorder.Rounding = 6;
+			this.TextApellidos.ButtonBorder.Thickness = 1;
+			this.TextApellidos.ButtonBorder.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.TextApellidos.ButtonBorder.Visible = true;
+			this.TextApellidos.ButtonColor.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.TextApellidos.ButtonColor.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.TextApellidos.ButtonColor.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.TextApellidos.ButtonColor.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+			this.TextApellidos.ButtonFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.TextApellidos.ButtonIndent = 3;
+			this.TextApellidos.ButtonText = "visualButton";
+			this.TextApellidos.ButtonVisible = false;
+			this.panelControlAnimator.SetDecoration(this.TextApellidos, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.TextApellidos, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.TextApellidos, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.TextApellidos, BunifuAnimatorNS.DecorationType.None);
+			this.TextApellidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextApellidos.Image = null;
+			this.TextApellidos.ImageSize = new System.Drawing.Size(16, 16);
+			this.TextApellidos.ImageVisible = false;
+			this.TextApellidos.ImageWidth = 35;
+			this.TextApellidos.Location = new System.Drawing.Point(580, 44);
+			this.TextApellidos.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.TextApellidos.Name = "TextApellidos";
+			this.TextApellidos.PasswordChar = '\0';
+			this.TextApellidos.ReadOnly = false;
+			this.TextApellidos.ScrollBars = System.Windows.Forms.ScrollBars.None;
+			this.TextApellidos.Size = new System.Drawing.Size(308, 23);
+			this.TextApellidos.TabIndex = 18;
+			this.TextApellidos.TextBoxWidth = 298;
+			this.TextApellidos.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.TextApellidos.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextApellidos.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextApellidos.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextApellidos.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.TextApellidos.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.TextApellidos.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.TextApellidos.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.TextApellidos.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.TextApellidos.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+			this.TextApellidos.Watermark.Text = "Watermark text";
+			this.TextApellidos.Watermark.Visible = false;
+			this.TextApellidos.WordWrap = true;
+			// 
+			// TextDireccion
+			// 
+			this.TextDireccion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.TextDireccion.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.TextDireccion.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(249)))));
+			this.TextDireccion.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.TextDireccion.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.TextDireccion.Border.HoverVisible = true;
+			this.TextDireccion.Border.Rounding = 6;
+			this.TextDireccion.Border.Thickness = 1;
+			this.TextDireccion.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.TextDireccion.Border.Visible = true;
+			this.TextDireccion.ButtonBorder.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.TextDireccion.ButtonBorder.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.TextDireccion.ButtonBorder.HoverVisible = true;
+			this.TextDireccion.ButtonBorder.Rounding = 6;
+			this.TextDireccion.ButtonBorder.Thickness = 1;
+			this.TextDireccion.ButtonBorder.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.TextDireccion.ButtonBorder.Visible = true;
+			this.TextDireccion.ButtonColor.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.TextDireccion.ButtonColor.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.TextDireccion.ButtonColor.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.TextDireccion.ButtonColor.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+			this.TextDireccion.ButtonFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.TextDireccion.ButtonIndent = 3;
+			this.TextDireccion.ButtonText = "visualButton";
+			this.TextDireccion.ButtonVisible = false;
+			this.panelControlAnimator.SetDecoration(this.TextDireccion, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.TextDireccion, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.TextDireccion, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.TextDireccion, BunifuAnimatorNS.DecorationType.None);
+			this.TextDireccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextDireccion.Image = null;
+			this.TextDireccion.ImageSize = new System.Drawing.Size(16, 16);
+			this.TextDireccion.ImageVisible = false;
+			this.TextDireccion.ImageWidth = 35;
+			this.TextDireccion.Location = new System.Drawing.Point(317, 113);
+			this.TextDireccion.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.TextDireccion.Name = "TextDireccion";
+			this.TextDireccion.PasswordChar = '\0';
+			this.TextDireccion.ReadOnly = false;
+			this.TextDireccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+			this.TextDireccion.Size = new System.Drawing.Size(571, 23);
+			this.TextDireccion.TabIndex = 17;
+			this.TextDireccion.TextBoxWidth = 561;
+			this.TextDireccion.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.TextDireccion.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextDireccion.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextDireccion.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextDireccion.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.TextDireccion.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.TextDireccion.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.TextDireccion.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.TextDireccion.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.TextDireccion.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+			this.TextDireccion.Watermark.Text = "Watermark text";
+			this.TextDireccion.Watermark.Visible = false;
+			this.TextDireccion.WordWrap = true;
+			// 
+			// TextDNI
+			// 
+			this.TextDNI.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.TextDNI.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(249)))));
+			this.TextDNI.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.TextDNI.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.TextDNI.Border.HoverVisible = true;
+			this.TextDNI.Border.Rounding = 6;
+			this.TextDNI.Border.Thickness = 1;
+			this.TextDNI.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.TextDNI.Border.Visible = true;
+			this.TextDNI.ButtonBorder.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.TextDNI.ButtonBorder.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.TextDNI.ButtonBorder.HoverVisible = true;
+			this.TextDNI.ButtonBorder.Rounding = 6;
+			this.TextDNI.ButtonBorder.Thickness = 1;
+			this.TextDNI.ButtonBorder.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.TextDNI.ButtonBorder.Visible = true;
+			this.TextDNI.ButtonColor.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.TextDNI.ButtonColor.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.TextDNI.ButtonColor.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.TextDNI.ButtonColor.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+			this.TextDNI.ButtonFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.TextDNI.ButtonIndent = 3;
+			this.TextDNI.ButtonText = "visualButton";
+			this.TextDNI.ButtonVisible = false;
+			this.panelControlAnimator.SetDecoration(this.TextDNI, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.TextDNI, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.TextDNI, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.TextDNI, BunifuAnimatorNS.DecorationType.None);
+			this.TextDNI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextDNI.Image = null;
+			this.TextDNI.ImageSize = new System.Drawing.Size(16, 16);
+			this.TextDNI.ImageVisible = false;
+			this.TextDNI.ImageWidth = 35;
+			this.TextDNI.Location = new System.Drawing.Point(317, 81);
+			this.TextDNI.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.TextDNI.Name = "TextDNI";
+			this.TextDNI.PasswordChar = '\0';
+			this.TextDNI.ReadOnly = false;
+			this.TextDNI.ScrollBars = System.Windows.Forms.ScrollBars.None;
+			this.TextDNI.Size = new System.Drawing.Size(106, 23);
+			this.TextDNI.TabIndex = 16;
+			this.TextDNI.TextBoxWidth = 96;
+			this.TextDNI.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.TextDNI.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextDNI.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextDNI.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextDNI.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.TextDNI.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.TextDNI.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.TextDNI.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.TextDNI.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.TextDNI.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+			this.TextDNI.Watermark.Text = "Watermark text";
+			this.TextDNI.Watermark.Visible = false;
+			this.TextDNI.WordWrap = true;
+			// 
+			// TextNombre
+			// 
+			this.TextNombre.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.TextNombre.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(249)))));
+			this.TextNombre.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.TextNombre.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.TextNombre.Border.HoverVisible = true;
+			this.TextNombre.Border.Rounding = 6;
+			this.TextNombre.Border.Thickness = 1;
+			this.TextNombre.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.TextNombre.Border.Visible = true;
+			this.TextNombre.ButtonBorder.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.TextNombre.ButtonBorder.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.TextNombre.ButtonBorder.HoverVisible = true;
+			this.TextNombre.ButtonBorder.Rounding = 6;
+			this.TextNombre.ButtonBorder.Thickness = 1;
+			this.TextNombre.ButtonBorder.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.TextNombre.ButtonBorder.Visible = true;
+			this.TextNombre.ButtonColor.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.TextNombre.ButtonColor.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.TextNombre.ButtonColor.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.TextNombre.ButtonColor.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+			this.TextNombre.ButtonFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.TextNombre.ButtonIndent = 3;
+			this.TextNombre.ButtonText = "visualButton";
+			this.TextNombre.ButtonVisible = false;
+			this.panelControlAnimator.SetDecoration(this.TextNombre, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.TextNombre, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.TextNombre, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.TextNombre, BunifuAnimatorNS.DecorationType.None);
+			this.TextNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextNombre.Image = null;
+			this.TextNombre.ImageSize = new System.Drawing.Size(16, 16);
+			this.TextNombre.ImageVisible = false;
+			this.TextNombre.ImageWidth = 35;
+			this.TextNombre.Location = new System.Drawing.Point(317, 44);
+			this.TextNombre.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.TextNombre.Name = "TextNombre";
+			this.TextNombre.PasswordChar = '\0';
+			this.TextNombre.ReadOnly = false;
+			this.TextNombre.ScrollBars = System.Windows.Forms.ScrollBars.None;
+			this.TextNombre.Size = new System.Drawing.Size(179, 23);
+			this.TextNombre.TabIndex = 15;
+			this.TextNombre.TextBoxWidth = 169;
+			this.TextNombre.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.TextNombre.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextNombre.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextNombre.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.TextNombre.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.TextNombre.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.TextNombre.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.TextNombre.Watermark.Active = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.TextNombre.Watermark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.TextNombre.Watermark.Inactive = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+			this.TextNombre.Watermark.Text = "Watermark text";
+			this.TextNombre.Watermark.Visible = false;
+			this.TextNombre.WordWrap = true;
+			// 
+			// bunifuCustomLabel9
+			// 
+			this.bunifuCustomLabel9.AutoSize = true;
+			this.bunifuCustomLabel9.BackColor = System.Drawing.Color.Transparent;
+			this.panelControlAnimator2.SetDecoration(this.bunifuCustomLabel9, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.bunifuCustomLabel9, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.bunifuCustomLabel9, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.bunifuCustomLabel9, BunifuAnimatorNS.DecorationType.None);
+			this.bunifuCustomLabel9.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+			this.bunifuCustomLabel9.ForeColor = System.Drawing.Color.White;
+			this.bunifuCustomLabel9.Location = new System.Drawing.Point(502, 47);
+			this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
+			this.bunifuCustomLabel9.Size = new System.Drawing.Size(72, 20);
+			this.bunifuCustomLabel9.TabIndex = 14;
+			this.bunifuCustomLabel9.Text = "Apellidos";
+			// 
+			// bunifuCustomLabel8
+			// 
+			this.bunifuCustomLabel8.AutoSize = true;
+			this.bunifuCustomLabel8.BackColor = System.Drawing.Color.Transparent;
+			this.panelControlAnimator2.SetDecoration(this.bunifuCustomLabel8, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.bunifuCustomLabel8, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.bunifuCustomLabel8, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.bunifuCustomLabel8, BunifuAnimatorNS.DecorationType.None);
+			this.bunifuCustomLabel8.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+			this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.White;
+			this.bunifuCustomLabel8.Location = new System.Drawing.Point(237, 113);
+			this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
+			this.bunifuCustomLabel8.Size = new System.Drawing.Size(74, 20);
+			this.bunifuCustomLabel8.TabIndex = 13;
+			this.bunifuCustomLabel8.Text = "Dirección";
+			// 
+			// bunifuCustomLabel6
+			// 
+			this.bunifuCustomLabel6.AutoSize = true;
+			this.bunifuCustomLabel6.BackColor = System.Drawing.Color.Transparent;
+			this.panelControlAnimator2.SetDecoration(this.bunifuCustomLabel6, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.bunifuCustomLabel6, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.bunifuCustomLabel6, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.bunifuCustomLabel6, BunifuAnimatorNS.DecorationType.None);
+			this.bunifuCustomLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+			this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.White;
+			this.bunifuCustomLabel6.Location = new System.Drawing.Point(237, 81);
+			this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
+			this.bunifuCustomLabel6.Size = new System.Drawing.Size(36, 20);
+			this.bunifuCustomLabel6.TabIndex = 12;
+			this.bunifuCustomLabel6.Text = "DNI";
+			// 
+			// BtnAgregarNuevoCliente
+			// 
+			this.BtnAgregarNuevoCliente.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.BtnAgregarNuevoCliente.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.BtnAgregarNuevoCliente.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.BtnAgregarNuevoCliente.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.BtnAgregarNuevoCliente.Border.Color = System.Drawing.Color.White;
+			this.BtnAgregarNuevoCliente.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.BtnAgregarNuevoCliente.Border.HoverVisible = true;
+			this.BtnAgregarNuevoCliente.Border.Rounding = 6;
+			this.BtnAgregarNuevoCliente.Border.Thickness = 1;
+			this.BtnAgregarNuevoCliente.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.BtnAgregarNuevoCliente.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.BtnAgregarNuevoCliente, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.BtnAgregarNuevoCliente, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.BtnAgregarNuevoCliente, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.BtnAgregarNuevoCliente, BunifuAnimatorNS.DecorationType.None);
+			this.BtnAgregarNuevoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnAgregarNuevoCliente.ForeColor = System.Drawing.Color.White;
+			this.BtnAgregarNuevoCliente.Image = global::XLight.Properties.Resources.Plus_Math_50px;
+			this.BtnAgregarNuevoCliente.Location = new System.Drawing.Point(22, 99);
+			this.BtnAgregarNuevoCliente.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.BtnAgregarNuevoCliente.Name = "BtnAgregarNuevoCliente";
+			this.BtnAgregarNuevoCliente.Size = new System.Drawing.Size(190, 52);
+			this.BtnAgregarNuevoCliente.TabIndex = 11;
+			this.BtnAgregarNuevoCliente.Text = "     Agregar";
+			this.BtnAgregarNuevoCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.BtnAgregarNuevoCliente.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.BtnAgregarNuevoCliente.TextStyle.Enabled = System.Drawing.Color.White;
+			this.BtnAgregarNuevoCliente.TextStyle.Hover = System.Drawing.Color.White;
+			this.BtnAgregarNuevoCliente.TextStyle.Pressed = System.Drawing.Color.White;
+			this.BtnAgregarNuevoCliente.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnAgregarNuevoCliente.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnAgregarNuevoCliente.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.BtnAgregarNuevoCliente.Click += new System.EventHandler(this.BtnAgregarNuevoCliente_Click);
+			// 
+			// bunifuCustomLabel7
+			// 
+			this.bunifuCustomLabel7.AutoSize = true;
+			this.bunifuCustomLabel7.BackColor = System.Drawing.Color.Transparent;
+			this.panelControlAnimator2.SetDecoration(this.bunifuCustomLabel7, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.bunifuCustomLabel7, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.bunifuCustomLabel7, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.bunifuCustomLabel7, BunifuAnimatorNS.DecorationType.None);
+			this.bunifuCustomLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+			this.bunifuCustomLabel7.ForeColor = System.Drawing.Color.White;
+			this.bunifuCustomLabel7.Location = new System.Drawing.Point(236, 47);
+			this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
+			this.bunifuCustomLabel7.Size = new System.Drawing.Size(66, 20);
+			this.bunifuCustomLabel7.TabIndex = 11;
+			this.bunifuCustomLabel7.Text = "Nombre";
+			// 
+			// pictureBox4
+			// 
+			this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+			this.panelControlAnimator2.SetDecoration(this.pictureBox4, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.pictureBox4, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.pictureBox4, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.pictureBox4, BunifuAnimatorNS.DecorationType.None);
+			this.pictureBox4.Image = global::XLight.Properties.Resources.Customer_50px;
+			this.pictureBox4.Location = new System.Drawing.Point(22, 21);
+			this.pictureBox4.Name = "pictureBox4";
+			this.pictureBox4.Size = new System.Drawing.Size(51, 49);
+			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox4.TabIndex = 2;
+			this.pictureBox4.TabStop = false;
 			// 
 			// panelDashboard
 			// 
@@ -742,7 +2340,7 @@
 			this.card1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("card1.BackgroundImage")));
 			this.card1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.card1.Controls.Add(this.bunifuCustomLabel1);
-			this.card1.Controls.Add(this.lblClientes);
+			this.card1.Controls.Add(this.lblClien);
 			this.card1.Controls.Add(this.pictureBox1);
 			this.transi1.SetDecoration(this.card1, BunifuAnimatorNS.DecorationType.None);
 			this.logoAnimator.SetDecoration(this.card1, BunifuAnimatorNS.DecorationType.None);
@@ -775,22 +2373,22 @@
 			this.bunifuCustomLabel1.TabIndex = 9;
 			this.bunifuCustomLabel1.Text = "Clientes totales";
 			// 
-			// lblClientes
+			// lblClien
 			// 
-			this.lblClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-			this.lblClientes.AutoSize = true;
-			this.lblClientes.BackColor = System.Drawing.Color.Transparent;
-			this.panelControlAnimator2.SetDecoration(this.lblClientes, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.lblClientes, BunifuAnimatorNS.DecorationType.None);
-			this.transi1.SetDecoration(this.lblClientes, BunifuAnimatorNS.DecorationType.None);
-			this.logoAnimator.SetDecoration(this.lblClientes, BunifuAnimatorNS.DecorationType.None);
-			this.lblClientes.Font = new System.Drawing.Font("Segoe UI Semibold", 18.25F, System.Drawing.FontStyle.Bold);
-			this.lblClientes.ForeColor = System.Drawing.Color.White;
-			this.lblClientes.Location = new System.Drawing.Point(16, 100);
-			this.lblClientes.Name = "lblClientes";
-			this.lblClientes.Size = new System.Drawing.Size(175, 35);
-			this.lblClientes.TabIndex = 8;
-			this.lblClientes.Text = "3.253 Clientes";
+			this.lblClien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+			this.lblClien.AutoSize = true;
+			this.lblClien.BackColor = System.Drawing.Color.Transparent;
+			this.panelControlAnimator2.SetDecoration(this.lblClien, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.lblClien, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.lblClien, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.lblClien, BunifuAnimatorNS.DecorationType.None);
+			this.lblClien.Font = new System.Drawing.Font("Segoe UI Semibold", 18.25F, System.Drawing.FontStyle.Bold);
+			this.lblClien.ForeColor = System.Drawing.Color.White;
+			this.lblClien.Location = new System.Drawing.Point(16, 100);
+			this.lblClien.Name = "lblClien";
+			this.lblClien.Size = new System.Drawing.Size(175, 35);
+			this.lblClien.TabIndex = 8;
+			this.lblClien.Text = "3.253 Clientes";
 			// 
 			// pictureBox1
 			// 
@@ -1083,42 +2681,42 @@
 			this.btnSalir.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 			this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
 			// 
-			// btnCambiarUsuario
+			// BtnUsuarioSetup
 			// 
-			this.btnCambiarUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnCambiarUsuario.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnCambiarUsuario.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-			this.btnCambiarUsuario.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-			this.btnCambiarUsuario.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
-			this.btnCambiarUsuario.Border.Color = System.Drawing.Color.White;
-			this.btnCambiarUsuario.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.btnCambiarUsuario.Border.HoverVisible = true;
-			this.btnCambiarUsuario.Border.Rounding = 6;
-			this.btnCambiarUsuario.Border.Thickness = 1;
-			this.btnCambiarUsuario.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-			this.btnCambiarUsuario.Border.Visible = true;
-			this.logoAnimator.SetDecoration(this.btnCambiarUsuario, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.btnCambiarUsuario, BunifuAnimatorNS.DecorationType.None);
-			this.transi1.SetDecoration(this.btnCambiarUsuario, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator2.SetDecoration(this.btnCambiarUsuario, BunifuAnimatorNS.DecorationType.None);
-			this.btnCambiarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnCambiarUsuario.ForeColor = System.Drawing.Color.White;
-			this.btnCambiarUsuario.Image = global::XLight.Properties.Resources.Console_50px;
-			this.btnCambiarUsuario.Location = new System.Drawing.Point(12, 533);
-			this.btnCambiarUsuario.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-			this.btnCambiarUsuario.Name = "btnCambiarUsuario";
-			this.btnCambiarUsuario.Size = new System.Drawing.Size(228, 52);
-			this.btnCambiarUsuario.TabIndex = 9;
-			this.btnCambiarUsuario.Text = "      Cambiar Usuario";
-			this.btnCambiarUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.btnCambiarUsuario.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-			this.btnCambiarUsuario.TextStyle.Enabled = System.Drawing.Color.White;
-			this.btnCambiarUsuario.TextStyle.Hover = System.Drawing.Color.White;
-			this.btnCambiarUsuario.TextStyle.Pressed = System.Drawing.Color.White;
-			this.btnCambiarUsuario.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-			this.btnCambiarUsuario.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-			this.btnCambiarUsuario.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-			this.btnCambiarUsuario.Click += new System.EventHandler(this.btnCambiarUsuario_Click);
+			this.BtnUsuarioSetup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.BtnUsuarioSetup.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.BtnUsuarioSetup.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.BtnUsuarioSetup.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.BtnUsuarioSetup.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.BtnUsuarioSetup.Border.Color = System.Drawing.Color.White;
+			this.BtnUsuarioSetup.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.BtnUsuarioSetup.Border.HoverVisible = true;
+			this.BtnUsuarioSetup.Border.Rounding = 6;
+			this.BtnUsuarioSetup.Border.Thickness = 1;
+			this.BtnUsuarioSetup.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.BtnUsuarioSetup.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.BtnUsuarioSetup, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.BtnUsuarioSetup, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.BtnUsuarioSetup, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.BtnUsuarioSetup, BunifuAnimatorNS.DecorationType.None);
+			this.BtnUsuarioSetup.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnUsuarioSetup.ForeColor = System.Drawing.Color.White;
+			this.BtnUsuarioSetup.Image = global::XLight.Properties.Resources.Console_50px;
+			this.BtnUsuarioSetup.Location = new System.Drawing.Point(12, 533);
+			this.BtnUsuarioSetup.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.BtnUsuarioSetup.Name = "BtnUsuarioSetup";
+			this.BtnUsuarioSetup.Size = new System.Drawing.Size(228, 52);
+			this.BtnUsuarioSetup.TabIndex = 9;
+			this.BtnUsuarioSetup.Text = "      Cambiar Usuario";
+			this.BtnUsuarioSetup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.BtnUsuarioSetup.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.BtnUsuarioSetup.TextStyle.Enabled = System.Drawing.Color.White;
+			this.BtnUsuarioSetup.TextStyle.Hover = System.Drawing.Color.White;
+			this.BtnUsuarioSetup.TextStyle.Pressed = System.Drawing.Color.White;
+			this.BtnUsuarioSetup.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnUsuarioSetup.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnUsuarioSetup.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.BtnUsuarioSetup.Click += new System.EventHandler(this.BtnUsuarioSetup_Click);
 			// 
 			// btnOpciones
 			// 
@@ -1229,6 +2827,7 @@
 			this.btnBalance.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
 			this.btnBalance.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
 			this.btnBalance.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.btnBalance.Visible = false;
 			this.btnBalance.Click += new System.EventHandler(this.btnBalance_Click);
 			// 
 			// btnClientes
@@ -1395,12 +2994,30 @@
 			this.btnMaximizar.Zoom = 20;
 			this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
 			// 
+			// LblUser
+			// 
+			this.LblUser.AutoSize = true;
+			this.panelControlAnimator2.SetDecoration(this.LblUser, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.LblUser, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.LblUser, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.LblUser, BunifuAnimatorNS.DecorationType.None);
+			this.LblUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.LblUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
+			this.LblUser.Location = new System.Drawing.Point(146, 17);
+			this.LblUser.Name = "LblUser";
+			this.LblUser.Size = new System.Drawing.Size(57, 21);
+			this.LblUser.TabIndex = 9;
+			this.LblUser.Text = "XLight";
+			// 
 			// MenuGeneral
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
 			this.ClientSize = new System.Drawing.Size(1188, 650);
+			this.Controls.Add(this.PanelOpciones);
+			this.Controls.Add(this.PanelHistorial);
+			this.Controls.Add(this.PanelBalance);
 			this.Controls.Add(this.PanelClientes);
 			this.Controls.Add(this.panelDashboard);
 			this.Controls.Add(this.panelControl);
@@ -1417,9 +3034,21 @@
 			this.panelControl.ResumeLayout(false);
 			this.header.ResumeLayout(false);
 			this.header.PerformLayout();
-			this.PanelClientes.ResumeLayout(false);
-			this.PanelBalance.ResumeLayout(false);
+			this.PanelOpciones.ResumeLayout(false);
+			this.visualGroupBox2.ResumeLayout(false);
+			this.visualGroupBox2.PerformLayout();
+			this.groupBox1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+			this.visualGroupBox1.ResumeLayout(false);
 			this.PanelHistorial.ResumeLayout(false);
+			this.PanelClientes.ResumeLayout(false);
+			this.bunifuGradientPanel2.ResumeLayout(false);
+			this.bunifuGradientPanel2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+			this.bunifuGradientPanel1.ResumeLayout(false);
+			this.bunifuGradientPanel1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			this.panelDashboard.ResumeLayout(false);
 			this.panelStats.ResumeLayout(false);
 			this.panelStats.PerformLayout();
@@ -1459,7 +3088,7 @@
 		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton btnBalance;
 		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton btnHistorial;
 		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton btnOpciones;
-		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton btnCambiarUsuario;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnUsuarioSetup;
 		private Bunifu.Framework.UI.BunifuSeparator separadorInferior;
 		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton btnSalir;
 		private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
@@ -1501,12 +3130,72 @@
 		private Bunifu.Framework.UI.BunifuCustomLabel lblConectado;
 		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
 		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-		private Bunifu.Framework.UI.BunifuCustomLabel lblClientes;
+		private Bunifu.Framework.UI.BunifuCustomLabel lblClien;
 		private BunifuAnimatorNS.BunifuTransition transi1;
 		private Bunifu.Framework.UI.BunifuGradientPanel PanelClientes;
 		private Bunifu.Framework.UI.BunifuGradientPanel PanelBalance;
 		private Bunifu.Framework.UI.BunifuGradientPanel PanelHistorial;
 		private Bunifu.Framework.UI.BunifuGradientPanel PanelOpciones;
+		private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnAgregarNuevoCliente;
+		private System.Windows.Forms.PictureBox pictureBox4;
+		private Bunifu.Framework.UI.BunifuDatepicker DataFecha;
+		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel11;
+		private VisualPlus.Toolkit.Controls.Editors.VisualTextBox TextTelefono;
+		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
+		private VisualPlus.Toolkit.Controls.Editors.VisualTextBox TextApellidos;
+		private VisualPlus.Toolkit.Controls.Editors.VisualTextBox TextDireccion;
+		private VisualPlus.Toolkit.Controls.Editors.VisualTextBox TextDNI;
+		private VisualPlus.Toolkit.Controls.Editors.VisualTextBox TextNombre;
+		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
+		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
+		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
+		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
+		private VisualPlus.Toolkit.Controls.Layout.VisualSeparator visualSeparator1;
+		private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnImprimirClientes;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnBorrar;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnEditar;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnAbrirFicha;
+		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel13;
+		private System.Windows.Forms.PictureBox pictureBox5;
+		private System.Drawing.Printing.PrintDocument printDocument1;
+		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Apellidos;
+		private System.Windows.Forms.DataGridViewTextBoxColumn DNI;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
+		private System.Windows.Forms.TextBox txtBoxBuscadorRegistro;
+		private System.Windows.Forms.ListView listViewHistorial;
+		private System.Windows.Forms.ColumnHeader columnHeader1;
+		private System.Windows.Forms.ColumnHeader columnHeader2;
+		private System.Windows.Forms.ColumnHeader columnHeader3;
+		private System.Windows.Forms.ColumnHeader columnHeader4;
+		private System.Windows.Forms.ColumnHeader columnHeader5;
+		private VisualPlus.Toolkit.Controls.Layout.VisualGroupBox visualGroupBox1;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnRutaUsuarios;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnRutaData;
+		private VisualPlus.Toolkit.Controls.Layout.VisualGroupBox visualGroupBox2;
+		private VisualPlus.Toolkit.Controls.Layout.VisualSeparator visualSeparator4;
+		private VisualPlus.Toolkit.Controls.Layout.VisualSeparator visualSeparator3;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualLabel LblHistorial;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualLabel LblClientes;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnRutaHistorial;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnRutaClientes;
+		private VisualPlus.Toolkit.Controls.Layout.VisualSeparator visualSeparator2;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualLabel LblUsuarios;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualLabel LblData;
+		private System.Windows.Forms.GroupBox groupBox1;
+		private System.Windows.Forms.PictureBox pictureBox6;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualLabel visualLabel1;
+		private System.Windows.Forms.CheckBox checkBoxAuto;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnCrearUsuario;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnCambiarContraseña;
+		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnBorrarHistorial;
+		private Bunifu.Framework.UI.BunifuCustomLabel LblUser;
 	}
 }
 

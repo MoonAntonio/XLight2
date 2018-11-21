@@ -95,8 +95,9 @@ namespace XLight.Forms
 					Temporizador.Stop();
 					Login login = new Login(configuracionActual);
 					//Login login = new Login();
-					login.Show();
 					this.Hide();
+					login.Show();
+					
 				}
 				else
 				{

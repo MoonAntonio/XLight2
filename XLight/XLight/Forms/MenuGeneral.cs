@@ -84,7 +84,7 @@ namespace XLight
 				usuarioActual = new Usuario("Admin", "Admin", 0, pH, pC, 0, 0);
 			}
 
-			//LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios;
+			LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios;
 			idActual = usuarioActual.IdActual;
 
 			ActualizarBusquedaRegistro();
@@ -96,7 +96,7 @@ namespace XLight
 			PanelHistorial.Visible = false;
 			PanelOpciones.Visible = false;
 
-			//BtnUsuarioSetup.Visible = false;
+			BtnUsuarioSetup.Visible = false;
 
 			GuardarAjustes();
 		}
@@ -110,6 +110,48 @@ namespace XLight
 			usuarioActual = user;
 
 			InitializeComponent();
+
+
+			CargarTemplates();
+
+			AplicarElipse();
+
+			actualizadorDia.Start();
+
+			// TODO Para testear
+			if (configuracionActual == null)
+			{
+				string pD = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Data");
+				string pU = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), pD + @"\Usuarios");
+				string pA = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Ajustes\ajustes.xml");
+				string uU = "Admin";
+
+				configuracionActual = new Ajustes(pD, pU, pA, uU);
+			}
+
+			if (usuarioActual == null)
+			{
+				string pH = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), configuracionActual.PathData + @"\Usuarios\Admin\historial.xml");
+				string pC = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), configuracionActual.PathData + @"\Usuarios\Admin\clientes.xml");
+
+				usuarioActual = new Usuario("Admin", "Admin", 0, pH, pC, 0, 0);
+			}
+
+			LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios;
+			idActual = usuarioActual.IdActual;
+
+			ActualizarBusquedaRegistro();
+
+			AutoCompletar();
+
+			PanelClientes.Visible = false;
+			PanelBalance.Visible = false;
+			PanelHistorial.Visible = false;
+			PanelOpciones.Visible = false;
+
+			BtnUsuarioSetup.Visible = false;
+
+			GuardarAjustes();
 		}
 		#endregion
 
@@ -118,32 +160,110 @@ namespace XLight
 		{
 			selectBtn = 0;
 			SetSelectForeColor();
-			PanelDashShow(true);
+			if (panelDashboard.Visible) return;
+
+			panelDashboard.Visible = true;
+			PanelClientes.Visible = false;
+			PanelBalance.Visible = false;
+			PanelHistorial.Visible = false;
+			PanelOpciones.Visible = false;
+
+			LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios + " >> " + "Inicio";
+
+			BtnUsuarioSetup.Visible = false;
 		}
 
 		private void btnClientes_Click(object sender, EventArgs e)
 		{
 			selectBtn = 1;
 			SetSelectForeColor();
-			PanelDashShow(false);
+			if (PanelClientes.Visible) return;
+
+			panelDashboard.Visible = false;
+			PanelClientes.Visible = true;
+			PanelBalance.Visible = false;
+			PanelHistorial.Visible = false;
+			PanelOpciones.Visible = false;
+
+			LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios + " >> " + "Clientes";
+
+			BtnUsuarioSetup.Visible = false;
 		}
 
 		private void btnBalance_Click(object sender, EventArgs e)
 		{
 			selectBtn = 2;
 			SetSelectForeColor();
+			if (usuarioActual.NivelPrivilegios == 0)
+			{
+				if (PanelBalance.Visible) return;
+
+				panelDashboard.Visible = false;
+				PanelBalance.Visible = true;
+				PanelClientes.Visible = false;
+				PanelHistorial.Visible = false;
+				PanelOpciones.Visible = false;
+
+				LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios + " >> " + "Balance";
+			}
+			else
+			{
+				MessageBox.Show("No tienes privilegios suficientes. Contacta con tu admin.");
+			}
+
+			BtnUsuarioSetup.Visible = false;
 		}
 
 		private void btnHistorial_Click(object sender, EventArgs e)
 		{
 			selectBtn = 3;
 			SetSelectForeColor();
+
+			CargarHistorial();
+
+			if (PanelHistorial.Visible) return;
+
+			panelDashboard.Visible = false;
+			PanelHistorial.Visible = true;
+			PanelClientes.Visible = false;
+			PanelBalance.Visible = false;
+			PanelOpciones.Visible = false;
+
+			LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios + " >> " + "Historial";
+
+			BtnUsuarioSetup.Visible = false;
 		}
 
 		private void btnOpciones_Click(object sender, EventArgs e)
 		{
 			selectBtn = 4;
 			SetSelectForeColor();
+
+			if (PanelOpciones.Visible) return;
+
+			panelDashboard.Visible = false;
+			PanelHistorial.Visible = false;
+			PanelClientes.Visible = false;
+			PanelBalance.Visible = false;
+			PanelOpciones.Visible = true;
+
+			LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios + " >> " + "Opciones";
+
+			LblData.Text = configuracionActual.PathData;
+			LblUsuarios.Text = configuracionActual.PathUsuarios;
+			LblClientes.Text = usuarioActual.PathClientes;
+			LblHistorial.Text = usuarioActual.PathHistorial;
+
+			if (usuarioActual.InicioAutomatico == 0)
+			{
+				checkBoxAuto.CheckState = CheckState.Unchecked;
+			}
+			else
+			{
+				checkBoxAuto.CheckState = CheckState.Checked;
+			}
+
+			BtnUsuarioSetup.Visible = true;
 		}
 
 		private void btnSalir_Click(object sender, EventArgs e)
@@ -219,7 +339,7 @@ namespace XLight
 			btnHistorial.BackColorState = oldState;
 			btnOpciones.BackColorState = oldState;
 			btnSalir.BackColorState = oldState;
-			btnCambiarUsuario.BackColorState = oldState;
+			BtnUsuarioSetup.BackColorState = oldState;
 
 			switch (selectBtn)
 			{
@@ -230,7 +350,7 @@ namespace XLight
 					btnHistorial.BackColorState = oldState;
 					btnOpciones.BackColorState = oldState;
 					btnSalir.BackColorState = oldState;
-					btnCambiarUsuario.BackColorState = oldState;
+					BtnUsuarioSetup.BackColorState = oldState;
 					break;
 
 				case 1:
@@ -240,7 +360,7 @@ namespace XLight
 					btnHistorial.BackColorState = oldState;
 					btnOpciones.BackColorState = oldState;
 					btnSalir.BackColorState = oldState;
-					btnCambiarUsuario.BackColorState = oldState;
+					BtnUsuarioSetup.BackColorState = oldState;
 					break;
 
 				case 2:
@@ -250,7 +370,7 @@ namespace XLight
 					btnHistorial.BackColorState = oldState;
 					btnOpciones.BackColorState = oldState;
 					btnSalir.BackColorState = oldState;
-					btnCambiarUsuario.BackColorState = oldState;
+					BtnUsuarioSetup.BackColorState = oldState;
 					break;
 
 				case 3:
@@ -260,7 +380,7 @@ namespace XLight
 					btnHistorial.BackColorState = newState;
 					btnOpciones.BackColorState = oldState;
 					btnSalir.BackColorState = oldState;
-					btnCambiarUsuario.BackColorState = oldState;
+					BtnUsuarioSetup.BackColorState = oldState;
 					break;
 
 				case 4:
@@ -270,7 +390,7 @@ namespace XLight
 					btnHistorial.BackColorState = oldState;
 					btnOpciones.BackColorState = newState;
 					btnSalir.BackColorState = oldState;
-					btnCambiarUsuario.BackColorState = oldState;
+					BtnUsuarioSetup.BackColorState = oldState;
 					break;
 
 				case 5:
@@ -280,7 +400,7 @@ namespace XLight
 					btnHistorial.BackColorState = oldState;
 					btnOpciones.BackColorState = oldState;
 					btnSalir.BackColorState = newState;
-					btnCambiarUsuario.BackColorState = oldState;
+					BtnUsuarioSetup.BackColorState = oldState;
 					break;
 
 				case 6:
@@ -290,7 +410,7 @@ namespace XLight
 					btnHistorial.BackColorState = oldState;
 					btnOpciones.BackColorState = oldState;
 					btnSalir.BackColorState = oldState;
-					btnCambiarUsuario.BackColorState = newState;
+					BtnUsuarioSetup.BackColorState = newState;
 					break;
 
 				default:
@@ -300,7 +420,7 @@ namespace XLight
 					btnHistorial.BackColorState = oldState;
 					btnOpciones.BackColorState = oldState;
 					btnSalir.BackColorState = oldState;
-					btnCambiarUsuario.BackColorState = oldState;
+					BtnUsuarioSetup.BackColorState = oldState;
 					break;
 			}
 		}
@@ -658,7 +778,7 @@ namespace XLight
 		/// </summary>
 		public void ActualizarBusquedaRegistro()// Actualiza la busqueda de registro
 		{
-			//dataGridView1.Rows.Clear();
+			dataGridView1.Rows.Clear();
 			XmlDocument doc = new XmlDocument();
 
 			doc.Load(usuarioActual.PathClientes);
@@ -681,7 +801,7 @@ namespace XLight
 				string fecha = inCliente.SelectSingleNode("fecha").InnerText;
 				string direccion = inCliente.SelectSingleNode("direccion").InnerText;
 
-				//dataGridView1.Rows.Add(id, nombre, apellidos, dni, telefono, fecha, direccion);
+				dataGridView1.Rows.Add(id, nombre, apellidos, dni, telefono, fecha, direccion);
 			}
 		}
 
@@ -692,8 +812,8 @@ namespace XLight
 		{
 			nombresClientes.Clear();
 
-			//txtBoxBuscadorRegistro.AutoCompleteSource = AutoCompleteSource.CustomSource;
-			//txtBoxBuscadorRegistro.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+			txtBoxBuscadorRegistro.AutoCompleteSource = AutoCompleteSource.CustomSource;
+			txtBoxBuscadorRegistro.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
 			AutoCompleteStringCollection coll = new AutoCompleteStringCollection();
 
 			XmlDocument doc = new XmlDocument();
@@ -728,7 +848,7 @@ namespace XLight
 				coll.Add(name);
 			}
 
-			//txtBoxBuscadorRegistro.AutoCompleteCustomSource = coll;
+			txtBoxBuscadorRegistro.AutoCompleteCustomSource = coll;
 		}
 
 		/// <summary>
@@ -738,7 +858,7 @@ namespace XLight
 		/// <param name="e"></param>
 		private void BtnImprimirClientes_Click(object sender, EventArgs e)// Imprimir Lista
 		{
-			//printDocument1.Print();
+			printDocument1.Print();
 		}
 
 		/// <summary>
@@ -748,9 +868,9 @@ namespace XLight
 		/// <param name="e"></param>
 		private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)// Preparar pagina para imprimir
 		{
-			/*Bitmap bm = new Bitmap(this.dataGridView1.Width, this.dataGridView1.Height);
+			Bitmap bm = new Bitmap(this.dataGridView1.Width, this.dataGridView1.Height);
 			dataGridView1.DrawToBitmap(bm, new Rectangle(0, 0, this.dataGridView1.Width, this.dataGridView1.Height));
-			e.Graphics.DrawImage(bm, 10, 10);*/
+			e.Graphics.DrawImage(bm, 10, 10);
 		}
 
 		/// <summary>
@@ -780,7 +900,7 @@ namespace XLight
 				listaItems.SubItems.Add(suceso);
 				listaItems.SubItems.Add(fecha);
 
-				//listViewHistorial.Items.Add(listaItems);
+				listViewHistorial.Items.Add(listaItems);
 			}
 		}
 
@@ -895,9 +1015,9 @@ namespace XLight
 			PanelHistorial.Visible = false;
 			PanelOpciones.Visible = false;
 
-			//LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios + " >> " + "Clientes";
+			LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios + " >> " + "Clientes";
 
-			//BtnUsuarioSetup.Visible = false;
+			BtnUsuarioSetup.Visible = false;
 		}
 
 		/// <summary>
@@ -916,14 +1036,14 @@ namespace XLight
 				PanelHistorial.Visible = false;
 				PanelOpciones.Visible = false;
 
-				//LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios + " >> " + "Balance";
+				LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios + " >> " + "Balance";
 			}
 			else
 			{
 				MessageBox.Show("No tienes privilegios suficientes. Contacta con tu admin.");
 			}
 
-			//BtnUsuarioSetup.Visible = false;
+			BtnUsuarioSetup.Visible = false;
 		}
 
 		/// <summary>
@@ -942,9 +1062,9 @@ namespace XLight
 			PanelBalance.Visible = false;
 			PanelOpciones.Visible = false;
 
-			//LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios + " >> " + "Historial";
+			LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios + " >> " + "Historial";
 
-			//BtnUsuarioSetup.Visible = false;
+			BtnUsuarioSetup.Visible = false;
 		}
 
 		/// <summary>
@@ -961,9 +1081,9 @@ namespace XLight
 			PanelBalance.Visible = false;
 			PanelOpciones.Visible = true;
 
-			//LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios + " >> " + "Opciones";
+			LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios + " >> " + "Opciones";
 
-			/*LblData.Text = configuracionActual.PathData;
+			LblData.Text = configuracionActual.PathData;
 			LblUsuarios.Text = configuracionActual.PathUsuarios;
 			LblClientes.Text = usuarioActual.PathClientes;
 			LblHistorial.Text = usuarioActual.PathHistorial;
@@ -977,7 +1097,7 @@ namespace XLight
 				checkBoxAuto.CheckState = CheckState.Checked;
 			}
 
-			BtnUsuarioSetup.Visible = true;*/
+			BtnUsuarioSetup.Visible = true;
 		}
 
 		/// <summary>
@@ -987,7 +1107,7 @@ namespace XLight
 		/// <param name="e"></param>
 		private void BtnAgregarNuevoCliente_Click(object sender, EventArgs e)// Agregar cliente
 		{
-			/*if (TextNombre.Text == string.Empty)
+			if (TextNombre.Text == string.Empty)
 			{
 				MessageBox.Show("Tienes que completar nombre como minimo.");
 			}
@@ -1012,7 +1132,7 @@ namespace XLight
 
 				// Mostrar mensaje
 				MessageBox.Show("Cliente agregado.");
-			}*/
+			}
 		}
 
 		/// <summary>
@@ -1022,9 +1142,9 @@ namespace XLight
 		/// <param name="e"></param>
 		private void BtnAbrirFicha_Click(object sender, EventArgs e)// Abre la ficha del usuario
 		{
-			//dataGridView1.ClearSelection();
+			dataGridView1.ClearSelection();
 
-			/*if (txtBoxBuscadorRegistro.Text != string.Empty)
+			if (txtBoxBuscadorRegistro.Text != string.Empty)
 			{
 				string nombreFicha = txtBoxBuscadorRegistro.Text;
 
@@ -1036,7 +1156,7 @@ namespace XLight
 			else
 			{
 				MessageBox.Show("Tienes que buscar algun cliente.");
-			}*/
+			}
 		}
 
 		/// <summary>
@@ -1046,7 +1166,7 @@ namespace XLight
 		/// <param name="e"></param>
 		private void BtnBorrar_Click(object sender, EventArgs e)// Borrar un cliente
 		{
-			/*XmlDocument doc = new XmlDocument();
+			XmlDocument doc = new XmlDocument();
 			DateTime diahora = DateTime.Now;
 			string dia = diahora.ToString("dddd dd MMMM");
 			string no = "";
@@ -1095,7 +1215,7 @@ namespace XLight
 			else
 			{
 				MessageBox.Show("Primero busca un usuario");
-			}*/
+			}
 		}
 
 		/// <summary>
@@ -1105,7 +1225,7 @@ namespace XLight
 		/// <param name="e"></param>
 		private void BtnEditar_Click(object sender, EventArgs e)// Editar un usuario
 		{
-			/*if (txtBoxBuscadorRegistro.Text != string.Empty)
+			if (txtBoxBuscadorRegistro.Text != string.Empty)
 			{
 				string nombreFicha = txtBoxBuscadorRegistro.Text;
 
@@ -1117,7 +1237,7 @@ namespace XLight
 			else
 			{
 				MessageBox.Show("Tienes que buscar algun cliente.");
-			}*/
+			}
 		}
 
 		/// <summary>
@@ -1132,7 +1252,7 @@ namespace XLight
 			if (busqueda.ShowDialog() == DialogResult.OK)
 			{
 				string path = busqueda.SelectedPath;
-				//LblData.Text = path;
+				LblData.Text = path;
 				configuracionActual.PathData = path;
 				GuardarAjustes();
 			}
@@ -1150,7 +1270,7 @@ namespace XLight
 			if (busqueda.ShowDialog() == DialogResult.OK)
 			{
 				string path = busqueda.SelectedPath;
-				//LblUser.Text = path;
+				LblUser.Text = path;
 				configuracionActual.PathUsuarios = path;
 				GuardarAjustes();
 			}
@@ -1168,7 +1288,7 @@ namespace XLight
 			if (busqueda.ShowDialog() == DialogResult.OK)
 			{
 				string path = busqueda.FileName;
-				//LblClientes.Text = path;
+				LblClientes.Text = path;
 				usuarioActual.PathClientes = path;
 				GuardarUsuario();
 			}
@@ -1186,7 +1306,7 @@ namespace XLight
 			if (busqueda.ShowDialog() == DialogResult.OK)
 			{
 				string path = busqueda.FileName;
-				//LblHistorial.Text = path;
+				LblHistorial.Text = path;
 				usuarioActual.PathHistorial = path;
 				GuardarUsuario();
 			}
@@ -1211,7 +1331,7 @@ namespace XLight
 		/// <param name="e"></param>
 		private void checkBoxAuto_CheckStateChanged(object sender, EventArgs e)// Cambiar estado check
 		{
-			/*if (checkBoxAuto.CheckState == CheckState.Checked)
+			if (checkBoxAuto.CheckState == CheckState.Checked)
 			{
 				usuarioActual.InicioAutomatico = 1;
 			}
@@ -1220,7 +1340,7 @@ namespace XLight
 				usuarioActual.InicioAutomatico = 0;
 			}
 
-			GuardarUsuario();*/
+			GuardarUsuario();
 		}
 
 		/// <summary>
@@ -1256,7 +1376,7 @@ namespace XLight
 		/// <param name="e"></param>
 		private void BtnCrearUsuario_Click(object sender, EventArgs e)// Crear nuevo usuario
 		{
-			/*if (usuarioActual.NivelPrivilegios == 0)
+			if (usuarioActual.NivelPrivilegios == 0)
 			{
 				NuevoUsuario nUser = new NuevoUsuario(configuracionActual);
 				nUser.Show();
@@ -1264,7 +1384,7 @@ namespace XLight
 			else
 			{
 				MessageBox.Show("No tienes nivel suficiente para esta opcion.");
-			}*/
+			}
 		}
 		#endregion
 	}

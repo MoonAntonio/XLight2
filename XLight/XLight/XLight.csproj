@@ -219,6 +219,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Logo_Tocayo_512_MasRosa.ico" />
+    <None Include="Resources\Add to Favorites_50px.png" />
+    <None Include="Resources\Sort_50px.png" />
+    <None Include="Resources\Versions_50px.png" />
+    <None Include="Resources\Avatar.png" />
+    <None Include="Resources\Audio Wave_50px.png" />
+    <None Include="Resources\Process_50px.png" />
+    <None Include="Resources\Plus Math_50px.png" />
+    <None Include="Resources\Plus Math_100px.png" />
+    <None Include="Resources\Kodi_100px.png" />
+    <None Include="Resources\Tick Box_100px.png" />
+    <None Include="Resources\Fire_100px.png" />
+    <None Include="Resources\Realtime_100px.png" />
+    <None Include="Resources\Clash Royale_100px.png" />
     <None Include="Resources\Round_100px.png" />
     <None Include="Resources\Play_100px.png" />
     <None Include="Resources\Cuphead_100px.png" />

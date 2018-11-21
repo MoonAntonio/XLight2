@@ -147,8 +147,9 @@ namespace XLight.Forms
 						configuracionActual.UltimoUser = usuarioActual.Nombre;
 
 						MenuGeneral main = new MenuGeneral(configuracionActual, usuarioActual);
-						main.Show();
 						this.Close();
+						main.Show();
+						
 
 						return;
 					}

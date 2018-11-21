@@ -36,6 +36,8 @@
 			this.lblVersion = new Bunifu.Framework.UI.BunifuCustomLabel();
 			this.lblSeguimiento = new Bunifu.Framework.UI.BunifuCustomLabel();
 			this.Temporizador = new System.Windows.Forms.Timer(this.components);
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// bunifuElipse1
@@ -95,12 +97,23 @@
 			this.Temporizador.Interval = 3;
 			this.Temporizador.Tick += new System.EventHandler(this.Temporizador_Tick);
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = global::XLight.Properties.Resources.Kodi_100px;
+			this.pictureBox1.Location = new System.Drawing.Point(508, 9);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(218, 118);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox1.TabIndex = 5;
+			this.pictureBox1.TabStop = false;
+			// 
 			// Splash
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
 			this.ClientSize = new System.Drawing.Size(738, 192);
+			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.lblSeguimiento);
 			this.Controls.Add(this.lblVersion);
 			this.Controls.Add(this.lblTitulo);
@@ -110,6 +123,7 @@
 			this.Name = "Splash";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Splash";
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -123,5 +137,6 @@
 		private Bunifu.Framework.UI.BunifuCustomLabel lblTitulo;
 		private Bunifu.Framework.UI.BunifuProgressBar progressBarBorde;
 		private System.Windows.Forms.Timer Temporizador;
+		private System.Windows.Forms.PictureBox pictureBox1;
 	}
 }
