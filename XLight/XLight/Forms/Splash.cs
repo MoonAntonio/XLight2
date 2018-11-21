@@ -35,17 +35,7 @@ namespace XLight.Forms
 		public Splash()// Constructor de Splash
 		{
 			InitializeComponent();
-		}
-		#endregion
 
-		#region Loader
-		/// <summary>
-		/// <para>Loader de <see cref="Splash"/>.</para>
-		/// </summary>
-		/// <param name="sender"></param>
-		/// <param name="e"></param>
-		private void Splash_Load(object sender, EventArgs e)// Loader de Splash
-		{
 			// Comprobar si existen ajustes
 			// Si no existen ajustes , crearlos
 			if (!File.Exists("Ajustes/ajustes.xml"))
@@ -78,6 +68,18 @@ namespace XLight.Forms
 		}
 		#endregion
 
+		#region Loader
+		/// <summary>
+		/// <para>Loader de <see cref="Splash"/>.</para>
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void Splash_Load(object sender, EventArgs e)// Loader de Splash
+		{
+			
+		}
+		#endregion
+
 		#region Metodos Privados
 		/// <summary>
 		/// <para>Temporizador</para>
@@ -88,14 +90,18 @@ namespace XLight.Forms
 		{
 			try
 			{
-				progressBarBorde.Value += 1;
-				ProcesarTexto();
 				if (progressBarBorde.Value >= 100)
 				{
 					Temporizador.Stop();
 					Login login = new Login(configuracionActual);
+					//Login login = new Login();
 					login.Show();
 					this.Hide();
+				}
+				else
+				{
+					progressBarBorde.Value += 1;
+					ProcesarTexto();
 				}
 			}
 			catch (Exception)

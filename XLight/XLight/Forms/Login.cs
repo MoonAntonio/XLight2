@@ -52,6 +52,18 @@ namespace XLight.Forms
 		public Login()// Constructor de Login
 		{
 			InitializeComponent();
+
+			CargarUsuarioAnterior();
+
+			// Si esta activado autologin, logear
+			if (Extensiones.Extensiones.GetValor(usuarioActual.InicioAutomatico) == true)
+			{
+				CargarUsuarioActivo();
+			}
+			else
+			{
+				CargarUsuarios();
+			}
 		}
 
 		/// <summary>
@@ -64,6 +76,18 @@ namespace XLight.Forms
 			configuracionActual = new Ajustes(config.PathData, config.PathUsuarios, config.PathAjustes, config.UltimoUser);
 
 			InitializeComponent();
+
+			CargarUsuarioAnterior();
+
+			// Si esta activado autologin, logear
+			if (Extensiones.Extensiones.GetValor(usuarioActual.InicioAutomatico) == true)
+			{
+				CargarUsuarioActivo();
+			}
+			else
+			{
+				CargarUsuarios();
+			}
 		}
 
 		/// <summary>
@@ -78,17 +102,7 @@ namespace XLight.Forms
 			formCentral = mainForm;
 
 			InitializeComponent();
-		}
-		#endregion
 
-		#region Loader
-		/// <summary>
-		/// <para>Loader de <see cref="Login"/>.</para>
-		/// </summary>
-		/// <param name="sender"></param>
-		/// <param name="e"></param>
-		private void Login_Load(object sender, EventArgs e)// Loader de Login
-		{
 			CargarUsuarioAnterior();
 
 			// Si esta activado autologin, logear
@@ -100,6 +114,18 @@ namespace XLight.Forms
 			{
 				CargarUsuarios();
 			}
+		}
+		#endregion
+
+		#region Loader
+		/// <summary>
+		/// <para>Loader de <see cref="Login"/>.</para>
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void Login_Load(object sender, EventArgs e)// Loader de Login
+		{
+
 		}
 		#endregion
 

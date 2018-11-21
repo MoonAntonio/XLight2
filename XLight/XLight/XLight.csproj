@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Ajustes.cs" />
+    <Compile Include="Clases\Cliente.cs" />
     <Compile Include="Clases\Usuario.cs" />
     <Compile Include="Clases\Xml.cs" />
     <Compile Include="Extensiones\Extensiones.cs" />

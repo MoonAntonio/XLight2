@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
 			this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
 			this.progressBarBorde = new Bunifu.Framework.UI.BunifuProgressBar();
 			this.lblTitulo = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -91,7 +92,7 @@
 			// Temporizador
 			// 
 			this.Temporizador.Enabled = true;
-			this.Temporizador.Interval = 1;
+			this.Temporizador.Interval = 3;
 			this.Temporizador.Tick += new System.EventHandler(this.Temporizador_Tick);
 			// 
 			// Splash
@@ -105,6 +106,7 @@
 			this.Controls.Add(this.lblTitulo);
 			this.Controls.Add(this.progressBarBorde);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Splash";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Splash";

@@ -39,6 +39,7 @@
 			this.InputName = new Bunifu.Framework.UI.BunifuTextbox();
 			this.InputPassword = new Bunifu.Framework.UI.BunifuTextbox();
 			this.LblTitulo = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
 			this.bunifuGradientPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.bunifuGradientPanel3.SuspendLayout();
@@ -188,6 +189,13 @@
 			this.LblTitulo.TabIndex = 0;
 			this.LblTitulo.Text = "Conectar";
 			// 
+			// bunifuDragControl1
+			// 
+			this.bunifuDragControl1.Fixed = true;
+			this.bunifuDragControl1.Horizontal = true;
+			this.bunifuDragControl1.TargetControl = this.LblTitulo;
+			this.bunifuDragControl1.Vertical = true;
+			// 
 			// Login
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -195,6 +203,7 @@
 			this.ClientSize = new System.Drawing.Size(375, 495);
 			this.Controls.Add(this.bunifuGradientPanel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Login";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Login";
@@ -218,5 +227,6 @@
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnLogin;
 		private Bunifu.Framework.UI.BunifuCustomLabel LblTitulo;
+		private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
 	}
 }
