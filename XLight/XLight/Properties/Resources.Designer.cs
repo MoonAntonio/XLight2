@@ -193,9 +193,29 @@ namespace XLight.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Login_50px {
+            get {
+                object obj = ResourceManager.GetObject("Login_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Minimize_Window_100px {
             get {
                 object obj = ResourceManager.GetObject("Minimize Window_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Name_Tag_50px {
+            get {
+                object obj = ResourceManager.GetObject("Name Tag_50px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -256,6 +276,16 @@ namespace XLight.Properties {
         internal static System.Drawing.Bitmap Target_100px {
             get {
                 object obj = ResourceManager.GetObject("Target_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Unlock_50px {
+            get {
+                object obj = ResourceManager.GetObject("Unlock_50px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

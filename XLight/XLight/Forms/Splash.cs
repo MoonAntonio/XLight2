@@ -15,7 +15,6 @@ using System.Windows.Forms;
 using System.Xml;
 using XLight.Clases;
 using XLight.Forms;
-using AutoUpdaterDotNET;
 #endregion
 
 namespace XLight.Forms
@@ -36,7 +35,6 @@ namespace XLight.Forms
 		public Splash()// Constructor de Splash
 		{
 			InitializeComponent();
-			AutoUpdater.Start("http://rbsoft.org/updates/AutoUpdaterTest.xml");
 		}
 		#endregion
 
@@ -48,7 +46,35 @@ namespace XLight.Forms
 		/// <param name="e"></param>
 		private void Splash_Load(object sender, EventArgs e)// Loader de Splash
 		{
-			
+			// Comprobar si existen ajustes
+			// Si no existen ajustes , crearlos
+			if (!File.Exists("Ajustes/ajustes.xml"))
+			{
+				// Generar las paths
+				string pD = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Data");
+				string pU = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), pD + @"\Usuarios");
+				string pA = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Ajustes\ajustes.xml");
+				string uU = "Admin";
+
+				// Crear ajustes
+				configuracionActual = new Ajustes(pD, pU, pA, uU);
+
+				// Crear directorios
+				Directory.CreateDirectory("Data");
+				Directory.CreateDirectory("Data/Usuarios/Admin");
+				Directory.CreateDirectory("Ajustes");
+
+				// Crear Datas
+				CrearAjustes("Ajustes/ajustes.xml", "Ajustes");
+				CrearClientes("Data/Usuarios/Admin/clientes.xml", "Clientes");
+				CrearHistorial("Data/Usuarios/Admin/historial.xml", "Entradas");
+				CrearUsuario("Data/Usuarios/usuarios.xml", "Usuarios");
+			}
+			else
+			{
+				// Si existen guardarlos
+				CargarAjustes(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Ajustes\ajustes.xml"));
+			}
 		}
 		#endregion
 
@@ -66,7 +92,10 @@ namespace XLight.Forms
 				ProcesarTexto();
 				if (progressBarBorde.Value >= 100)
 				{
-
+					Temporizador.Stop();
+					Login login = new Login(configuracionActual);
+					login.Show();
+					this.Hide();
 				}
 			}
 			catch (Exception)

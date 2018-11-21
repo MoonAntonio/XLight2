@@ -1,23 +1,60 @@
-﻿using System;
+﻿//                                  ┌∩┐(◣_◢)┌∩┐
+//                                                                              \\
+// Main.cs (01/10/2017)                                              			\\
+// Autor: Antonio Mateo (Moon Pincho) 									        \\
+// Descripcion:     Formulario de Main											\\
+// Fecha Mod:       01/10/2017                                                  \\
+// Ultima Mod:      Version Inicial												\\
+//******************************************************************************\\
+
+#region Librerias
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+using System.Reflection;
 using System.Windows.Forms;
-using VisualPlus.Toolkit.Controls.Interactivity;
+using System.Xml;
+using XLight.Clases;
+#endregion
 
 namespace XLight
 {
 	public partial class MenuGeneral : Form
 	{
+
+		#region Variables Publicas
+		/// <summary>
+		/// <para>Configuracion actual de los ajustes.</para>
+		/// </summary>
+		public Ajustes configuracionActual;                                     // Configuracion actual de los ajustes
+		/// <summary>
+		/// <para>Usuario actual del sistema.</para>
+		/// </summary>
+		public Usuario usuarioActual;                                           // Usuario actual del sistema
+		/// <summary>
+		/// <para>Nombre de los clientes</para>
+		/// </summary>
+		public List<string> nombresClientes = new List<string>();				// Nombre de los clientes
+		#endregion
+
+		#region Variables Privadas
+		/// <summary>
+		/// <para>Id actual</para>
+		/// </summary>
+		private int idActual;                                                   // Id actual
 		List<Dictionary<string, Color>> templates = new List<Dictionary<string, Color>>();
 		int cur_template = 0;
 		DateTime endTime = DateTime.Now;
 		private int selectBtn = 0;
+		#endregion
 
+
+		#region Constructores
+		/// <summary>
+		/// <para>Constructor de <see cref="Main"/>.</para>
+		/// </summary>
 		public MenuGeneral()
 		{
 			InitializeComponent();
@@ -28,6 +65,18 @@ namespace XLight
 
 			actualizadorDia.Start();
 		}
+
+		/// <summary>
+		/// <para>Constructor de <see cref="Main"/>.</para>
+		/// </summary>
+		public MenuGeneral(Ajustes config, Usuario user)// Constructor de Main
+		{
+			configuracionActual = config;
+			usuarioActual = user;
+
+			InitializeComponent();
+		}
+		#endregion
 
 		#region Metodos Btns
 		private void btnInicio_Click(object sender, EventArgs e)
