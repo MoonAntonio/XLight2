@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CambiarContrase));
 			this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
 			this.visualTextBox1 = new VisualPlus.Toolkit.Controls.Editors.VisualTextBox();
 			this.visualTextBox2 = new VisualPlus.Toolkit.Controls.Editors.VisualTextBox();
@@ -261,6 +262,7 @@
 			this.Controls.Add(this.visualTextBox2);
 			this.Controls.Add(this.visualTextBox1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "CambiarContrase";
 			this.Text = "CambiarContrase";
 			this.ResumeLayout(false);
