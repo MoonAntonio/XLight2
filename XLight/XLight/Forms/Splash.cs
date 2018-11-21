@@ -8,7 +8,6 @@
 //******************************************************************************\\
 
 #region Librerias
-using SharpUpdate;
 using System;
 using System.IO;
 using System.Reflection;
@@ -27,7 +26,6 @@ namespace XLight.Forms
 		/// <para>Configuracion actual de los ajustes.</para>
 		/// </summary>
 		public Ajustes configuracionActual;                                     // Configuracion actual de los ajustes
-		private SharpUpdater updater;
 		#endregion
 
 		#region Constructor
@@ -38,7 +36,6 @@ namespace XLight.Forms
 		{
 			InitializeComponent();
 
-			updater = new SharpUpdater(Assembly.GetExecutingAssembly(), this, new Uri("update-xml-location"));
 		}
 		#endregion
 
@@ -50,7 +47,7 @@ namespace XLight.Forms
 		/// <param name="e"></param>
 		private void Splash_Load(object sender, EventArgs e)// Loader de Splash
 		{
-			updater.DoUpdate();
+			
 		}
 		#endregion
 
