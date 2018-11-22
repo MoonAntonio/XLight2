@@ -37,7 +37,8 @@ namespace XLight
 		/// <summary>
 		/// <para>Nombre de los clientes</para>
 		/// </summary>
-		public List<string> nombresClientes = new List<string>();				// Nombre de los clientes
+		public List<string> nombresClientes = new List<string>();               // Nombre de los clientes
+		public int segundos = 0;
 		#endregion
 
 		#region Variables Privadas
@@ -49,6 +50,7 @@ namespace XLight
 		int cur_template = 0;
 		DateTime endTime = DateTime.Now;
 		private int selectBtn = 0;
+		private int historialCount = 0;
 		#endregion
 
 		#region Constructores
@@ -99,6 +101,22 @@ namespace XLight
 			BtnUsuarioSetup.Visible = false;
 
 			GuardarAjustes();
+
+			Random random = new Random();
+			int randomNumber = random.Next(0, 100);
+			progressMensual.Value = randomNumber;
+
+			lblClien.Text = nombresClientes.Count + " Clientes";
+			bunifuCustomLabel4.Text = historialCount + " Cambios";
+
+			if (usuarioActual.NivelPrivilegios == 0)
+			{
+				btnBalance.Visible = true;
+			}
+			else
+			{
+				btnBalance.Visible = false;
+			}
 		}
 
 		/// <summary>
@@ -152,6 +170,22 @@ namespace XLight
 			BtnUsuarioSetup.Visible = false;
 
 			GuardarAjustes();
+
+			Random random = new Random();
+			int randomNumber = random.Next(0, 100);
+			progressMensual.Value = randomNumber;
+
+			lblClien.Text = nombresClientes.Count + " Clientes";
+			bunifuCustomLabel4.Text = historialCount + " Cambios";
+
+			if (usuarioActual.NivelPrivilegios == 0)
+			{
+				btnBalance.Visible = true;
+			}
+			else
+			{
+				btnBalance.Visible = false;
+			}
 		}
 		#endregion
 
@@ -171,6 +205,13 @@ namespace XLight
 			LblUser.Text = "." + usuarioActual.Nombre + " nvl." + usuarioActual.NivelPrivilegios + " >> " + "Inicio";
 
 			BtnUsuarioSetup.Visible = false;
+
+			Random random = new Random();
+			int randomNumber = random.Next(0, 100);
+			progressMensual.Value = randomNumber;
+
+			lblClien.Text = nombresClientes.Count + " Clientes";
+			bunifuCustomLabel4.Text = historialCount + " Cambios";
 		}
 
 		private void btnClientes_Click(object sender, EventArgs e)
@@ -878,6 +919,9 @@ namespace XLight
 		/// </summary>
 		private void CargarHistorial()// Carga el historial
 		{
+			historialCount = 0;
+			listViewHistorial.Items.Clear();
+
 			XmlDocument doc = new XmlDocument();
 
 			doc.Load(usuarioActual.PathHistorial);
@@ -901,6 +945,8 @@ namespace XLight
 				listaItems.SubItems.Add(fecha);
 
 				listViewHistorial.Items.Add(listaItems);
+
+				historialCount++;
 			}
 		}
 
@@ -1387,5 +1433,11 @@ namespace XLight
 			}
 		}
 		#endregion
+
+		private void Update_Tick(object sender, EventArgs e)
+		{
+			segundos++;
+			lblConectado.Text = segundos + " s.";
+		}
 	}
 }

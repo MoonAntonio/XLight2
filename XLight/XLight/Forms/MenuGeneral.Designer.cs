@@ -29,24 +29,32 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
 			BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
-			BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
-			BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuGeneral));
+			BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+			BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
+			BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
 			this.buniElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
 			this.panelControl = new System.Windows.Forms.Panel();
+			this.btnSalir = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.BtnUsuarioSetup = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.separadorInferior = new Bunifu.Framework.UI.BunifuSeparator();
+			this.btnOpciones = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.btnHistorial = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.btnBalance = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.btnClientes = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.separadorSuperior = new Bunifu.Framework.UI.BunifuSeparator();
+			this.btnInicio = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
+			this.imgLogoAmpliado = new System.Windows.Forms.PictureBox();
 			this.header = new System.Windows.Forms.Panel();
+			this.LblUser = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.btnTransparente = new Bunifu.Framework.UI.BunifuImageButton();
+			this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+			this.btnSlider = new Bunifu.Framework.UI.BunifuImageButton();
+			this.btnMaximizar = new Bunifu.Framework.UI.BunifuImageButton();
 			this.lblSuperior = new Bunifu.Framework.UI.BunifuCustomLabel();
 			this.controlDrag = new Bunifu.Framework.UI.BunifuDragControl(this.components);
 			this.logoAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
-			this.panelControlAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
-			this.panelControlAnimator2 = new BunifuAnimatorNS.BunifuTransition(this.components);
-			this.actualizadorDia = new System.Windows.Forms.Timer(this.components);
-			this.transi1 = new BunifuAnimatorNS.BunifuTransition(this.components);
-			this.printDocument1 = new System.Drawing.Printing.PrintDocument();
 			this.PanelOpciones = new Bunifu.Framework.UI.BunifuGradientPanel();
 			this.visualGroupBox2 = new VisualPlus.Toolkit.Controls.Layout.VisualGroupBox();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -143,21 +151,19 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.label8 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.btnSalir = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
-			this.BtnUsuarioSetup = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
-			this.btnOpciones = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
-			this.btnHistorial = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
-			this.btnBalance = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
-			this.btnClientes = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
-			this.btnInicio = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
-			this.imgLogoAmpliado = new System.Windows.Forms.PictureBox();
-			this.btnTransparente = new Bunifu.Framework.UI.BunifuImageButton();
-			this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-			this.btnSlider = new Bunifu.Framework.UI.BunifuImageButton();
-			this.btnMaximizar = new Bunifu.Framework.UI.BunifuImageButton();
-			this.LblUser = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.panelControlAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
+			this.panelControlAnimator2 = new BunifuAnimatorNS.BunifuTransition(this.components);
+			this.actualizadorDia = new System.Windows.Forms.Timer(this.components);
+			this.transi1 = new BunifuAnimatorNS.BunifuTransition(this.components);
+			this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+			this.Update = new System.Windows.Forms.Timer(this.components);
 			this.panelControl.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.imgLogoAmpliado)).BeginInit();
 			this.header.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.btnTransparente)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnSlider)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
 			this.PanelOpciones.SuspendLayout();
 			this.visualGroupBox2.SuspendLayout();
 			this.groupBox1.SuspendLayout();
@@ -179,11 +185,6 @@
 			this.card1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.panelBase.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.imgLogoAmpliado)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.btnTransparente)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.btnSlider)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// buniElipse
@@ -214,6 +215,80 @@
 			this.panelControl.Size = new System.Drawing.Size(256, 597);
 			this.panelControl.TabIndex = 0;
 			// 
+			// btnSalir
+			// 
+			this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnSalir.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnSalir.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.btnSalir.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.btnSalir.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.btnSalir.Border.Color = System.Drawing.Color.White;
+			this.btnSalir.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.btnSalir.Border.HoverVisible = true;
+			this.btnSalir.Border.Rounding = 6;
+			this.btnSalir.Border.Thickness = 1;
+			this.btnSalir.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.btnSalir.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.btnSalir, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.btnSalir, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.btnSalir, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.btnSalir, BunifuAnimatorNS.DecorationType.None);
+			this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSalir.ForeColor = System.Drawing.Color.White;
+			this.btnSalir.Image = global::XLight.Properties.Resources.Shutdown_50px;
+			this.btnSalir.Location = new System.Drawing.Point(12, 441);
+			this.btnSalir.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.btnSalir.Name = "btnSalir";
+			this.btnSalir.Size = new System.Drawing.Size(228, 52);
+			this.btnSalir.TabIndex = 10;
+			this.btnSalir.Text = "               Salir";
+			this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnSalir.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.btnSalir.TextStyle.Enabled = System.Drawing.Color.White;
+			this.btnSalir.TextStyle.Hover = System.Drawing.Color.White;
+			this.btnSalir.TextStyle.Pressed = System.Drawing.Color.White;
+			this.btnSalir.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.btnSalir.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.btnSalir.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+			// 
+			// BtnUsuarioSetup
+			// 
+			this.BtnUsuarioSetup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.BtnUsuarioSetup.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.BtnUsuarioSetup.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.BtnUsuarioSetup.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.BtnUsuarioSetup.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.BtnUsuarioSetup.Border.Color = System.Drawing.Color.White;
+			this.BtnUsuarioSetup.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.BtnUsuarioSetup.Border.HoverVisible = true;
+			this.BtnUsuarioSetup.Border.Rounding = 6;
+			this.BtnUsuarioSetup.Border.Thickness = 1;
+			this.BtnUsuarioSetup.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.BtnUsuarioSetup.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.BtnUsuarioSetup, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.BtnUsuarioSetup, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.BtnUsuarioSetup, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.BtnUsuarioSetup, BunifuAnimatorNS.DecorationType.None);
+			this.BtnUsuarioSetup.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnUsuarioSetup.ForeColor = System.Drawing.Color.White;
+			this.BtnUsuarioSetup.Image = global::XLight.Properties.Resources.Console_50px;
+			this.BtnUsuarioSetup.Location = new System.Drawing.Point(12, 533);
+			this.BtnUsuarioSetup.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.BtnUsuarioSetup.Name = "BtnUsuarioSetup";
+			this.BtnUsuarioSetup.Size = new System.Drawing.Size(228, 52);
+			this.BtnUsuarioSetup.TabIndex = 9;
+			this.BtnUsuarioSetup.Text = "      Cambiar Usuario";
+			this.BtnUsuarioSetup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.BtnUsuarioSetup.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.BtnUsuarioSetup.TextStyle.Enabled = System.Drawing.Color.White;
+			this.BtnUsuarioSetup.TextStyle.Hover = System.Drawing.Color.White;
+			this.BtnUsuarioSetup.TextStyle.Pressed = System.Drawing.Color.White;
+			this.BtnUsuarioSetup.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnUsuarioSetup.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.BtnUsuarioSetup.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.BtnUsuarioSetup.Click += new System.EventHandler(this.BtnUsuarioSetup_Click);
+			// 
 			// separadorInferior
 			// 
 			this.separadorInferior.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -231,6 +306,154 @@
 			this.separadorInferior.Transparency = 255;
 			this.separadorInferior.Vertical = false;
 			// 
+			// btnOpciones
+			// 
+			this.btnOpciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnOpciones.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnOpciones.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.btnOpciones.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.btnOpciones.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.btnOpciones.Border.Color = System.Drawing.Color.White;
+			this.btnOpciones.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.btnOpciones.Border.HoverVisible = true;
+			this.btnOpciones.Border.Rounding = 6;
+			this.btnOpciones.Border.Thickness = 1;
+			this.btnOpciones.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.btnOpciones.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.btnOpciones, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.btnOpciones, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.btnOpciones, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.btnOpciones, BunifuAnimatorNS.DecorationType.None);
+			this.btnOpciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnOpciones.ForeColor = System.Drawing.Color.White;
+			this.btnOpciones.Image = global::XLight.Properties.Resources.Slider__50px;
+			this.btnOpciones.Location = new System.Drawing.Point(12, 383);
+			this.btnOpciones.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.btnOpciones.Name = "btnOpciones";
+			this.btnOpciones.Size = new System.Drawing.Size(228, 52);
+			this.btnOpciones.TabIndex = 7;
+			this.btnOpciones.Text = "           Opciones";
+			this.btnOpciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnOpciones.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.btnOpciones.TextStyle.Enabled = System.Drawing.Color.White;
+			this.btnOpciones.TextStyle.Hover = System.Drawing.Color.White;
+			this.btnOpciones.TextStyle.Pressed = System.Drawing.Color.White;
+			this.btnOpciones.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.btnOpciones.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.btnOpciones.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.btnOpciones.Click += new System.EventHandler(this.btnOpciones_Click);
+			// 
+			// btnHistorial
+			// 
+			this.btnHistorial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnHistorial.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnHistorial.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.btnHistorial.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.btnHistorial.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.btnHistorial.Border.Color = System.Drawing.Color.White;
+			this.btnHistorial.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.btnHistorial.Border.HoverVisible = true;
+			this.btnHistorial.Border.Rounding = 6;
+			this.btnHistorial.Border.Thickness = 1;
+			this.btnHistorial.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.btnHistorial.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.btnHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.btnHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.btnHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.btnHistorial, BunifuAnimatorNS.DecorationType.None);
+			this.btnHistorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnHistorial.ForeColor = System.Drawing.Color.White;
+			this.btnHistorial.Image = global::XLight.Properties.Resources.Heart_with_Pulse_50px;
+			this.btnHistorial.Location = new System.Drawing.Point(12, 325);
+			this.btnHistorial.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.btnHistorial.Name = "btnHistorial";
+			this.btnHistorial.Size = new System.Drawing.Size(228, 52);
+			this.btnHistorial.TabIndex = 6;
+			this.btnHistorial.Text = "            Historial";
+			this.btnHistorial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnHistorial.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.btnHistorial.TextStyle.Enabled = System.Drawing.Color.White;
+			this.btnHistorial.TextStyle.Hover = System.Drawing.Color.White;
+			this.btnHistorial.TextStyle.Pressed = System.Drawing.Color.White;
+			this.btnHistorial.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.btnHistorial.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.btnHistorial.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
+			// 
+			// btnBalance
+			// 
+			this.btnBalance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnBalance.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnBalance.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.btnBalance.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.btnBalance.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.btnBalance.Border.Color = System.Drawing.Color.White;
+			this.btnBalance.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.btnBalance.Border.HoverVisible = true;
+			this.btnBalance.Border.Rounding = 6;
+			this.btnBalance.Border.Thickness = 1;
+			this.btnBalance.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.btnBalance.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.btnBalance, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.btnBalance, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.btnBalance, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.btnBalance, BunifuAnimatorNS.DecorationType.None);
+			this.btnBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBalance.ForeColor = System.Drawing.Color.White;
+			this.btnBalance.Image = global::XLight.Properties.Resources.Combo_Chart_50px;
+			this.btnBalance.Location = new System.Drawing.Point(12, 267);
+			this.btnBalance.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.btnBalance.Name = "btnBalance";
+			this.btnBalance.Size = new System.Drawing.Size(228, 52);
+			this.btnBalance.TabIndex = 5;
+			this.btnBalance.Text = "            Balance";
+			this.btnBalance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnBalance.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.btnBalance.TextStyle.Enabled = System.Drawing.Color.White;
+			this.btnBalance.TextStyle.Hover = System.Drawing.Color.White;
+			this.btnBalance.TextStyle.Pressed = System.Drawing.Color.White;
+			this.btnBalance.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.btnBalance.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.btnBalance.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.btnBalance.Click += new System.EventHandler(this.btnBalance_Click);
+			// 
+			// btnClientes
+			// 
+			this.btnClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnClientes.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnClientes.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.btnClientes.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.btnClientes.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.btnClientes.Border.Color = System.Drawing.Color.White;
+			this.btnClientes.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.btnClientes.Border.HoverVisible = true;
+			this.btnClientes.Border.Rounding = 6;
+			this.btnClientes.Border.Thickness = 1;
+			this.btnClientes.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.btnClientes.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.btnClientes, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.btnClientes, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.btnClientes, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.btnClientes, BunifuAnimatorNS.DecorationType.None);
+			this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnClientes.ForeColor = System.Drawing.Color.White;
+			this.btnClientes.Image = global::XLight.Properties.Resources.Customer_50px;
+			this.btnClientes.Location = new System.Drawing.Point(12, 209);
+			this.btnClientes.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.btnClientes.Name = "btnClientes";
+			this.btnClientes.Size = new System.Drawing.Size(228, 52);
+			this.btnClientes.TabIndex = 4;
+			this.btnClientes.Text = "            Clientes";
+			this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnClientes.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.btnClientes.TextStyle.Enabled = System.Drawing.Color.White;
+			this.btnClientes.TextStyle.Hover = System.Drawing.Color.White;
+			this.btnClientes.TextStyle.Pressed = System.Drawing.Color.White;
+			this.btnClientes.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.btnClientes.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.btnClientes.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+			// 
 			// separadorSuperior
 			// 
 			this.separadorSuperior.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -247,6 +470,58 @@
 			this.separadorSuperior.TabIndex = 3;
 			this.separadorSuperior.Transparency = 255;
 			this.separadorSuperior.Vertical = false;
+			// 
+			// btnInicio
+			// 
+			this.btnInicio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnInicio.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnInicio.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+			this.btnInicio.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.btnInicio.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
+			this.btnInicio.Border.Color = System.Drawing.Color.White;
+			this.btnInicio.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.btnInicio.Border.HoverVisible = true;
+			this.btnInicio.Border.Rounding = 6;
+			this.btnInicio.Border.Thickness = 1;
+			this.btnInicio.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.btnInicio.Border.Visible = true;
+			this.logoAnimator.SetDecoration(this.btnInicio, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.btnInicio, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.btnInicio, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.btnInicio, BunifuAnimatorNS.DecorationType.None);
+			this.btnInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnInicio.ForeColor = System.Drawing.Color.White;
+			this.btnInicio.Image = global::XLight.Properties.Resources.Registry_Editor_50px;
+			this.btnInicio.Location = new System.Drawing.Point(12, 151);
+			this.btnInicio.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.btnInicio.Name = "btnInicio";
+			this.btnInicio.Size = new System.Drawing.Size(228, 52);
+			this.btnInicio.TabIndex = 1;
+			this.btnInicio.Text = "          DashBoard";
+			this.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnInicio.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.btnInicio.TextStyle.Enabled = System.Drawing.Color.White;
+			this.btnInicio.TextStyle.Hover = System.Drawing.Color.White;
+			this.btnInicio.TextStyle.Pressed = System.Drawing.Color.White;
+			this.btnInicio.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.btnInicio.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.btnInicio.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
+			// 
+			// imgLogoAmpliado
+			// 
+			this.imgLogoAmpliado.Anchor = System.Windows.Forms.AnchorStyles.Left;
+			this.panelControlAnimator2.SetDecoration(this.imgLogoAmpliado, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.imgLogoAmpliado, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.imgLogoAmpliado, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.imgLogoAmpliado, BunifuAnimatorNS.DecorationType.None);
+			this.imgLogoAmpliado.Image = global::XLight.Properties.Resources.Icono;
+			this.imgLogoAmpliado.Location = new System.Drawing.Point(66, 18);
+			this.imgLogoAmpliado.Name = "imgLogoAmpliado";
+			this.imgLogoAmpliado.Size = new System.Drawing.Size(137, 95);
+			this.imgLogoAmpliado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.imgLogoAmpliado.TabIndex = 0;
+			this.imgLogoAmpliado.TabStop = false;
 			// 
 			// header
 			// 
@@ -266,6 +541,96 @@
 			this.header.Name = "header";
 			this.header.Size = new System.Drawing.Size(1188, 53);
 			this.header.TabIndex = 1;
+			// 
+			// LblUser
+			// 
+			this.LblUser.AutoSize = true;
+			this.panelControlAnimator2.SetDecoration(this.LblUser, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.LblUser, BunifuAnimatorNS.DecorationType.None);
+			this.transi1.SetDecoration(this.LblUser, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.LblUser, BunifuAnimatorNS.DecorationType.None);
+			this.LblUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.LblUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
+			this.LblUser.Location = new System.Drawing.Point(146, 17);
+			this.LblUser.Name = "LblUser";
+			this.LblUser.Size = new System.Drawing.Size(57, 21);
+			this.LblUser.TabIndex = 9;
+			this.LblUser.Text = "XLight";
+			// 
+			// btnTransparente
+			// 
+			this.btnTransparente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnTransparente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.transi1.SetDecoration(this.btnTransparente, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.btnTransparente, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.btnTransparente, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.btnTransparente, BunifuAnimatorNS.DecorationType.None);
+			this.btnTransparente.Image = global::XLight.Properties.Resources.Target_100px;
+			this.btnTransparente.ImageActive = null;
+			this.btnTransparente.Location = new System.Drawing.Point(927, 7);
+			this.btnTransparente.Name = "btnTransparente";
+			this.btnTransparente.Size = new System.Drawing.Size(34, 37);
+			this.btnTransparente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.btnTransparente.TabIndex = 8;
+			this.btnTransparente.TabStop = false;
+			this.btnTransparente.Zoom = 20;
+			this.btnTransparente.Click += new System.EventHandler(this.btnTransparente_Click);
+			// 
+			// bunifuImageButton1
+			// 
+			this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.transi1.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
+			this.bunifuImageButton1.Image = global::XLight.Properties.Resources.Minimize_Window_100px;
+			this.bunifuImageButton1.ImageActive = null;
+			this.bunifuImageButton1.Location = new System.Drawing.Point(967, 7);
+			this.bunifuImageButton1.Name = "bunifuImageButton1";
+			this.bunifuImageButton1.Size = new System.Drawing.Size(34, 37);
+			this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.bunifuImageButton1.TabIndex = 7;
+			this.bunifuImageButton1.TabStop = false;
+			this.bunifuImageButton1.Zoom = 20;
+			this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+			// 
+			// btnSlider
+			// 
+			this.btnSlider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.transi1.SetDecoration(this.btnSlider, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.btnSlider, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.btnSlider, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.btnSlider, BunifuAnimatorNS.DecorationType.None);
+			this.btnSlider.Image = global::XLight.Properties.Resources.ACLC_College_100px;
+			this.btnSlider.ImageActive = null;
+			this.btnSlider.Location = new System.Drawing.Point(17, 3);
+			this.btnSlider.Name = "btnSlider";
+			this.btnSlider.Size = new System.Drawing.Size(53, 47);
+			this.btnSlider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.btnSlider.TabIndex = 6;
+			this.btnSlider.TabStop = false;
+			this.btnSlider.Zoom = 20;
+			this.btnSlider.Click += new System.EventHandler(this.btnSlider_Click);
+			// 
+			// btnMaximizar
+			// 
+			this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnMaximizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+			this.transi1.SetDecoration(this.btnMaximizar, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator.SetDecoration(this.btnMaximizar, BunifuAnimatorNS.DecorationType.None);
+			this.logoAnimator.SetDecoration(this.btnMaximizar, BunifuAnimatorNS.DecorationType.None);
+			this.panelControlAnimator2.SetDecoration(this.btnMaximizar, BunifuAnimatorNS.DecorationType.None);
+			this.btnMaximizar.Image = global::XLight.Properties.Resources.Currency_100px;
+			this.btnMaximizar.ImageActive = null;
+			this.btnMaximizar.Location = new System.Drawing.Point(1007, 7);
+			this.btnMaximizar.Name = "btnMaximizar";
+			this.btnMaximizar.Size = new System.Drawing.Size(34, 37);
+			this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.btnMaximizar.TabIndex = 4;
+			this.btnMaximizar.TabStop = false;
+			this.btnMaximizar.Zoom = 20;
+			this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
 			// 
 			// lblSuperior
 			// 
@@ -293,27 +658,6 @@
 			// 
 			this.logoAnimator.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate;
 			this.logoAnimator.Cursor = null;
-			animation4.AnimateOnlyDifferences = true;
-			animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-			animation4.LeafCoeff = 0F;
-			animation4.MaxTime = 1F;
-			animation4.MinTime = 0F;
-			animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-			animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-			animation4.MosaicSize = 0;
-			animation4.Padding = new System.Windows.Forms.Padding(30);
-			animation4.RotateCoeff = 0.5F;
-			animation4.RotateLimit = 0.2F;
-			animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-			animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-			animation4.TimeCoeff = 0F;
-			animation4.TransparencyCoeff = 0F;
-			this.logoAnimator.DefaultAnimation = animation4;
-			// 
-			// panelControlAnimator
-			// 
-			this.panelControlAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
-			this.panelControlAnimator.Cursor = null;
 			animation3.AnimateOnlyDifferences = true;
 			animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
 			animation3.LeafCoeff = 0F;
@@ -321,63 +665,15 @@
 			animation3.MinTime = 0F;
 			animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
 			animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-			animation3.MosaicSize = 1;
-			animation3.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-			animation3.RotateCoeff = 0F;
-			animation3.RotateLimit = 0F;
+			animation3.MosaicSize = 0;
+			animation3.Padding = new System.Windows.Forms.Padding(30);
+			animation3.RotateCoeff = 0.5F;
+			animation3.RotateLimit = 0.2F;
 			animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
 			animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-			animation3.TimeCoeff = 2F;
+			animation3.TimeCoeff = 0F;
 			animation3.TransparencyCoeff = 0F;
-			this.panelControlAnimator.DefaultAnimation = animation3;
-			// 
-			// panelControlAnimator2
-			// 
-			this.panelControlAnimator2.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
-			this.panelControlAnimator2.Cursor = null;
-			animation1.AnimateOnlyDifferences = true;
-			animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-			animation1.LeafCoeff = 0F;
-			animation1.MaxTime = 1F;
-			animation1.MinTime = 0F;
-			animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-			animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-			animation1.MosaicSize = 0;
-			animation1.Padding = new System.Windows.Forms.Padding(0);
-			animation1.RotateCoeff = 0F;
-			animation1.RotateLimit = 0F;
-			animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-			animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-			animation1.TimeCoeff = 0F;
-			animation1.TransparencyCoeff = 0F;
-			this.panelControlAnimator2.DefaultAnimation = animation1;
-			// 
-			// actualizadorDia
-			// 
-			this.actualizadorDia.Interval = 1000;
-			this.actualizadorDia.Tick += new System.EventHandler(this.actualizadorDia_Tick);
-			// 
-			// transi1
-			// 
-			this.transi1.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
-			this.transi1.Cursor = null;
-			animation2.AnimateOnlyDifferences = true;
-			animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-			animation2.LeafCoeff = 0F;
-			animation2.MaxTime = 1F;
-			animation2.MinTime = 0F;
-			animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-			animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-			animation2.MosaicSize = 0;
-			animation2.Padding = new System.Windows.Forms.Padding(0);
-			animation2.RotateCoeff = 0F;
-			animation2.RotateLimit = 0F;
-			animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-			animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-			animation2.TimeCoeff = 0F;
-			animation2.TransparencyCoeff = 0F;
-			this.transi1.DefaultAnimation = animation2;
-			this.transi1.Interval = 15;
+			this.logoAnimator.DefaultAnimation = animation3;
 			// 
 			// PanelOpciones
 			// 
@@ -2644,370 +2940,79 @@
 			this.label3.TabIndex = 13;
 			this.label3.Text = ":";
 			// 
-			// btnSalir
+			// panelControlAnimator
 			// 
-			this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnSalir.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnSalir.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-			this.btnSalir.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-			this.btnSalir.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
-			this.btnSalir.Border.Color = System.Drawing.Color.White;
-			this.btnSalir.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.btnSalir.Border.HoverVisible = true;
-			this.btnSalir.Border.Rounding = 6;
-			this.btnSalir.Border.Thickness = 1;
-			this.btnSalir.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-			this.btnSalir.Border.Visible = true;
-			this.logoAnimator.SetDecoration(this.btnSalir, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.btnSalir, BunifuAnimatorNS.DecorationType.None);
-			this.transi1.SetDecoration(this.btnSalir, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator2.SetDecoration(this.btnSalir, BunifuAnimatorNS.DecorationType.None);
-			this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSalir.ForeColor = System.Drawing.Color.White;
-			this.btnSalir.Image = global::XLight.Properties.Resources.Shutdown_50px;
-			this.btnSalir.Location = new System.Drawing.Point(12, 441);
-			this.btnSalir.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-			this.btnSalir.Name = "btnSalir";
-			this.btnSalir.Size = new System.Drawing.Size(228, 52);
-			this.btnSalir.TabIndex = 10;
-			this.btnSalir.Text = "               Salir";
-			this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.btnSalir.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-			this.btnSalir.TextStyle.Enabled = System.Drawing.Color.White;
-			this.btnSalir.TextStyle.Hover = System.Drawing.Color.White;
-			this.btnSalir.TextStyle.Pressed = System.Drawing.Color.White;
-			this.btnSalir.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-			this.btnSalir.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-			this.btnSalir.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-			this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+			this.panelControlAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
+			this.panelControlAnimator.Cursor = null;
+			animation2.AnimateOnlyDifferences = true;
+			animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+			animation2.LeafCoeff = 0F;
+			animation2.MaxTime = 1F;
+			animation2.MinTime = 0F;
+			animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+			animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+			animation2.MosaicSize = 1;
+			animation2.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+			animation2.RotateCoeff = 0F;
+			animation2.RotateLimit = 0F;
+			animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+			animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+			animation2.TimeCoeff = 2F;
+			animation2.TransparencyCoeff = 0F;
+			this.panelControlAnimator.DefaultAnimation = animation2;
 			// 
-			// BtnUsuarioSetup
+			// panelControlAnimator2
 			// 
-			this.BtnUsuarioSetup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-			this.BtnUsuarioSetup.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.BtnUsuarioSetup.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-			this.BtnUsuarioSetup.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-			this.BtnUsuarioSetup.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
-			this.BtnUsuarioSetup.Border.Color = System.Drawing.Color.White;
-			this.BtnUsuarioSetup.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.BtnUsuarioSetup.Border.HoverVisible = true;
-			this.BtnUsuarioSetup.Border.Rounding = 6;
-			this.BtnUsuarioSetup.Border.Thickness = 1;
-			this.BtnUsuarioSetup.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-			this.BtnUsuarioSetup.Border.Visible = true;
-			this.logoAnimator.SetDecoration(this.BtnUsuarioSetup, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.BtnUsuarioSetup, BunifuAnimatorNS.DecorationType.None);
-			this.transi1.SetDecoration(this.BtnUsuarioSetup, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator2.SetDecoration(this.BtnUsuarioSetup, BunifuAnimatorNS.DecorationType.None);
-			this.BtnUsuarioSetup.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.BtnUsuarioSetup.ForeColor = System.Drawing.Color.White;
-			this.BtnUsuarioSetup.Image = global::XLight.Properties.Resources.Console_50px;
-			this.BtnUsuarioSetup.Location = new System.Drawing.Point(12, 533);
-			this.BtnUsuarioSetup.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-			this.BtnUsuarioSetup.Name = "BtnUsuarioSetup";
-			this.BtnUsuarioSetup.Size = new System.Drawing.Size(228, 52);
-			this.BtnUsuarioSetup.TabIndex = 9;
-			this.BtnUsuarioSetup.Text = "      Cambiar Usuario";
-			this.BtnUsuarioSetup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.BtnUsuarioSetup.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-			this.BtnUsuarioSetup.TextStyle.Enabled = System.Drawing.Color.White;
-			this.BtnUsuarioSetup.TextStyle.Hover = System.Drawing.Color.White;
-			this.BtnUsuarioSetup.TextStyle.Pressed = System.Drawing.Color.White;
-			this.BtnUsuarioSetup.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-			this.BtnUsuarioSetup.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-			this.BtnUsuarioSetup.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-			this.BtnUsuarioSetup.Click += new System.EventHandler(this.BtnUsuarioSetup_Click);
+			this.panelControlAnimator2.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+			this.panelControlAnimator2.Cursor = null;
+			animation4.AnimateOnlyDifferences = true;
+			animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+			animation4.LeafCoeff = 0F;
+			animation4.MaxTime = 1F;
+			animation4.MinTime = 0F;
+			animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+			animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+			animation4.MosaicSize = 0;
+			animation4.Padding = new System.Windows.Forms.Padding(0);
+			animation4.RotateCoeff = 0F;
+			animation4.RotateLimit = 0F;
+			animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+			animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+			animation4.TimeCoeff = 0F;
+			animation4.TransparencyCoeff = 0F;
+			this.panelControlAnimator2.DefaultAnimation = animation4;
 			// 
-			// btnOpciones
+			// actualizadorDia
 			// 
-			this.btnOpciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnOpciones.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnOpciones.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-			this.btnOpciones.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-			this.btnOpciones.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
-			this.btnOpciones.Border.Color = System.Drawing.Color.White;
-			this.btnOpciones.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.btnOpciones.Border.HoverVisible = true;
-			this.btnOpciones.Border.Rounding = 6;
-			this.btnOpciones.Border.Thickness = 1;
-			this.btnOpciones.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-			this.btnOpciones.Border.Visible = true;
-			this.logoAnimator.SetDecoration(this.btnOpciones, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.btnOpciones, BunifuAnimatorNS.DecorationType.None);
-			this.transi1.SetDecoration(this.btnOpciones, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator2.SetDecoration(this.btnOpciones, BunifuAnimatorNS.DecorationType.None);
-			this.btnOpciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnOpciones.ForeColor = System.Drawing.Color.White;
-			this.btnOpciones.Image = global::XLight.Properties.Resources.Slider__50px;
-			this.btnOpciones.Location = new System.Drawing.Point(12, 383);
-			this.btnOpciones.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-			this.btnOpciones.Name = "btnOpciones";
-			this.btnOpciones.Size = new System.Drawing.Size(228, 52);
-			this.btnOpciones.TabIndex = 7;
-			this.btnOpciones.Text = "           Opciones";
-			this.btnOpciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.btnOpciones.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-			this.btnOpciones.TextStyle.Enabled = System.Drawing.Color.White;
-			this.btnOpciones.TextStyle.Hover = System.Drawing.Color.White;
-			this.btnOpciones.TextStyle.Pressed = System.Drawing.Color.White;
-			this.btnOpciones.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-			this.btnOpciones.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-			this.btnOpciones.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-			this.btnOpciones.Click += new System.EventHandler(this.btnOpciones_Click);
+			this.actualizadorDia.Interval = 1000;
+			this.actualizadorDia.Tick += new System.EventHandler(this.actualizadorDia_Tick);
 			// 
-			// btnHistorial
+			// transi1
 			// 
-			this.btnHistorial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnHistorial.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnHistorial.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-			this.btnHistorial.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-			this.btnHistorial.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
-			this.btnHistorial.Border.Color = System.Drawing.Color.White;
-			this.btnHistorial.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.btnHistorial.Border.HoverVisible = true;
-			this.btnHistorial.Border.Rounding = 6;
-			this.btnHistorial.Border.Thickness = 1;
-			this.btnHistorial.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-			this.btnHistorial.Border.Visible = true;
-			this.logoAnimator.SetDecoration(this.btnHistorial, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.btnHistorial, BunifuAnimatorNS.DecorationType.None);
-			this.transi1.SetDecoration(this.btnHistorial, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator2.SetDecoration(this.btnHistorial, BunifuAnimatorNS.DecorationType.None);
-			this.btnHistorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnHistorial.ForeColor = System.Drawing.Color.White;
-			this.btnHistorial.Image = global::XLight.Properties.Resources.Heart_with_Pulse_50px;
-			this.btnHistorial.Location = new System.Drawing.Point(12, 325);
-			this.btnHistorial.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-			this.btnHistorial.Name = "btnHistorial";
-			this.btnHistorial.Size = new System.Drawing.Size(228, 52);
-			this.btnHistorial.TabIndex = 6;
-			this.btnHistorial.Text = "            Historial";
-			this.btnHistorial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.btnHistorial.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-			this.btnHistorial.TextStyle.Enabled = System.Drawing.Color.White;
-			this.btnHistorial.TextStyle.Hover = System.Drawing.Color.White;
-			this.btnHistorial.TextStyle.Pressed = System.Drawing.Color.White;
-			this.btnHistorial.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-			this.btnHistorial.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-			this.btnHistorial.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-			this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
+			this.transi1.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
+			this.transi1.Cursor = null;
+			animation1.AnimateOnlyDifferences = true;
+			animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+			animation1.LeafCoeff = 0F;
+			animation1.MaxTime = 1F;
+			animation1.MinTime = 0F;
+			animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+			animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+			animation1.MosaicSize = 0;
+			animation1.Padding = new System.Windows.Forms.Padding(0);
+			animation1.RotateCoeff = 0F;
+			animation1.RotateLimit = 0F;
+			animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+			animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+			animation1.TimeCoeff = 0F;
+			animation1.TransparencyCoeff = 0F;
+			this.transi1.DefaultAnimation = animation1;
+			this.transi1.Interval = 15;
 			// 
-			// btnBalance
+			// Update
 			// 
-			this.btnBalance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnBalance.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnBalance.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-			this.btnBalance.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-			this.btnBalance.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
-			this.btnBalance.Border.Color = System.Drawing.Color.White;
-			this.btnBalance.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.btnBalance.Border.HoverVisible = true;
-			this.btnBalance.Border.Rounding = 6;
-			this.btnBalance.Border.Thickness = 1;
-			this.btnBalance.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-			this.btnBalance.Border.Visible = true;
-			this.logoAnimator.SetDecoration(this.btnBalance, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.btnBalance, BunifuAnimatorNS.DecorationType.None);
-			this.transi1.SetDecoration(this.btnBalance, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator2.SetDecoration(this.btnBalance, BunifuAnimatorNS.DecorationType.None);
-			this.btnBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnBalance.ForeColor = System.Drawing.Color.White;
-			this.btnBalance.Image = global::XLight.Properties.Resources.Combo_Chart_50px;
-			this.btnBalance.Location = new System.Drawing.Point(12, 267);
-			this.btnBalance.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-			this.btnBalance.Name = "btnBalance";
-			this.btnBalance.Size = new System.Drawing.Size(228, 52);
-			this.btnBalance.TabIndex = 5;
-			this.btnBalance.Text = "            Balance";
-			this.btnBalance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.btnBalance.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-			this.btnBalance.TextStyle.Enabled = System.Drawing.Color.White;
-			this.btnBalance.TextStyle.Hover = System.Drawing.Color.White;
-			this.btnBalance.TextStyle.Pressed = System.Drawing.Color.White;
-			this.btnBalance.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-			this.btnBalance.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-			this.btnBalance.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-			this.btnBalance.Visible = false;
-			this.btnBalance.Click += new System.EventHandler(this.btnBalance_Click);
-			// 
-			// btnClientes
-			// 
-			this.btnClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnClientes.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnClientes.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-			this.btnClientes.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-			this.btnClientes.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
-			this.btnClientes.Border.Color = System.Drawing.Color.White;
-			this.btnClientes.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.btnClientes.Border.HoverVisible = true;
-			this.btnClientes.Border.Rounding = 6;
-			this.btnClientes.Border.Thickness = 1;
-			this.btnClientes.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-			this.btnClientes.Border.Visible = true;
-			this.logoAnimator.SetDecoration(this.btnClientes, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.btnClientes, BunifuAnimatorNS.DecorationType.None);
-			this.transi1.SetDecoration(this.btnClientes, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator2.SetDecoration(this.btnClientes, BunifuAnimatorNS.DecorationType.None);
-			this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnClientes.ForeColor = System.Drawing.Color.White;
-			this.btnClientes.Image = global::XLight.Properties.Resources.Customer_50px;
-			this.btnClientes.Location = new System.Drawing.Point(12, 209);
-			this.btnClientes.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-			this.btnClientes.Name = "btnClientes";
-			this.btnClientes.Size = new System.Drawing.Size(228, 52);
-			this.btnClientes.TabIndex = 4;
-			this.btnClientes.Text = "            Clientes";
-			this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.btnClientes.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-			this.btnClientes.TextStyle.Enabled = System.Drawing.Color.White;
-			this.btnClientes.TextStyle.Hover = System.Drawing.Color.White;
-			this.btnClientes.TextStyle.Pressed = System.Drawing.Color.White;
-			this.btnClientes.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-			this.btnClientes.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-			this.btnClientes.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-			this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
-			// 
-			// btnInicio
-			// 
-			this.btnInicio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnInicio.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnInicio.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-			this.btnInicio.BackColorState.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-			this.btnInicio.BackColorState.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(162)))), ((int)(((byte)(204)))));
-			this.btnInicio.Border.Color = System.Drawing.Color.White;
-			this.btnInicio.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.btnInicio.Border.HoverVisible = true;
-			this.btnInicio.Border.Rounding = 6;
-			this.btnInicio.Border.Thickness = 1;
-			this.btnInicio.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-			this.btnInicio.Border.Visible = true;
-			this.logoAnimator.SetDecoration(this.btnInicio, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.btnInicio, BunifuAnimatorNS.DecorationType.None);
-			this.transi1.SetDecoration(this.btnInicio, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator2.SetDecoration(this.btnInicio, BunifuAnimatorNS.DecorationType.None);
-			this.btnInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnInicio.ForeColor = System.Drawing.Color.White;
-			this.btnInicio.Image = global::XLight.Properties.Resources.Registry_Editor_50px;
-			this.btnInicio.Location = new System.Drawing.Point(12, 151);
-			this.btnInicio.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-			this.btnInicio.Name = "btnInicio";
-			this.btnInicio.Size = new System.Drawing.Size(228, 52);
-			this.btnInicio.TabIndex = 1;
-			this.btnInicio.Text = "          DashBoard";
-			this.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.btnInicio.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-			this.btnInicio.TextStyle.Enabled = System.Drawing.Color.White;
-			this.btnInicio.TextStyle.Hover = System.Drawing.Color.White;
-			this.btnInicio.TextStyle.Pressed = System.Drawing.Color.White;
-			this.btnInicio.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-			this.btnInicio.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-			this.btnInicio.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-			this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
-			// 
-			// imgLogoAmpliado
-			// 
-			this.imgLogoAmpliado.Anchor = System.Windows.Forms.AnchorStyles.Left;
-			this.panelControlAnimator2.SetDecoration(this.imgLogoAmpliado, BunifuAnimatorNS.DecorationType.None);
-			this.transi1.SetDecoration(this.imgLogoAmpliado, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.imgLogoAmpliado, BunifuAnimatorNS.DecorationType.None);
-			this.logoAnimator.SetDecoration(this.imgLogoAmpliado, BunifuAnimatorNS.DecorationType.None);
-			this.imgLogoAmpliado.Image = global::XLight.Properties.Resources.Icono;
-			this.imgLogoAmpliado.Location = new System.Drawing.Point(66, 18);
-			this.imgLogoAmpliado.Name = "imgLogoAmpliado";
-			this.imgLogoAmpliado.Size = new System.Drawing.Size(137, 95);
-			this.imgLogoAmpliado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.imgLogoAmpliado.TabIndex = 0;
-			this.imgLogoAmpliado.TabStop = false;
-			// 
-			// btnTransparente
-			// 
-			this.btnTransparente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnTransparente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-			this.transi1.SetDecoration(this.btnTransparente, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.btnTransparente, BunifuAnimatorNS.DecorationType.None);
-			this.logoAnimator.SetDecoration(this.btnTransparente, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator2.SetDecoration(this.btnTransparente, BunifuAnimatorNS.DecorationType.None);
-			this.btnTransparente.Image = global::XLight.Properties.Resources.Target_100px;
-			this.btnTransparente.ImageActive = null;
-			this.btnTransparente.Location = new System.Drawing.Point(927, 7);
-			this.btnTransparente.Name = "btnTransparente";
-			this.btnTransparente.Size = new System.Drawing.Size(34, 37);
-			this.btnTransparente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.btnTransparente.TabIndex = 8;
-			this.btnTransparente.TabStop = false;
-			this.btnTransparente.Zoom = 20;
-			this.btnTransparente.Click += new System.EventHandler(this.btnTransparente_Click);
-			// 
-			// bunifuImageButton1
-			// 
-			this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-			this.transi1.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
-			this.logoAnimator.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator2.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
-			this.bunifuImageButton1.Image = global::XLight.Properties.Resources.Minimize_Window_100px;
-			this.bunifuImageButton1.ImageActive = null;
-			this.bunifuImageButton1.Location = new System.Drawing.Point(967, 7);
-			this.bunifuImageButton1.Name = "bunifuImageButton1";
-			this.bunifuImageButton1.Size = new System.Drawing.Size(34, 37);
-			this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.bunifuImageButton1.TabIndex = 7;
-			this.bunifuImageButton1.TabStop = false;
-			this.bunifuImageButton1.Zoom = 20;
-			this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-			// 
-			// btnSlider
-			// 
-			this.btnSlider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-			this.transi1.SetDecoration(this.btnSlider, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.btnSlider, BunifuAnimatorNS.DecorationType.None);
-			this.logoAnimator.SetDecoration(this.btnSlider, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator2.SetDecoration(this.btnSlider, BunifuAnimatorNS.DecorationType.None);
-			this.btnSlider.Image = global::XLight.Properties.Resources.ACLC_College_100px;
-			this.btnSlider.ImageActive = null;
-			this.btnSlider.Location = new System.Drawing.Point(17, 3);
-			this.btnSlider.Name = "btnSlider";
-			this.btnSlider.Size = new System.Drawing.Size(53, 47);
-			this.btnSlider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.btnSlider.TabIndex = 6;
-			this.btnSlider.TabStop = false;
-			this.btnSlider.Zoom = 20;
-			this.btnSlider.Click += new System.EventHandler(this.btnSlider_Click);
-			// 
-			// btnMaximizar
-			// 
-			this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnMaximizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-			this.transi1.SetDecoration(this.btnMaximizar, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.btnMaximizar, BunifuAnimatorNS.DecorationType.None);
-			this.logoAnimator.SetDecoration(this.btnMaximizar, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator2.SetDecoration(this.btnMaximizar, BunifuAnimatorNS.DecorationType.None);
-			this.btnMaximizar.Image = global::XLight.Properties.Resources.Currency_100px;
-			this.btnMaximizar.ImageActive = null;
-			this.btnMaximizar.Location = new System.Drawing.Point(1007, 7);
-			this.btnMaximizar.Name = "btnMaximizar";
-			this.btnMaximizar.Size = new System.Drawing.Size(34, 37);
-			this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.btnMaximizar.TabIndex = 4;
-			this.btnMaximizar.TabStop = false;
-			this.btnMaximizar.Zoom = 20;
-			this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
-			// 
-			// LblUser
-			// 
-			this.LblUser.AutoSize = true;
-			this.panelControlAnimator2.SetDecoration(this.LblUser, BunifuAnimatorNS.DecorationType.None);
-			this.panelControlAnimator.SetDecoration(this.LblUser, BunifuAnimatorNS.DecorationType.None);
-			this.transi1.SetDecoration(this.LblUser, BunifuAnimatorNS.DecorationType.None);
-			this.logoAnimator.SetDecoration(this.LblUser, BunifuAnimatorNS.DecorationType.None);
-			this.LblUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.LblUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
-			this.LblUser.Location = new System.Drawing.Point(146, 17);
-			this.LblUser.Name = "LblUser";
-			this.LblUser.Size = new System.Drawing.Size(57, 21);
-			this.LblUser.TabIndex = 9;
-			this.LblUser.Text = "XLight";
+			this.Update.Interval = 1000;
+			this.Update.Tick += new System.EventHandler(this.Update_Tick);
 			// 
 			// MenuGeneral
 			// 
@@ -3015,11 +3020,11 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
 			this.ClientSize = new System.Drawing.Size(1188, 650);
+			this.Controls.Add(this.panelDashboard);
 			this.Controls.Add(this.PanelOpciones);
 			this.Controls.Add(this.PanelHistorial);
 			this.Controls.Add(this.PanelBalance);
 			this.Controls.Add(this.PanelClientes);
-			this.Controls.Add(this.panelDashboard);
 			this.Controls.Add(this.panelControl);
 			this.Controls.Add(this.header);
 			this.panelControlAnimator2.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
@@ -3032,8 +3037,13 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "XLight";
 			this.panelControl.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.imgLogoAmpliado)).EndInit();
 			this.header.ResumeLayout(false);
 			this.header.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.btnTransparente)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnSlider)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
 			this.PanelOpciones.ResumeLayout(false);
 			this.visualGroupBox2.ResumeLayout(false);
 			this.visualGroupBox2.PerformLayout();
@@ -3063,11 +3073,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.panelBase.ResumeLayout(false);
 			this.panelBase.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.imgLogoAmpliado)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.btnTransparente)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.btnSlider)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -3196,6 +3201,7 @@
 		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnCambiarContraseña;
 		private VisualPlus.Toolkit.Controls.Interactivity.VisualButton BtnBorrarHistorial;
 		private Bunifu.Framework.UI.BunifuCustomLabel LblUser;
+		private System.Windows.Forms.Timer Update;
 	}
 }
 
