@@ -170,7 +170,7 @@ namespace XLight.Forms
 			string subTele = TextTelefono.Text;
 			string subFech = DataFecha.Text;
 			string subDire = TextDireccion.Text;
-
+			string subConsulta = cliente.UltimaConsulta.ToString();
 
 			XmlDocument doc = new XmlDocument();
 
@@ -209,6 +209,10 @@ namespace XLight.Forms
 			XmlElement xdir = doc.CreateElement("direccion");
 			xdir.InnerText = subDire;
 			nuevoCliente.AppendChild(xdir);
+
+			XmlElement xultco = doc.CreateElement("ultconsulta");
+			xultco.InnerText = subConsulta;
+			nuevoCliente.AppendChild(xultco);
 
 			foreach (XmlNode item in listaClientes)
 			{

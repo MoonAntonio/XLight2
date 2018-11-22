@@ -219,6 +219,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Logo_Tocayo_512_MasRosa.ico" />
+    <None Include="Resources\uv1.jpg" />
+    <None Include="Resources\pegatina39.png" />
     <None Include="Resources\Add to Favorites_50px.png" />
     <None Include="Resources\Sort_50px.png" />
     <None Include="Resources\Versions_50px.png" />

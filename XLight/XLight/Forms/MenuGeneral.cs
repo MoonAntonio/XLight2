@@ -117,6 +117,8 @@ namespace XLight
 			{
 				btnBalance.Visible = false;
 			}
+
+			lblUsuarioGeneral.Text = usuarioActual.Nombre;
 		}
 
 		/// <summary>
@@ -186,6 +188,8 @@ namespace XLight
 			{
 				btnBalance.Visible = false;
 			}
+
+			lblUsuarioGeneral.Text = usuarioActual.Nombre;
 		}
 		#endregion
 
@@ -554,10 +558,14 @@ namespace XLight
 		{
 			endTime = DateTime.Now;
 
-			d.Text = endTime.Day.ToString();
-			h.Text = endTime.Hour.ToString();
-			m.Text = endTime.Minute.ToString();
-			s.Text = endTime.Second.ToString();
+			d.Text = endTime.Day.ToString("D2");
+			h.Text = endTime.Hour.ToString("D2");
+			m.Text = endTime.Minute.ToString("D2");
+			s.Text = endTime.Second.ToString("D2");
+
+			segundos = segundos + 1;
+			lblConectado.Text = segundos.ToString("D4") + " s.";
+			lblUsuarioGeneral.Text = usuarioActual.Nombre;
 		}
 		#endregion
 
@@ -683,6 +691,7 @@ namespace XLight
 			}
 
 			doc.Save(usuarioActual.PathClientes);
+			CargarHistorial();
 		}
 
 		/// <summary>
@@ -812,6 +821,7 @@ namespace XLight
 
 			doc.DocumentElement.AppendChild(cliente);
 			doc.Save(usuarioActual.PathHistorial);
+			CargarHistorial();
 		}
 
 		/// <summary>
@@ -843,6 +853,7 @@ namespace XLight
 				string direccion = inCliente.SelectSingleNode("direccion").InnerText;
 
 				dataGridView1.Rows.Add(id, nombre, apellidos, dni, telefono, fecha, direccion);
+				CargarHistorial();
 			}
 		}
 
@@ -1171,6 +1182,9 @@ namespace XLight
 				// Borrar info
 				TextNombre.Text = "";
 				TextApellidos.Text = "";
+				TextDNI.Text = "";
+				TextDireccion.Text = "";
+				DataFecha.Value = new DateTime();
 
 				// Actualizar lista
 				ActualizarBusquedaRegistro();
@@ -1436,8 +1450,8 @@ namespace XLight
 
 		private void Update_Tick(object sender, EventArgs e)
 		{
-			segundos++;
-			lblConectado.Text = segundos + " s.";
+			segundos = segundos + 1;
+			lblConectado.Text = segundos.ToString() + " s.";
 		}
 	}
 }

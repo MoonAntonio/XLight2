@@ -293,6 +293,16 @@ namespace XLight.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pegatina39 {
+            get {
+                object obj = ResourceManager.GetObject("pegatina39", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Play_100px {
             get {
                 object obj = ResourceManager.GetObject("Play_100px", resourceCulture);
@@ -446,6 +456,16 @@ namespace XLight.Properties {
         internal static System.Drawing.Bitmap uv {
             get {
                 object obj = ResourceManager.GetObject("uv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap uv1 {
+            get {
+                object obj = ResourceManager.GetObject("uv1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

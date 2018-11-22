@@ -40,40 +40,40 @@
 			this.visualLabel9 = new VisualPlus.Toolkit.Controls.Interactivity.VisualLabel();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.Hipnosis = new VisualPlus.Toolkit.Child.VisualTabPage();
-			this.visualListBoxHipnosis = new VisualPlus.Toolkit.Controls.DataManagement.VisualListBox();
 			this.visualSeparator4 = new VisualPlus.Toolkit.Controls.Layout.VisualSeparator();
 			this.BtnImprimirHipnosis = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.BtnGuardarHipnosis = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.BtnCrearHipnosis = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.richTextBoxHipnosis = new System.Windows.Forms.RichTextBox();
+			this.visualListBoxHipnosis = new VisualPlus.Toolkit.Controls.DataManagement.VisualListBox();
 			this.Sueños = new VisualPlus.Toolkit.Child.VisualTabPage();
-			this.visualListBoxInterpretar = new VisualPlus.Toolkit.Controls.DataManagement.VisualListBox();
 			this.visualSeparator3 = new VisualPlus.Toolkit.Controls.Layout.VisualSeparator();
 			this.BtnImprimirInterpretar = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.BtnGuardarInterpretar = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.BtnCrearInterpretar = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.richTextBoxInterpretar = new System.Windows.Forms.RichTextBox();
+			this.visualListBoxInterpretar = new VisualPlus.Toolkit.Controls.DataManagement.VisualListBox();
 			this.Regresion = new VisualPlus.Toolkit.Child.VisualTabPage();
-			this.visualListBoxRegresion = new VisualPlus.Toolkit.Controls.DataManagement.VisualListBox();
 			this.visualSeparator2 = new VisualPlus.Toolkit.Controls.Layout.VisualSeparator();
 			this.BtnImprimirRegresion = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.BtnGuardarRegresion = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.BtnCrearRegresion = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.richTextBoxRegresion = new System.Windows.Forms.RichTextBox();
+			this.visualListBoxRegresion = new VisualPlus.Toolkit.Controls.DataManagement.VisualListBox();
 			this.Reiki = new VisualPlus.Toolkit.Child.VisualTabPage();
-			this.visualListBoxReiki = new VisualPlus.Toolkit.Controls.DataManagement.VisualListBox();
 			this.BtnImprimirReiki = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.visualSeparator1 = new VisualPlus.Toolkit.Controls.Layout.VisualSeparator();
 			this.BtnGuardarReiki = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.BtnCrearReiki = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.richTextBoxReiki = new System.Windows.Forms.RichTextBox();
+			this.visualListBoxReiki = new VisualPlus.Toolkit.Controls.DataManagement.VisualListBox();
 			this.Thetahealing = new VisualPlus.Toolkit.Child.VisualTabPage();
-			this.visualListBoxTetra = new VisualPlus.Toolkit.Controls.DataManagement.VisualListBox();
 			this.BtnImprimirTetra = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.BtnGuardarTetra = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.visualSeparator5 = new VisualPlus.Toolkit.Controls.Layout.VisualSeparator();
 			this.BtnCrearTetra = new VisualPlus.Toolkit.Controls.Interactivity.VisualButton();
 			this.richTextBoxTetra = new System.Windows.Forms.RichTextBox();
+			this.visualListBoxTetra = new VisualPlus.Toolkit.Controls.DataManagement.VisualListBox();
 			this.txtUltimaConsulta = new VisualPlus.Toolkit.Controls.Interactivity.VisualLabel();
 			this.visualLabel7 = new VisualPlus.Toolkit.Controls.Interactivity.VisualLabel();
 			this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
@@ -332,39 +332,6 @@
 			this.Hipnosis.TextLineAlignment = System.Drawing.StringAlignment.Center;
 			this.Hipnosis.TextSelected = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(220)))), ((int)(((byte)(227)))));
 			// 
-			// visualListBoxHipnosis
-			// 
-			this.visualListBoxHipnosis.AlternateColors = false;
-			this.visualListBoxHipnosis.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-			this.visualListBoxHipnosis.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(249)))));
-			this.visualListBoxHipnosis.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-			this.visualListBoxHipnosis.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.visualListBoxHipnosis.Border.HoverVisible = true;
-			this.visualListBoxHipnosis.Border.Rounding = 6;
-			this.visualListBoxHipnosis.Border.Thickness = 1;
-			this.visualListBoxHipnosis.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-			this.visualListBoxHipnosis.Border.Visible = true;
-			this.visualListBoxHipnosis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxHipnosis.ItemAlternate = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(13)))));
-			this.visualListBoxHipnosis.ItemHeight = 18;
-			this.visualListBoxHipnosis.ItemLineAlignment = System.Drawing.StringAlignment.Center;
-			this.visualListBoxHipnosis.ItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-			this.visualListBoxHipnosis.ItemSelected = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.visualListBoxHipnosis.Location = new System.Drawing.Point(6, 72);
-			this.visualListBoxHipnosis.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-			this.visualListBoxHipnosis.Name = "visualListBoxHipnosis";
-			this.visualListBoxHipnosis.Size = new System.Drawing.Size(612, 368);
-			this.visualListBoxHipnosis.TabIndex = 27;
-			this.visualListBoxHipnosis.Text = "visualListBox1";
-			this.visualListBoxHipnosis.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-			this.visualListBoxHipnosis.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxHipnosis.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxHipnosis.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxHipnosis.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-			this.visualListBoxHipnosis.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-			this.visualListBoxHipnosis.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-			this.visualListBoxHipnosis.SelectedIndexChanged += new System.EventHandler(this.visualListBoxHipnosis_SelectedIndexChanged);
-			// 
 			// visualSeparator4
 			// 
 			this.visualSeparator4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
@@ -491,6 +458,39 @@
 			this.richTextBoxHipnosis.Text = "";
 			this.richTextBoxHipnosis.TextChanged += new System.EventHandler(this.richTextBoxHipnosis_TextChanged);
 			// 
+			// visualListBoxHipnosis
+			// 
+			this.visualListBoxHipnosis.AlternateColors = false;
+			this.visualListBoxHipnosis.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualListBoxHipnosis.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(249)))));
+			this.visualListBoxHipnosis.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.visualListBoxHipnosis.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.visualListBoxHipnosis.Border.HoverVisible = true;
+			this.visualListBoxHipnosis.Border.Rounding = 6;
+			this.visualListBoxHipnosis.Border.Thickness = 1;
+			this.visualListBoxHipnosis.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.visualListBoxHipnosis.Border.Visible = true;
+			this.visualListBoxHipnosis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxHipnosis.ItemAlternate = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(13)))));
+			this.visualListBoxHipnosis.ItemHeight = 18;
+			this.visualListBoxHipnosis.ItemLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualListBoxHipnosis.ItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualListBoxHipnosis.ItemSelected = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.visualListBoxHipnosis.Location = new System.Drawing.Point(6, 72);
+			this.visualListBoxHipnosis.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.visualListBoxHipnosis.Name = "visualListBoxHipnosis";
+			this.visualListBoxHipnosis.Size = new System.Drawing.Size(612, 368);
+			this.visualListBoxHipnosis.TabIndex = 27;
+			this.visualListBoxHipnosis.Text = "visualListBox1";
+			this.visualListBoxHipnosis.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.visualListBoxHipnosis.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxHipnosis.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxHipnosis.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxHipnosis.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.visualListBoxHipnosis.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualListBoxHipnosis.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.visualListBoxHipnosis.SelectedIndexChanged += new System.EventHandler(this.visualListBoxHipnosis_SelectedIndexChanged);
+			// 
 			// Sueños
 			// 
 			this.Sueños.BackColor = System.Drawing.Color.Transparent;
@@ -521,39 +521,6 @@
 			this.Sueños.TextImageRelation = VisualPlus.Toolkit.Child.VisualTabPage.TextImageRelations.Text;
 			this.Sueños.TextLineAlignment = System.Drawing.StringAlignment.Center;
 			this.Sueños.TextSelected = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(220)))), ((int)(((byte)(227)))));
-			// 
-			// visualListBoxInterpretar
-			// 
-			this.visualListBoxInterpretar.AlternateColors = false;
-			this.visualListBoxInterpretar.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-			this.visualListBoxInterpretar.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(249)))));
-			this.visualListBoxInterpretar.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-			this.visualListBoxInterpretar.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.visualListBoxInterpretar.Border.HoverVisible = true;
-			this.visualListBoxInterpretar.Border.Rounding = 6;
-			this.visualListBoxInterpretar.Border.Thickness = 1;
-			this.visualListBoxInterpretar.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-			this.visualListBoxInterpretar.Border.Visible = true;
-			this.visualListBoxInterpretar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxInterpretar.ItemAlternate = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(13)))));
-			this.visualListBoxInterpretar.ItemHeight = 18;
-			this.visualListBoxInterpretar.ItemLineAlignment = System.Drawing.StringAlignment.Center;
-			this.visualListBoxInterpretar.ItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-			this.visualListBoxInterpretar.ItemSelected = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.visualListBoxInterpretar.Location = new System.Drawing.Point(6, 72);
-			this.visualListBoxInterpretar.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-			this.visualListBoxInterpretar.Name = "visualListBoxInterpretar";
-			this.visualListBoxInterpretar.Size = new System.Drawing.Size(612, 368);
-			this.visualListBoxInterpretar.TabIndex = 26;
-			this.visualListBoxInterpretar.Text = "visualListBox1";
-			this.visualListBoxInterpretar.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-			this.visualListBoxInterpretar.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxInterpretar.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxInterpretar.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxInterpretar.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-			this.visualListBoxInterpretar.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-			this.visualListBoxInterpretar.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-			this.visualListBoxInterpretar.SelectedIndexChanged += new System.EventHandler(this.visualListBoxInterpretar_SelectedIndexChanged);
 			// 
 			// visualSeparator3
 			// 
@@ -681,6 +648,39 @@
 			this.richTextBoxInterpretar.Text = "";
 			this.richTextBoxInterpretar.TextChanged += new System.EventHandler(this.richTextBoxInterpretar_TextChanged);
 			// 
+			// visualListBoxInterpretar
+			// 
+			this.visualListBoxInterpretar.AlternateColors = false;
+			this.visualListBoxInterpretar.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualListBoxInterpretar.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(249)))));
+			this.visualListBoxInterpretar.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.visualListBoxInterpretar.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.visualListBoxInterpretar.Border.HoverVisible = true;
+			this.visualListBoxInterpretar.Border.Rounding = 6;
+			this.visualListBoxInterpretar.Border.Thickness = 1;
+			this.visualListBoxInterpretar.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.visualListBoxInterpretar.Border.Visible = true;
+			this.visualListBoxInterpretar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxInterpretar.ItemAlternate = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(13)))));
+			this.visualListBoxInterpretar.ItemHeight = 18;
+			this.visualListBoxInterpretar.ItemLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualListBoxInterpretar.ItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualListBoxInterpretar.ItemSelected = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.visualListBoxInterpretar.Location = new System.Drawing.Point(6, 72);
+			this.visualListBoxInterpretar.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.visualListBoxInterpretar.Name = "visualListBoxInterpretar";
+			this.visualListBoxInterpretar.Size = new System.Drawing.Size(612, 368);
+			this.visualListBoxInterpretar.TabIndex = 26;
+			this.visualListBoxInterpretar.Text = "visualListBox1";
+			this.visualListBoxInterpretar.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.visualListBoxInterpretar.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxInterpretar.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxInterpretar.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxInterpretar.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.visualListBoxInterpretar.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualListBoxInterpretar.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.visualListBoxInterpretar.SelectedIndexChanged += new System.EventHandler(this.visualListBoxInterpretar_SelectedIndexChanged);
+			// 
 			// Regresion
 			// 
 			this.Regresion.BackColor = System.Drawing.Color.Transparent;
@@ -711,39 +711,6 @@
 			this.Regresion.TextImageRelation = VisualPlus.Toolkit.Child.VisualTabPage.TextImageRelations.Text;
 			this.Regresion.TextLineAlignment = System.Drawing.StringAlignment.Center;
 			this.Regresion.TextSelected = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(220)))), ((int)(((byte)(227)))));
-			// 
-			// visualListBoxRegresion
-			// 
-			this.visualListBoxRegresion.AlternateColors = false;
-			this.visualListBoxRegresion.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-			this.visualListBoxRegresion.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(249)))));
-			this.visualListBoxRegresion.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-			this.visualListBoxRegresion.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.visualListBoxRegresion.Border.HoverVisible = true;
-			this.visualListBoxRegresion.Border.Rounding = 6;
-			this.visualListBoxRegresion.Border.Thickness = 1;
-			this.visualListBoxRegresion.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-			this.visualListBoxRegresion.Border.Visible = true;
-			this.visualListBoxRegresion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxRegresion.ItemAlternate = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(13)))));
-			this.visualListBoxRegresion.ItemHeight = 18;
-			this.visualListBoxRegresion.ItemLineAlignment = System.Drawing.StringAlignment.Center;
-			this.visualListBoxRegresion.ItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-			this.visualListBoxRegresion.ItemSelected = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.visualListBoxRegresion.Location = new System.Drawing.Point(6, 72);
-			this.visualListBoxRegresion.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-			this.visualListBoxRegresion.Name = "visualListBoxRegresion";
-			this.visualListBoxRegresion.Size = new System.Drawing.Size(612, 368);
-			this.visualListBoxRegresion.TabIndex = 25;
-			this.visualListBoxRegresion.Text = "visualListBox1";
-			this.visualListBoxRegresion.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-			this.visualListBoxRegresion.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxRegresion.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxRegresion.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxRegresion.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-			this.visualListBoxRegresion.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-			this.visualListBoxRegresion.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-			this.visualListBoxRegresion.SelectedIndexChanged += new System.EventHandler(this.visualListBoxRegresion_SelectedIndexChanged);
 			// 
 			// visualSeparator2
 			// 
@@ -871,6 +838,39 @@
 			this.richTextBoxRegresion.Text = "";
 			this.richTextBoxRegresion.TextChanged += new System.EventHandler(this.richTextBoxRegresion_TextChanged);
 			// 
+			// visualListBoxRegresion
+			// 
+			this.visualListBoxRegresion.AlternateColors = false;
+			this.visualListBoxRegresion.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualListBoxRegresion.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(249)))));
+			this.visualListBoxRegresion.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.visualListBoxRegresion.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.visualListBoxRegresion.Border.HoverVisible = true;
+			this.visualListBoxRegresion.Border.Rounding = 6;
+			this.visualListBoxRegresion.Border.Thickness = 1;
+			this.visualListBoxRegresion.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.visualListBoxRegresion.Border.Visible = true;
+			this.visualListBoxRegresion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxRegresion.ItemAlternate = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(13)))));
+			this.visualListBoxRegresion.ItemHeight = 18;
+			this.visualListBoxRegresion.ItemLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualListBoxRegresion.ItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualListBoxRegresion.ItemSelected = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.visualListBoxRegresion.Location = new System.Drawing.Point(6, 72);
+			this.visualListBoxRegresion.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.visualListBoxRegresion.Name = "visualListBoxRegresion";
+			this.visualListBoxRegresion.Size = new System.Drawing.Size(612, 368);
+			this.visualListBoxRegresion.TabIndex = 25;
+			this.visualListBoxRegresion.Text = "visualListBox1";
+			this.visualListBoxRegresion.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.visualListBoxRegresion.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxRegresion.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxRegresion.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxRegresion.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.visualListBoxRegresion.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualListBoxRegresion.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.visualListBoxRegresion.SelectedIndexChanged += new System.EventHandler(this.visualListBoxRegresion_SelectedIndexChanged);
+			// 
 			// Reiki
 			// 
 			this.Reiki.BackColor = System.Drawing.Color.Transparent;
@@ -901,39 +901,6 @@
 			this.Reiki.TextImageRelation = VisualPlus.Toolkit.Child.VisualTabPage.TextImageRelations.Text;
 			this.Reiki.TextLineAlignment = System.Drawing.StringAlignment.Center;
 			this.Reiki.TextSelected = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(220)))), ((int)(((byte)(227)))));
-			// 
-			// visualListBoxReiki
-			// 
-			this.visualListBoxReiki.AlternateColors = false;
-			this.visualListBoxReiki.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-			this.visualListBoxReiki.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(249)))));
-			this.visualListBoxReiki.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-			this.visualListBoxReiki.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.visualListBoxReiki.Border.HoverVisible = true;
-			this.visualListBoxReiki.Border.Rounding = 6;
-			this.visualListBoxReiki.Border.Thickness = 1;
-			this.visualListBoxReiki.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-			this.visualListBoxReiki.Border.Visible = true;
-			this.visualListBoxReiki.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxReiki.ItemAlternate = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(13)))));
-			this.visualListBoxReiki.ItemHeight = 18;
-			this.visualListBoxReiki.ItemLineAlignment = System.Drawing.StringAlignment.Center;
-			this.visualListBoxReiki.ItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-			this.visualListBoxReiki.ItemSelected = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.visualListBoxReiki.Location = new System.Drawing.Point(6, 72);
-			this.visualListBoxReiki.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-			this.visualListBoxReiki.Name = "visualListBoxReiki";
-			this.visualListBoxReiki.Size = new System.Drawing.Size(612, 368);
-			this.visualListBoxReiki.TabIndex = 25;
-			this.visualListBoxReiki.Text = "visualListBox1";
-			this.visualListBoxReiki.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-			this.visualListBoxReiki.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxReiki.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxReiki.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxReiki.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-			this.visualListBoxReiki.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-			this.visualListBoxReiki.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-			this.visualListBoxReiki.SelectedIndexChanged += new System.EventHandler(this.visualListBoxReiki_SelectedIndexChanged);
 			// 
 			// BtnImprimirReiki
 			// 
@@ -1061,6 +1028,39 @@
 			this.richTextBoxReiki.Text = "";
 			this.richTextBoxReiki.TextChanged += new System.EventHandler(this.richTextBoxReiki_TextChanged);
 			// 
+			// visualListBoxReiki
+			// 
+			this.visualListBoxReiki.AlternateColors = false;
+			this.visualListBoxReiki.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualListBoxReiki.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(249)))));
+			this.visualListBoxReiki.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.visualListBoxReiki.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.visualListBoxReiki.Border.HoverVisible = true;
+			this.visualListBoxReiki.Border.Rounding = 6;
+			this.visualListBoxReiki.Border.Thickness = 1;
+			this.visualListBoxReiki.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.visualListBoxReiki.Border.Visible = true;
+			this.visualListBoxReiki.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxReiki.ItemAlternate = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(13)))));
+			this.visualListBoxReiki.ItemHeight = 18;
+			this.visualListBoxReiki.ItemLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualListBoxReiki.ItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualListBoxReiki.ItemSelected = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.visualListBoxReiki.Location = new System.Drawing.Point(6, 72);
+			this.visualListBoxReiki.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.visualListBoxReiki.Name = "visualListBoxReiki";
+			this.visualListBoxReiki.Size = new System.Drawing.Size(612, 368);
+			this.visualListBoxReiki.TabIndex = 25;
+			this.visualListBoxReiki.Text = "visualListBox1";
+			this.visualListBoxReiki.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.visualListBoxReiki.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxReiki.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxReiki.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxReiki.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.visualListBoxReiki.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualListBoxReiki.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.visualListBoxReiki.SelectedIndexChanged += new System.EventHandler(this.visualListBoxReiki_SelectedIndexChanged);
+			// 
 			// Thetahealing
 			// 
 			this.Thetahealing.BackColor = System.Drawing.Color.Transparent;
@@ -1091,39 +1091,6 @@
 			this.Thetahealing.TextImageRelation = VisualPlus.Toolkit.Child.VisualTabPage.TextImageRelations.Text;
 			this.Thetahealing.TextLineAlignment = System.Drawing.StringAlignment.Center;
 			this.Thetahealing.TextSelected = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(220)))), ((int)(((byte)(227)))));
-			// 
-			// visualListBoxTetra
-			// 
-			this.visualListBoxTetra.AlternateColors = false;
-			this.visualListBoxTetra.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-			this.visualListBoxTetra.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(249)))));
-			this.visualListBoxTetra.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-			this.visualListBoxTetra.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.visualListBoxTetra.Border.HoverVisible = true;
-			this.visualListBoxTetra.Border.Rounding = 6;
-			this.visualListBoxTetra.Border.Thickness = 1;
-			this.visualListBoxTetra.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
-			this.visualListBoxTetra.Border.Visible = true;
-			this.visualListBoxTetra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxTetra.ItemAlternate = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(13)))));
-			this.visualListBoxTetra.ItemHeight = 18;
-			this.visualListBoxTetra.ItemLineAlignment = System.Drawing.StringAlignment.Center;
-			this.visualListBoxTetra.ItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-			this.visualListBoxTetra.ItemSelected = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
-			this.visualListBoxTetra.Location = new System.Drawing.Point(6, 72);
-			this.visualListBoxTetra.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
-			this.visualListBoxTetra.Name = "visualListBoxTetra";
-			this.visualListBoxTetra.Size = new System.Drawing.Size(612, 368);
-			this.visualListBoxTetra.TabIndex = 30;
-			this.visualListBoxTetra.Text = "visualListBox1";
-			this.visualListBoxTetra.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-			this.visualListBoxTetra.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxTetra.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxTetra.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.visualListBoxTetra.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
-			this.visualListBoxTetra.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
-			this.visualListBoxTetra.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-			this.visualListBoxTetra.SelectedIndexChanged += new System.EventHandler(this.visualListBoxTetra_SelectedIndexChanged);
 			// 
 			// BtnImprimirTetra
 			// 
@@ -1250,6 +1217,39 @@
 			this.richTextBoxTetra.TabIndex = 0;
 			this.richTextBoxTetra.Text = "";
 			this.richTextBoxTetra.TextChanged += new System.EventHandler(this.richTextBoxTetra_TextChanged);
+			// 
+			// visualListBoxTetra
+			// 
+			this.visualListBoxTetra.AlternateColors = false;
+			this.visualListBoxTetra.BackColorState.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualListBoxTetra.BackColorState.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(249)))));
+			this.visualListBoxTetra.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.visualListBoxTetra.Border.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.visualListBoxTetra.Border.HoverVisible = true;
+			this.visualListBoxTetra.Border.Rounding = 6;
+			this.visualListBoxTetra.Border.Thickness = 1;
+			this.visualListBoxTetra.Border.Type = VisualPlus.Enumerators.ShapeTypes.Rounded;
+			this.visualListBoxTetra.Border.Visible = true;
+			this.visualListBoxTetra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxTetra.ItemAlternate = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(13)))));
+			this.visualListBoxTetra.ItemHeight = 18;
+			this.visualListBoxTetra.ItemLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualListBoxTetra.ItemNormal = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+			this.visualListBoxTetra.ItemSelected = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(183)))), ((int)(((byte)(230)))));
+			this.visualListBoxTetra.Location = new System.Drawing.Point(6, 72);
+			this.visualListBoxTetra.MouseState = VisualPlus.Enumerators.MouseStates.Normal;
+			this.visualListBoxTetra.Name = "visualListBoxTetra";
+			this.visualListBoxTetra.Size = new System.Drawing.Size(612, 368);
+			this.visualListBoxTetra.TabIndex = 30;
+			this.visualListBoxTetra.Text = "visualListBox1";
+			this.visualListBoxTetra.TextStyle.Disabled = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+			this.visualListBoxTetra.TextStyle.Enabled = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxTetra.TextStyle.Hover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxTetra.TextStyle.Pressed = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.visualListBoxTetra.TextStyle.TextAlignment = System.Drawing.StringAlignment.Center;
+			this.visualListBoxTetra.TextStyle.TextLineAlignment = System.Drawing.StringAlignment.Center;
+			this.visualListBoxTetra.TextStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.visualListBoxTetra.SelectedIndexChanged += new System.EventHandler(this.visualListBoxTetra_SelectedIndexChanged);
 			// 
 			// txtUltimaConsulta
 			// 
@@ -1460,9 +1460,9 @@
 			this.DataFecha.ForeColor = System.Drawing.Color.Black;
 			this.DataFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
 			this.DataFecha.FormatCustom = null;
-			this.DataFecha.Location = new System.Drawing.Point(464, 78);
+			this.DataFecha.Location = new System.Drawing.Point(464, 72);
 			this.DataFecha.Name = "DataFecha";
-			this.DataFecha.Size = new System.Drawing.Size(166, 23);
+			this.DataFecha.Size = new System.Drawing.Size(166, 34);
 			this.DataFecha.TabIndex = 11;
 			this.DataFecha.Value = new System.DateTime(2018, 11, 21, 15, 46, 14, 660);
 			// 
